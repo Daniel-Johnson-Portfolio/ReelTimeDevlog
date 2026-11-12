@@ -43,6 +43,7 @@ This is every stage of the loop in one recording. The walk and the swings are si
 
 - The replay shows the player's stand-in and not much else. The zombies and the kills aren't in shot.
 - The first replay camera is nearly black.
+- The Director's own reviewer went through this reel after I posted it and was harder on it than I was: the loop "plays in order but not proven". No machete kill on a zombie is on film, the replay holds still for 3.4 seconds and "reads as a freeze", and the retake takes 8.5 seconds, not a third of one.
 - The dailies thumbnail is still empty.
 - The reels are silent apart from a second and a half. Nobody knows yet whether that's the game or the recorder.
 
