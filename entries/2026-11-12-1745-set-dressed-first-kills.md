@@ -5,7 +5,6 @@ categories: [world, gameplay]
 sessions: [world, world-2, floater-1, npc-ai, engine]
 summary: Sixteen script-built props turned the grey-box forecourt into a 1970s gas station, and the 17:30 reel has the first machete kills, the first real death and the first sound.
 cover: media/machete-kills-at-the-pumps.mp4
-featured: true
 draft: false
 ---
 

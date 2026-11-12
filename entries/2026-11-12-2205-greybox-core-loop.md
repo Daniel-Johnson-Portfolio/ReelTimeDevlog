@@ -1,11 +1,12 @@
 ---
 title: "Milestone two: the core loop plays, in grey boxes"
-date: 2026-11-12T23:00:00+00:00
+date: 2026-11-12T22:05:00+00:00
 categories: [milestones, gameplay]
 sessions: [you, director, engine, gameplay, gameplay-2, npc-ai, world, world-2, ui, audio, floater-1, toolsmith, release]
-summary: Eighteen hours in, Reel Time is a game you can play from slate to dailies. It took five sets of reels, three usage stalls and one humbling playtest to be able to say that.
+summary: Seventeen hours in, Reel Time plays from slate to dailies by the path a player takes. At 21:41 it didn't, and the Director refused to call the milestone met.
 cover: media/day-one-take-slate-kills-cut-retake.mp4
-draft: true
+featured: true
+draft: false
 ---
 
 The second milestone is "Playable greybox core loop", due at 23:00 on day one. Its test, written before the jam: "Greybox level, the core action works, debug commands work, captures flowing."
@@ -14,24 +15,34 @@ The second milestone is "Playable greybox core loop", due at 23:00 on day one. I
 
 ## Where it stands
 
-All four parts of the test are met.
+All four parts of the test are met, an hour before the deadline.
 
 - **Greybox level.** Seven of them: a tutorial, two zombie, two UFO and two noir. The gas station has moved past grey boxes already.
 - **The core action works.** Time runs only when you move. Machete, ray gun and revolver. One hit is CUT, and the retake follows. Clear the scene and you get the Director's Cut replay and the dailies.
 - **Debug commands work.** The whole game can be driven from the console, which is how the Engine session films it.
 - **Captures flowing.** Single captures at 07:30, then six sets of whole-level reels from 11:30.
 
-And one honest footnote. When I played it myself this evening no enemies spawned, because of how levels stream in after travelling between them. The cause was found and fixed within the hour, and I haven't played the fixed build yet. So: the loop works on film and in tests. I'll believe it fully after playtest two.
+## The footnote
+
+Half an hour ago this milestone was not met, and the Director said so. Its message to me at 21:41:
+
+> "The only time a person played it, no enemy spawned in any level… If not, publish at about 22:50 as 'missed by one bug at the deadline'… That is a better Glass Box post than a tidy 'met'."
+
+The bug was in the journey between levels, which no reel had ever filmed. So the bar for "met" became a journey. First a headless test that starts at the title and travels through all six scenes, checking for a live enemy within ten seconds of ACTION in each. Then the Engine did the same trip in the real editor: title screen, start, travel to the gas station. Its log line: "wave 1/5 alive 2" at 0.2 seconds. Twelve seconds later a zombie hit the player and the Director called CUT.
+
+That's the proof, and here is its limit. A script and a test have made the trip. A person hasn't, not since the fix. I play it again in the morning.
+
+One more true thing: the levels I'll play then aren't these. They're being rebuilt tonight, with three spaces, a script and a stage door, because of what the playtest found.
 
 ## Day one in numbers
 
 @crew
 
-- **420 commits** to the game.
-- **52 of 110 tasks** done.
-- **83 kit runs**: scripts that build assets inside the editor.
+- **432 commits** to the game.
+- **52 of 114 tasks** done.
+- **87 kit runs**: scripts that build assets inside the editor.
 - **Three usage stalls**, a little over four hours with every session stopped.
-- **24 devlog posts**, this one included.
+- **25 devlog posts**, this one included.
 
 ## How the day went
 
