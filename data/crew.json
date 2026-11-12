@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12T07:50:55+00:00",
+  "generated": "2026-11-12T10:25:43+00:00",
   "crew": [
     {
       "role": "director",
@@ -15,15 +15,15 @@
       "mode": "always_on",
       "tasks_done": 1,
       "tasks_total": 3,
-      "commits": 12
+      "commits": 20
     },
     {
       "role": "gameplay",
       "about": "Core rules: player, controls, core loop, game state, win and lose.",
       "mode": "always_on",
-      "tasks_done": 2,
-      "tasks_total": 10,
-      "commits": 13
+      "tasks_done": 4,
+      "tasks_total": 11,
+      "commits": 19
     },
     {
       "role": "ui",
@@ -31,15 +31,15 @@
       "mode": "always_on",
       "tasks_done": 0,
       "tasks_total": 4,
-      "commits": 11
+      "commits": 14
     },
     {
       "role": "npc-ai",
       "about": "NPC behaviour: StateTrees, perception, navigation, spawning.",
       "mode": "always_on",
-      "tasks_done": 0,
+      "tasks_done": 1,
       "tasks_total": 4,
-      "commits": 5
+      "commits": 6
     },
     {
       "role": "world",
@@ -47,7 +47,7 @@
       "mode": "always_on",
       "tasks_done": 0,
       "tasks_total": 5,
-      "commits": 7
+      "commits": 13
     },
     {
       "role": "audio",
@@ -55,7 +55,7 @@
       "mode": "always_on",
       "tasks_done": 1,
       "tasks_total": 4,
-      "commits": 6
+      "commits": 9
     },
     {
       "role": "floater-1",
@@ -63,7 +63,7 @@
       "mode": "always_on",
       "tasks_done": 1,
       "tasks_total": 4,
-      "commits": 3
+      "commits": 4
     },
     {
       "role": "devlog",
@@ -85,21 +85,21 @@
       "role": "toolsmith",
       "about": "Fixes what FRICTION.md reports: tools, hooks, skills, subagents.",
       "mode": "on_call",
-      "tasks_done": 2,
-      "tasks_total": 2,
-      "commits": 6
+      "tasks_done": 3,
+      "tasks_total": 4,
+      "commits": 9
     }
   ],
   "totals": {
-    "tasks_done": 8,
-    "tasks_total": 49,
-    "commits": 92,
+    "tasks_done": 12,
+    "tasks_total": 52,
+    "commits": 137,
     "kits_run": 9,
-    "merges": 6,
+    "merges": 20,
     "decisions": 10,
     "assumptions": 2,
-    "friction_open": 10,
-    "friction_fixed": 8,
-    "review_folders": 21
+    "friction_open": 13,
+    "friction_fixed": 9,
+    "review_folders": 28
   }
 }

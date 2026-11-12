@@ -1,0 +1,29 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="cards.css">
+<style>
+.bar { display: flex; height: 110px; border-radius: 14px; overflow: hidden; border: 2px solid var(--line); margin: 14px 0 10px; }
+.bar div { display: flex; align-items: center; justify-content: center; font-family: Bahnschrift, sans-serif; font-size: 28px; }
+.work { background: #16261f; color: #a9f0c8; } .warn { background: #4a3a05; color: #ffe08a; } .dark { background: #08080a; color: var(--dim); letter-spacing: .2em; }
+.ticks { display: flex; font-family: Consolas, monospace; font-size: 22px; color: var(--dim); }
+.ticks span { flex: 1; } .ticks span:last-child { flex: 0 0 auto; }
+</style>
+<body><div class="frame">
+  <div class="kicker">Reel Time · bloopers · jam hour 3 to 5</div>
+  <h1>The usage limit: two hours dark</h1>
+  <div class="sub">A 19-minute warning, a clean stop, and one command to bring nine sessions back.</div>
+  <div class="grow">
+    <div class="bar">
+      <div class="work" style="flex:6">working</div>
+      <div class="warn" style="flex:19">warned</div>
+      <div class="dark" style="flex:116">NO COMMITS · 1 h 56 m</div>
+      <div class="work" style="flex:14">back</div>
+    </div>
+    <div class="ticks"><span>08:00</span><span>08:30</span><span>09:00</span><span>09:30</span><span>10:00</span><span>10:30</span></div>
+    <div class="row" style="margin-top:34px">
+      <div class="stat"><div class="n">08:06</div><div class="l">"commit now and leave notes"</div></div>
+      <div class="stat"><div class="n">08:25</div><div class="l">last commit before the stop</div></div>
+      <div class="stat"><div class="n red">09:30</div><div class="l">filming block missed</div></div>
+      <div class="stat"><div class="n green">10:21</div><div class="l">nine sessions resumed</div></div>
+    </div>
+  </div>
+  <div class="foot">Times are UK time, Thursday 12 November, from the game repo's commit history and the Director's log.</div>
+</div></body>
