@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12T05:49:44+00:00",
+  "generated": "2026-11-12T06:10:28+00:00",
   "crew": [
     {
       "role": "director",
@@ -14,7 +14,7 @@
       "about": "Owns the open editor, builds and main branch; runs kits and merges; captures review media.",
       "mode": "always_on",
       "tasks_done": 0,
-      "tasks_total": 0,
+      "tasks_total": 3,
       "commits": 0
     },
     {
@@ -22,7 +22,7 @@
       "about": "Core rules: player, controls, core loop, game state, win and lose.",
       "mode": "always_on",
       "tasks_done": 0,
-      "tasks_total": 0,
+      "tasks_total": 5,
       "commits": 0
     },
     {
@@ -46,7 +46,7 @@
       "about": "Level layout, progression, lighting and the overall look, built as kits.",
       "mode": "always_on",
       "tasks_done": 0,
-      "tasks_total": 0,
+      "tasks_total": 2,
       "commits": 0
     },
     {
@@ -92,14 +92,14 @@
   ],
   "totals": {
     "tasks_done": 0,
-    "tasks_total": 0,
+    "tasks_total": 12,
     "commits": 4,
     "kits_run": 0,
     "merges": 0,
-    "decisions": 1,
-    "assumptions": 0,
+    "decisions": 5,
+    "assumptions": 1,
     "friction_open": 11,
     "friction_fixed": 1,
-    "review_folders": 0
+    "review_folders": 1
   }
 }

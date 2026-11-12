@@ -1,0 +1,43 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="cards.css">
+<style>
+.g { display: grid; grid-template-columns: 1fr 1.25fr 1fr; gap: 18px; }
+.col { display: flex; flex-direction: column; gap: 18px; }
+.box { padding: 16px 20px; flex: 0 0 auto; }
+.box h2 { font-size: 28px; margin-bottom: 8px; }
+.t { font-size: 21px; padding: 6px 0; border-top: 1px solid var(--line); display: flex; gap: 12px; }
+.t .id { font-family: Consolas, monospace; color: var(--accent); font-size: 19px; flex: 0 0 auto; padding-top: 2px; }
+.eng { border-color: var(--green); } .gp { border-color: var(--red); } .wd { border-color: var(--blue); }
+</style>
+<body><div class="frame">
+  <div class="kicker">Reel Time · hour 2</div>
+  <h1>The first twelve tasks</h1>
+  <div class="sub">Written by the Director minutes after the pitch was locked. Five sessions started on them.</div>
+  <div class="grow">
+    <div class="g">
+      <div class="col">
+        <div class="box eng"><h2>Engine</h2>
+          <div class="t"><span class="id">T-0001</span>Baseline check: editor, MCP, Python stub</div>
+          <div class="t"><span class="id">T-0002</span>Bring in the animation sample we use</div>
+          <div class="t"><span class="id">T-0003</span>First empty package: zip size and time</div></div>
+      </div>
+      <div class="col">
+        <div class="box gp"><h2>Gameplay</h2>
+          <div class="t"><span class="id">T-0004</span>Movement: run, jump, slide, wall kick</div>
+          <div class="t"><span class="id">T-0005</span>Time: the world runs only while you move</div>
+          <div class="t"><span class="id">T-0006</span>Event bus: every hit and kill through one place</div>
+          <div class="t"><span class="id">T-0007</span>Machete: first-person melee</div>
+          <div class="t"><span class="id">T-0008</span>Level flow: slate, action, one hit = CUT</div></div>
+        <div class="box gp"><h2>Gameplay 2</h2>
+          <div class="t"><span class="id">T-0012</span>Reel spike: record the player and replay it</div></div>
+      </div>
+      <div class="col">
+        <div class="box wd"><h2>World</h2>
+          <div class="t"><span class="id">T-0009</span>Soundstage greybox kit and the screen test</div>
+          <div class="t"><span class="id">T-0011</span>Grindhouse film look, first pass</div></div>
+        <div class="box wd"><h2>World 2</h2>
+          <div class="t"><span class="id">T-0010</span>Zombie level 1 greybox: the gas station</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="foot">Titles shortened from the task files.</div>
+</div></body>

@@ -5,7 +5,6 @@ categories: [crew, pipeline]
 sessions: [you]
 summary: Two evenings of setup before the jam: a crew of Claude Code sessions, a smoke test that found 11 problems, the rules, the theme reveal and a Q&A. No game.
 cover: media/preprod-slate.jpg
-featured: true
 draft: false
 ---
 
