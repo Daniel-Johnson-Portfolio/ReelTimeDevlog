@@ -2,11 +2,33 @@
 title: Credits and licences
 summary: Everything in the game that the crew didn't make, and where it came from.
 order: 30
-draft: true
+draft: false
 ---
 
-(The devlog session keeps this in line with Release/CREDITS.md.)
+Every session adds a line to the crew's credits file the moment it brings something in. This page follows that file. Last updated Thursday 12 November, 13:55 UK time.
+
+## Third-party assets
 
 | What | Source | Licence | Used for |
 |---|---|---|---|
-| | | | |
+| Game Animation Sample (GASP) characters and animations | Epic Games | Epic's sample content; licence being confirmed on its store page | Player and NPC animation |
+| Unreal Engine logo (vertical, white) | Epic Games, shipped with UE 5.9 | Unreal Engine trademark, used under Epic's branding guidelines | The "Made with Unreal Engine" layer of the startup splash |
+| MakeHuman base mesh, body shapes and rig weights (through MPFB 2 for Blender) | MakeHuman community | CC0. The MPFB plugin code is GPL-3.0 and isn't shipped | The bodies of the enemy characters. Clothes, make-up textures and skinning were made here |
+| UE5 mannequin skeleton, skin weights and physics asset | Epic Games, UE 5.9 third-person template | Unreal Engine content, under the UE EULA | The skeleton and ragdoll every enemy uses |
+| Inter (Rasmus Andersson), Blender's built-in text font | Blender 5.2 | SIL OFL 1.1 | Letters modelled into set props ("DEAD MILE", "EATS", "GAS", "PHONE"). Geometry only; no font file is shipped |
+| Anton (The Anton Project Authors) | Google Fonts | SIL OFL 1.1 | UI: slams, titles, scene names |
+| Bebas Neue (Ryoichi Tsunekawa, Dharma Type) | Google Fonts | SIL OFL 1.1 | UI: labels, HUD, slate fields |
+| Courier Prime (Alan Dague-Greene, Quote-Unquote Apps) | Google Fonts | SIL OFL 1.1 | UI: body text, menus, subtitles |
+| Caveat (Impallari Type) | Google Fonts | SIL OFL 1.1 | UI: the Director's handwritten notes |
+
+## Tools used
+
+| Tool | What it did |
+|---|---|
+| Claude Code (Anthropic) | The whole crew: code, kits, planning, and this devlog |
+| Claude Design (Anthropic) | The UI direction: artboards for the HUD, menus and splash |
+| Unreal Engine 5.9 with the Unreal MCP server | The engine, and editor automation |
+| NVIDIA DLSS 4.5 (Super Resolution, DLAA) | Upscaling option in settings. Installed as tooling before the jam |
+| Blender 5.2 with MPFB 2 | All enemy bodies, clothes, hats and make-up textures, scripted with no window open |
+| Blender 5.2, scripted | Zombie set props: gas pump, barrel, wrecked sedan, tanker, canopy, signs, phone booth and more |
+| Kokoro-82M v1.0 text-to-speech (Apache-2.0, run locally) | Placeholder Director voice lines |
