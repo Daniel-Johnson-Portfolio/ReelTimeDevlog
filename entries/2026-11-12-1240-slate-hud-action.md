@@ -5,7 +5,6 @@ categories: [interface, fixes]
 sessions: [ui, gameplay, gameplay-2, engine, director]
 summary: At 11:15 no level had a HUD. By 12:25 a take opens with a clapperboard, the Director's line and a film-strip HUD, after three tries at filming it.
 cover: media/hud-slate-dead-mile-motel-take-one.mp4
-featured: true
 draft: false
 ---
 

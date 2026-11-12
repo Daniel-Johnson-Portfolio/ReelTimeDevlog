@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CUT! Take two. Print it. | Reel Time devlog</title>
+<meta name="description" content="The 13:30 reel shows most of a take for the first time: zombies walk in, one hit ends it with a CUT card, take two starts at once, and the scene ends on a dailies card.">
+<meta property="og:title" content="CUT! Take two. Print it. | Reel Time devlog">
+<meta property="og:description" content="The 13:30 reel shows most of a take for the first time: zombies walk in, one hit ends it with a CUT card, take two starts at once, and the scene ends on a dailies card.">
+<link rel="stylesheet" href="../style.css">
+<style>:root { --accent: #d7262b; }</style>
+<script src="../site.js" defer></script>
+</head>
+<body class="post-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap head-inner"><a class="brand" href="../index.html">Reel Time devlog</a><nav class="site-nav" aria-label="Main"><ul><li><a href="../the-game.html">The game</a></li><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../how-its-built.html">How it's built</a></li></ul></nav><form class="site-search" action="../search.html" role="search"><label class="sr-only" for="q-top">Search the devlog</label><input id="q-top" name="q" type="search" placeholder="Search posts"></form></div></header>
+<main id="main">
+<article class="post"><header class="post-head wrap-narrow"><ul class="chips"><li><a class="chip" href="../topics/gameplay.html"><span class="dot" style="--c:#d2462f"></span>Gameplay</a></li><li><a class="chip" href="../topics/interface.html"><span class="dot" style="--c:#0e9f8a"></span>Interface</a></li></ul><h1>CUT! Take two. Print it.</h1><p class="standfirst">The 13:30 reel shows most of a take for the first time: zombies walk in, one hit ends it with a CUT card, take two starts at once, and the scene ends on a dailies card.</p><p class="post-when"><span class="day">Day 1, Thu 12 Nov</span><span class="hour">Hour 9</span><time datetime="2026-11-12T13:40:00+00:00">13:40</time></p><ul class="crew" aria-label="Crew sessions involved"><li><a href="../crew/gameplay.html"><span class="dot crew-gameplay"></span>Gameplay</a></li><li><a href="../crew/ui.html"><span class="dot crew-ui"></span>UI</a></li><li><a href="../crew/npc-ai.html"><span class="dot crew-npc-ai"></span>NPC AI</a></li><li><a href="../crew/engine.html"><span class="dot crew-engine"></span>Engine</a></li></ul></header><div class="screen post-hero"><div class="wrap hero-inner"><video src="../media/cut-card-and-instant-retake.mp4" poster="../media/cut-card-and-instant-retake.jpg" autoplay muted loop playsinline controls preload="metadata"></video></div></div><div class="prose wrap-narrow"><p>Reel Time's loop is a film shoot. One hit and the Director yells cut. You go again straight away. Clear the scene and you get your dailies. Until this reel I'd only seen the first few seconds of that.</p>
+<figure class="clip"><video src="../media/cut-card-and-instant-retake.mp4" poster="../media/cut-card-and-instant-retake.jpg" autoplay muted loop playsinline controls preload="metadata"></video><figcaption>Take one at the gas station. Two zombies walk in, the player is killed, CUT! slams down, and take two is rolling a few seconds later.</figcaption></figure>
+
+<p>The retake is meant to be instant. This morning's headless test measured it at 0.33 seconds; on film the CUT card stays up for a couple of seconds first.</p>
+<figure class="post-gallery"><ul><li><a href="../media/take-one-two-zombies-rolling.jpg" data-lightbox data-caption="Take one, rolling. These two zombies are the new bodies from the NPC session, not mannequins."><img src="../media/take-one-two-zombies-rolling.thumb.jpg" alt="Take one, rolling. These two zombies are the new bodies from the NPC session, not mannequins." loading="lazy"></a><span class="pg-cap">Take one, rolling. These two zombies are the new bodies from the NPC session, not mannequins.</span></li><li><a href="../media/cut-card-take-counter.jpg" data-lightbox data-caption="The CUT card, from the UI session&#x27;s rebuild of the Claude Design mockup."><img src="../media/cut-card-take-counter.thumb.jpg" alt="The CUT card, from the UI session&#x27;s rebuild of the Claude Design mockup." loading="lazy"></a><span class="pg-cap">The CUT card, from the UI session&#x27;s rebuild of the Claude Design mockup.</span></li><li><a href="../media/dailies-card-three-stars.jpg" data-lightbox data-caption="Dailies: takes, running time against par, three stars, and NEXT SCENE, WATCH AGAIN or RETAKE."><img src="../media/dailies-card-three-stars.thumb.jpg" alt="Dailies: takes, running time against par, three stars, and NEXT SCENE, WATCH AGAIN or RETAKE." loading="lazy"></a><span class="pg-cap">Dailies: takes, running time against par, three stars, and NEXT SCENE, WATCH AGAIN or RETAKE.</span></li></ul></figure>
+
+<h2>The dailies</h2>
+<figure class="clip"><video src="../media/dailies-card-print-it-stamp.mp4" poster="../media/dailies-card-print-it-stamp.jpg" autoplay muted loop playsinline controls preload="metadata"></video><figcaption>Scene cleared. The dailies card comes up and PRINT IT! stamps the corner.</figcaption></figure>
+
+<p>Clear the scene and the Director's line comes up, "Yes! That's the stuff!", then this card. It reads from real data: two takes, par of 1:15, three stars.</p>
+<h2>How it was played</h2>
+<p>Nobody held a controller. The Engine session can't press keys, so it drives the game with console commands on a timeline. This is the start of the script for this reel:</p>
+<pre><code> 7.7s cmd rt.Player.Launch 500 0
+13.8s shot hero_01
+18.2s cmd rt.Debug.KillPlayer
+18.8s shot cut_01
+31.4s cmd rt.Flow.Clear
+</code></pre>
+<p>So this proves the flow, not the feel. The feel is for tonight, when I play it myself.</p>
+<h2>What the Engine's note says is wrong</h2>
+<p>The Engine wrote up its own reel, including what it didn't see:</p>
+<ul>
+<li>The CUT card says "TAKE 02 → TAKE 03" on the first cut. It's off by one.</li>
+<li>Take two gets no slate.</li>
+<li>"mark ring/beam and third-person replay NOT seen (replay skipped straight to dailies)".</li>
+<li>The dailies show a running time of 00:00 and an empty thumbnail.</li>
+<li>The small text in the top left corner is a debug readout of the time scale.</li>
+</ul>
+<p>The replay is the one that matters. It's the point of the game, a headless test says it works, and it still hasn't appeared on film.</p></div></article><nav class="post-nav wrap" aria-label="More posts"><a class="prev" href="2026-11-12-1240-slate-hud-action.html"><span>Previous</span>An hour later: a slate, a HUD and ACTION!</a><span></span></nav><section class="block wrap related"><div class="block-head"><h2>More in Gameplay</h2><a href="../topics/gameplay.html">All of them</a></div><div class="cards"><article class="card"><a class="card-media" href="../posts/2026-11-12-0810-first-replay-rough-cut.html" tabindex="-1" aria-hidden="true"><img src="../media/reel-first-replay-rough-cut.thumb.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"></span></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/gameplay.html"><span class="dot" style="--c:#d2462f"></span>Gameplay</a><span class="card-when">Day 1, hour 4</span></div><h3><a href="../posts/2026-11-12-0810-first-replay-rough-cut.html">The first replay is a rough cut</a></h3><p class="summary">The reel recorder replayed its first take with kills: three puppets, 16 shots cut between the stage&#x27;s camera marks. About one shot in three came out black.</p></div></article><article class="card"><a class="card-media" href="../posts/2026-11-12-0750-run-slide-wall-kick.html" tabindex="-1" aria-hidden="true"><img src="../media/movement-run-slide-wall-kick.thumb.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"></span></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/gameplay.html"><span class="dot" style="--c:#d2462f"></span>Gameplay</a><span class="card-when">Day 1, hour 3</span></div><h3><a href="../posts/2026-11-12-0750-run-slide-wall-kick.html">Run, slide, wall kick: the player moves</a></h3><p class="summary">The Gameplay session&#x27;s first-person character runs, slides under a gap and kicks off a wall, with the camera feel driven by one data asset. Filmed in the 07:30 block.</p></div></article><article class="card"><a class="card-media" href="../posts/2026-11-12-1240-slate-hud-action.html" tabindex="-1" aria-hidden="true"><img src="../media/hud-slate-dead-mile-motel-take-one.thumb.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"></span></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/interface.html"><span class="dot" style="--c:#0e9f8a"></span>Interface</a><span class="card-when">Day 1, hour 8</span></div><h3><a href="../posts/2026-11-12-1240-slate-hud-action.html">An hour later: a slate, a HUD and ACTION!</a></h3><p class="summary">At 11:15 no level had a HUD. By 12:25 a take opens with a clapperboard, the Director&#x27;s line and a film-strip HUD, after three tries at filming it.</p></div></article></div></section>
+</main>
+<footer class="site-foot"><div class="wrap foot-inner"><ul class="foot-links"><li><a href="../index.html">Home</a></li><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../search.html">Search</a></li><li><a href="../the-game.html">The game</a></li><li><a href="../how-its-built.html">How it&#x27;s built</a></li><li><a href="../before-the-jam.html">Made before the jam</a></li></ul><p>Built in Unreal Engine 5.9 by one person and a crew of Claude Code sessions, for the 2026 Epic AI MegaJam.</p></div></footer>
+</body>
+</html>
