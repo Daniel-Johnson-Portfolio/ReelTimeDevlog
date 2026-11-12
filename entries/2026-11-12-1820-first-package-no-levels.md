@@ -1,14 +1,14 @@
 ---
 title: The first packaged build had no levels in it
-date: 2026-11-12T18:30:00+00:00
+date: 2026-11-12T18:20:00+00:00
 categories: [pipeline, fixes]
 sessions: [engine, release, director]
 summary: The game built, zipped and ran with DLSS on a day ahead of the packaging milestone. Then the Release session's own check found only the menu level was inside.
 cover: media/first-package-empty.jpg
-draft: true
+draft: false
 ---
 
-Everything in this devlog so far was filmed inside the Unreal editor. A jam entry is a zip that runs on someone else's PC, and plenty of jam games die at that step on the last night. So the first package was a day-one task, and I'm glad it was.
+Everything in this devlog so far was filmed inside the Unreal editor. A jam entry is a zip that runs on someone else's PC, and packaging is the step that tends to go wrong on the last night. So the first package was a day-one task, and I'm glad it was.
 
 ![Four steps from "won't build" to a fixed cook list, in under three hours.](media/first-package-empty.jpg)
 
@@ -20,7 +20,7 @@ One decision came with it. The NVIDIA plugin stays out of the game's git repo an
 
 ## It built, and it was fat
 
-At 16:30 the package built: 680 MB zipped. 516 MB of that was debug files. The good news inside it: DLSS reports as on in the packaged game, which the NVIDIA prize needs.
+At 16:30 the package built: 680 MB zipped. 516 MB of that was debug files. The good news inside it: DLSS reports as on in the packaged game, which matters for the NVIDIA award I'm entering.
 
 ## It was empty
 
@@ -34,4 +34,4 @@ The fix is a list of maps to cook: the front end and the seven playable levels. 
 
 ## Why this is a good blooper
 
-Nobody saw it fail. A check found it on Thursday afternoon, 80 hours before the deadline. The same bug found at Sunday's content lock would have cost the evening.
+Nobody saw it fail. A check found it on Thursday afternoon, about 80 hours before the deadline. The same bug found at Sunday's content lock would have cost the evening.
