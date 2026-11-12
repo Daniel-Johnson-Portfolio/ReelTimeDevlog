@@ -35,3 +35,11 @@ The fix is a list of maps to cook: the front end and the seven playable levels. 
 ## Why this is a good blooper
 
 Nobody saw it fail. A check found it on Thursday afternoon, about 80 hours before the deadline. The same bug found at Sunday's content lock would have cost the evening.
+
+## Update, 19:00: it passes
+
+Forty minutes after this post the Release session ran the fixed pipeline. From the Director's log:
+
+> "first packaged build PASSES from a fresh unzip … 474 MB (limit 1000), boots to the front end, L_Zombie_01 / L_Noir_01 / L_UFO_01 load, DLSS supported."
+
+So the real size with the levels in is 474 MB, under half the jam's limit, and Friday's packaging milestone was met on Thursday. It's a grey-box game in that zip, but it's a game.
