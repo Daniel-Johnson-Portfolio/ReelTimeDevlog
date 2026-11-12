@@ -1,11 +1,12 @@
 {
   "last_commit": "154f003",
-  "last_covered": "2026-11-12T06:22:00+00:00",
+  "last_covered": "2026-11-12T06:36:00+00:00",
   "published": [
     "2026-11-12-0555-pre-production",
     "2026-11-12-0605-dlss-on-unreal-5-9",
     "pages: before-the-jam, how-its-built",
-    "2026-11-12-0615-pitch-locked (milestone: pitch); page the-game"
+    "2026-11-12-0615-pitch-locked (milestone: pitch); page the-game",
+    "2026-11-12-0640-first-footage (T-0001 baseline, wrong-window blooper)"
   ],
   "notes": "Diagram cards: cards/*.html rendered by tools/cards.py. Topics fixes/crew renamed Bloopers/Behind the scenes. Still draft: credits (empty table). Covered up to T-0001..T-0012 created, contracts v1, ramp crew opened. Sit-down 01 notes file was still empty at 06:20: recheck for quotes."
 }
