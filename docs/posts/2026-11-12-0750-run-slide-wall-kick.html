@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Run, slide, wall kick: the player moves | Reel Time devlog</title>
+<meta name="description" content="The Gameplay session&#x27;s first-person character runs, slides under a gap and kicks off a wall, with the camera feel driven by one data asset. Filmed in the 07:30 block.">
+<meta property="og:title" content="Run, slide, wall kick: the player moves | Reel Time devlog">
+<meta property="og:description" content="The Gameplay session&#x27;s first-person character runs, slides under a gap and kicks off a wall, with the camera feel driven by one data asset. Filmed in the 07:30 block.">
+<link rel="stylesheet" href="../style.css">
+<style>:root { --accent: #d7262b; }</style>
+<script src="../site.js" defer></script>
+</head>
+<body class="post-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap head-inner"><a class="brand" href="../index.html">Reel Time devlog</a><nav class="site-nav" aria-label="Main"><ul><li><a href="../the-game.html">The game</a></li><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../how-its-built.html">How it's built</a></li></ul></nav><form class="site-search" action="../search.html" role="search"><label class="sr-only" for="q-top">Search the devlog</label><input id="q-top" name="q" type="search" placeholder="Search posts"></form></div></header>
+<main id="main">
+<article class="post"><header class="post-head wrap-narrow"><ul class="chips"><li><a class="chip" href="../topics/gameplay.html"><span class="dot" style="--c:#d2462f"></span>Gameplay</a></li></ul><h1>Run, slide, wall kick: the player moves</h1><p class="standfirst">The Gameplay session&#x27;s first-person character runs, slides under a gap and kicks off a wall, with the camera feel driven by one data asset. Filmed in the 07:30 block.</p><p class="post-when"><span class="day">Day 1, Thu 12 Nov</span><span class="hour">Hour 3</span><time datetime="2026-11-12T07:50:00+00:00">07:50</time></p><ul class="crew" aria-label="Crew sessions involved"><li><a href="../crew/gameplay.html"><span class="dot crew-gameplay"></span>Gameplay</a></li><li><a href="../crew/engine.html"><span class="dot crew-engine"></span>Engine</a></li></ul></header><div class="screen post-hero"><div class="wrap hero-inner"><video src="../media/movement-run-slide-wall-kick.mp4" poster="../media/movement-run-slide-wall-kick.jpg" autoplay muted loop playsinline controls preload="metadata"></video></div></div><div class="prose wrap-narrow"><p>Movement was the top-priority task of day one. Reel Time's world only runs while you move, so moving has to feel good before anything else matters.</p>
+<figure class="clip"><video src="../media/movement-run-slide-wall-kick.mp4" poster="../media/movement-run-slide-wall-kick.jpg" autoplay muted loop playsinline controls preload="metadata"></video><figcaption>Five seconds on the soundstage: run, slide under the lintel, run at the checker wall, jump, kick off it. The yellow line is the debug readout: speed, state, kicks used, field of view, camera roll.</figcaption></figure>
+
+<p>This is our own character, not the template one. The Gameplay session had it written and passing headless tests 32 minutes after the task was created. It then waited for the Engine session to merge it and film it, which is how every piece of the game reaches the screen.</p>
+<figure class="post-gallery"><ul><li><a href="../media/movement-slide-under-lintel.jpg" data-lightbox data-caption="Mid-slide under the lintel. The field of view widens and the camera rolls into the slide."><img src="../media/movement-slide-under-lintel.thumb.jpg" alt="Mid-slide under the lintel. The field of view widens and the camera rolls into the slide." loading="lazy"></a><span class="pg-cap">Mid-slide under the lintel. The field of view widens and the camera rolls into the slide.</span></li><li><a href="../media/movement-run-at-checker-wall.jpg" data-lightbox data-caption="Full run at the checker wall the demo spawns, 8.2 metres a second."><img src="../media/movement-run-at-checker-wall.thumb.jpg" alt="Full run at the checker wall the demo spawns, 8.2 metres a second." loading="lazy"></a><span class="pg-cap">Full run at the checker wall the demo spawns, 8.2 metres a second.</span></li><li><a href="../media/movement-wall-kick-roll.jpg" data-lightbox data-caption="Just after the kick. The camera rolls away from the wall, then settles."><img src="../media/movement-wall-kick-roll.thumb.jpg" alt="Just after the kick. The camera rolls away from the wall, then settles." loading="lazy"></a><span class="pg-cap">Just after the kick. The camera rolls away from the wall, then settles.</span></li></ul></figure>
+
+<h2>Every number in one place</h2>
+<p>The task asked for a camera that feels "heavy but never nauseating", with every value in a data asset. A kit script writes that asset, so tuning needs no rebuild. Some of what's in it now:</p>
+<ul>
+<li><strong>Run:</strong> 8.2 m/s.</li>
+<li><strong>Slide:</strong> needs 4.5 m/s to start, adds a boost up to 14.5 m/s, lasts a second at most.</li>
+<li><strong>Wall kick:</strong> pushes away and up, three per jump, and never twice in a row off the same wall.</li>
+<li><strong>Camera:</strong> field of view 95°, up to 14° wider with speed and 8° more in a slide. Roll of 7° into a slide and 11° away from a kicked wall.</li>
+</ul>
+<p>Every camera effect is multiplied by a comfort scale from 0 to 1, which the settings menu will drive.</p>
+<h2>What you're not seeing yet</h2>
+<p>Nobody is holding the controller. The clip is a debug command, <code>rt.Debug.MoveDemo</code>, that plays the same inputs each time so the Engine can film it unattended. I get my hands on it in tonight's playtest, and that's when the numbers above start changing.</p>
+<p>The Engine also had to move the shoot. Its capture note:</p>
+<blockquote>
+<p>"The template arena has a yellow cylinder or block ~10 m ahead of the PlayerStart in every direction (tried yaw 0, 45, 90, 180, 270), so the demo ran into it and stalled."</p>
+</blockquote>
+<p>So it filmed on our own soundstage, which is why the first movement footage already has the grindhouse look on it.</p></div></article><nav class="post-nav wrap" aria-label="More posts"><a class="prev" href="2026-11-12-0740-two-more-sets.html"><span>Previous</span>Two more sets, and one that built itself three times</a><a class="next" href="2026-11-12-0755-first-zombie.html"><span>Next</span>The first zombie walks, lunges and ragdolls</a></nav>
+</main>
+<footer class="site-foot"><div class="wrap foot-inner"><ul class="foot-links"><li><a href="../index.html">Home</a></li><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../search.html">Search</a></li><li><a href="../the-game.html">The game</a></li><li><a href="../how-its-built.html">How it&#x27;s built</a></li><li><a href="../before-the-jam.html">Made before the jam</a></li></ul><p>Built in Unreal Engine 5.9 by one person and a crew of Claude Code sessions, for the 2026 Epic AI MegaJam.</p></div></footer>
+</body>
+</html>

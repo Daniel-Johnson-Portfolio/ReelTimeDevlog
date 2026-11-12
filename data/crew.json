@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12T07:32:21+00:00",
+  "generated": "2026-11-12T07:50:55+00:00",
   "crew": [
     {
       "role": "director",
@@ -22,23 +22,23 @@
       "about": "Core rules: player, controls, core loop, game state, win and lose.",
       "mode": "always_on",
       "tasks_done": 2,
-      "tasks_total": 7,
-      "commits": 12
+      "tasks_total": 10,
+      "commits": 13
     },
     {
       "role": "ui",
       "about": "Every screen: HUD, menus, splash, UI animation, built as kits from designs.",
       "mode": "always_on",
       "tasks_done": 0,
-      "tasks_total": 3,
-      "commits": 9
+      "tasks_total": 4,
+      "commits": 11
     },
     {
       "role": "npc-ai",
       "about": "NPC behaviour: StateTrees, perception, navigation, spawning.",
       "mode": "always_on",
       "tasks_done": 0,
-      "tasks_total": 3,
+      "tasks_total": 4,
       "commits": 5
     },
     {
@@ -46,7 +46,7 @@
       "about": "Level layout, progression, lighting and the overall look, built as kits.",
       "mode": "always_on",
       "tasks_done": 0,
-      "tasks_total": 3,
+      "tasks_total": 5,
       "commits": 7
     },
     {
@@ -54,7 +54,7 @@
       "about": "Sound effects, music and voice as kits; a planned workstream from day 2.",
       "mode": "always_on",
       "tasks_done": 1,
-      "tasks_total": 3,
+      "tasks_total": 4,
       "commits": 6
     },
     {
@@ -62,8 +62,8 @@
       "about": "Generalist: overflow tasks from any domain under a path lease, cross-domain fixes, testing.",
       "mode": "always_on",
       "tasks_done": 1,
-      "tasks_total": 3,
-      "commits": 2
+      "tasks_total": 4,
+      "commits": 3
     },
     {
       "role": "devlog",
@@ -92,14 +92,14 @@
   ],
   "totals": {
     "tasks_done": 8,
-    "tasks_total": 37,
-    "commits": 88,
+    "tasks_total": 49,
+    "commits": 92,
     "kits_run": 9,
     "merges": 6,
     "decisions": 10,
     "assumptions": 2,
-    "friction_open": 11,
-    "friction_fixed": 7,
+    "friction_open": 10,
+    "friction_fixed": 8,
     "review_folders": 21
   }
 }
