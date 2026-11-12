@@ -38,11 +38,16 @@ Getting this on film took three sets of reels.
 
 The toolsmith now has a task for a guard that checks a capture actually shows the game before anyone reviews it.
 
+## And the cast turned up
+
+![The enemy test map: zombies on the left, aliens in the middle, noir men in suits and hats on the right. The yellow lines and floating labels are debug drawing.](media/enemy-lineup-nine-types.jpg)
+
+The same kit run brought in the NPC session's character bodies. At 11:00 every enemy was Unreal's plain mannequin. They get their own post.
+
 ## Still wrong
 
 Look closely and there's plenty left:
 
 - The slate says scene 3. The Director says "Scene four".
 - The small white text floating over the enemies is debug output.
-- The enemies are still plain mannequins.
 - I haven't seen the replay or the dailies screen on film yet. That's the gate for tonight's playtest: one full take, played by hand, start to finish.
