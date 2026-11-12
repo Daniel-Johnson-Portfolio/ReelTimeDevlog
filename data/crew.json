@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-12T06:58:38+00:00",
+  "generated": "2026-11-12T07:32:21+00:00",
   "crew": [
     {
       "role": "director",
@@ -15,15 +15,15 @@
       "mode": "always_on",
       "tasks_done": 1,
       "tasks_total": 3,
-      "commits": 10
+      "commits": 12
     },
     {
       "role": "gameplay",
       "about": "Core rules: player, controls, core loop, game state, win and lose.",
       "mode": "always_on",
-      "tasks_done": 1,
-      "tasks_total": 6,
-      "commits": 6
+      "tasks_done": 2,
+      "tasks_total": 7,
+      "commits": 12
     },
     {
       "role": "ui",
@@ -31,7 +31,7 @@
       "mode": "always_on",
       "tasks_done": 0,
       "tasks_total": 3,
-      "commits": 4
+      "commits": 9
     },
     {
       "role": "npc-ai",
@@ -39,15 +39,15 @@
       "mode": "always_on",
       "tasks_done": 0,
       "tasks_total": 3,
-      "commits": 4
+      "commits": 5
     },
     {
       "role": "world",
       "about": "Level layout, progression, lighting and the overall look, built as kits.",
       "mode": "always_on",
       "tasks_done": 0,
-      "tasks_total": 4,
-      "commits": 3
+      "tasks_total": 3,
+      "commits": 7
     },
     {
       "role": "audio",
@@ -55,15 +55,15 @@
       "mode": "always_on",
       "tasks_done": 1,
       "tasks_total": 3,
-      "commits": 5
+      "commits": 6
     },
     {
       "role": "floater-1",
       "about": "Generalist: overflow tasks from any domain under a path lease, cross-domain fixes, testing.",
       "mode": "always_on",
       "tasks_done": 1,
-      "tasks_total": 2,
-      "commits": 1
+      "tasks_total": 3,
+      "commits": 2
     },
     {
       "role": "devlog",
@@ -87,19 +87,19 @@
       "mode": "on_call",
       "tasks_done": 2,
       "tasks_total": 2,
-      "commits": 4
+      "commits": 6
     }
   ],
   "totals": {
-    "tasks_done": 7,
-    "tasks_total": 35,
-    "commits": 58,
-    "kits_run": 7,
-    "merges": 3,
-    "decisions": 9,
+    "tasks_done": 8,
+    "tasks_total": 37,
+    "commits": 88,
+    "kits_run": 9,
+    "merges": 6,
+    "decisions": 10,
     "assumptions": 2,
-    "friction_open": 14,
-    "friction_fixed": 4,
-    "review_folders": 16
+    "friction_open": 11,
+    "friction_fixed": 7,
+    "review_folders": 21
   }
 }
