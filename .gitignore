@@ -1,0 +1,7 @@
+# local working folders: converted media before publishing, and the drafts preview
+# (anchored with a leading slash so docs/media, the published media, is still committed)
+/media/
+/preview/
+__pycache__/
+.DS_Store
+Thumbs.db
