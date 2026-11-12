@@ -5,7 +5,6 @@ categories: [milestones, gameplay]
 sessions: [you, director, engine, gameplay, gameplay-2, npc-ai, world, world-2, ui, audio, floater-1, toolsmith, release]
 summary: Seventeen hours in, Reel Time plays from slate to dailies by the path a player takes. At 21:41 it didn't, and the Director refused to call the milestone met.
 cover: media/day-one-take-slate-kills-cut-retake.mp4
-featured: true
 draft: false
 ---
 
