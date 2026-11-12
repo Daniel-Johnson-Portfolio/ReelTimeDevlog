@@ -1,4 +1,10 @@
 {
-  "last_commit": "",
-  "last_covered": ""
+  "last_commit": "154f003",
+  "last_covered": "2026-11-12T06:10:00+00:00",
+  "published": [
+    "2026-11-12-0555-pre-production",
+    "2026-11-12-0605-dlss-on-unreal-5-9",
+    "pages: before-the-jam, how-its-built"
+  ],
+  "notes": "Diagram cards: cards/*.html rendered by tools/cards.py. Topics fixes/crew renamed Bloopers/Behind the scenes. Still draft: the-game, credits (placeholders)."
 }
