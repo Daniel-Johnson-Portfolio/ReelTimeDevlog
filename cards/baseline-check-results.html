@@ -1,0 +1,24 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="cards.css">
+<style>
+.g { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 20px; }
+.it { background: var(--panel); border-left: 6px solid var(--green); border-radius: 8px; padding: 12px 18px; font-size: 21px; line-height: 1.3; }
+.it b { font-family: Bahnschrift, sans-serif; font-size: 25px; display: block; }
+.it .s { font-family: Consolas, monospace; font-size: 17px; color: var(--green); float: right; }
+.it.warn { border-left-color: var(--accent); } .it.warn .s { color: var(--accent); }
+</style>
+<body><div class="frame">
+  <div class="kicker">Reel Time · hour 2</div>
+  <h1>T-0001: does the pipeline work?</h1>
+  <div class="sub">The Engine session's first task, done in 11 minutes. "Baseline PASS with caveats."</div>
+  <div class="grow">
+    <div class="g">
+      <div class="it"><span class="s">PASS</span><b>Editor over MCP</b>111 toolsets answer from the running editor</div>
+      <div class="it"><span class="s">PASS</span><b>Python API stub</b>Current, so sessions look names up and never guess</div>
+      <div class="it warn"><span class="s">PASS, CAVEAT</span><b>C++ compiles</b>Live, while the editor runs. Header changes need an editor restart</div>
+      <div class="it"><span class="s">PASS</span><b>Kits</b>A throwaway kit made one material in the live editor, then it was deleted</div>
+      <div class="it warn"><span class="s">PASS ON TAKE 2</span><b>Filming</b>The first clip recorded the wrong window. Deleted, fixed, re-shot</div>
+      <div class="it"><span class="s">PASS</span><b>DLSS</b>Supported, with Ray Reconstruction, on the fresh project</div>
+    </div>
+  </div>
+  <div class="foot">From the Engine session's own task summary. Log clean: 0 errors.</div>
+</div></body>

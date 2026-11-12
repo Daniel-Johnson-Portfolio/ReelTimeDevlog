@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>First footage, and the take that filmed the wrong window | Reel Time devlog</title>
+<meta name="description" content="The Engine session proved the whole pipeline in 11 minutes: kits, live C++ compiles, DLSS and filming the game by itself. Its first clip recorded the wrong window.">
+<meta property="og:title" content="First footage, and the take that filmed the wrong window | Reel Time devlog">
+<meta property="og:description" content="The Engine session proved the whole pipeline in 11 minutes: kits, live C++ compiles, DLSS and filming the game by itself. Its first clip recorded the wrong window.">
+<link rel="stylesheet" href="../style.css">
+<style>:root { --accent: #f2b705; }</style>
+<script src="../site.js" defer></script>
+</head>
+<body class="post-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap head-inner"><a class="brand" href="../index.html">Reel Time devlog</a><nav class="site-nav" aria-label="Main"><ul><li><a href="../the-game.html">The game</a></li><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../how-its-built.html">How it's built</a></li></ul></nav><form class="site-search" action="../search.html" role="search"><label class="sr-only" for="q-top">Search the devlog</label><input id="q-top" name="q" type="search" placeholder="Search posts"></form></div></header>
+<main id="main">
+<article class="post"><header class="post-head wrap-narrow"><ul class="chips"><li><a class="chip" href="../topics/pipeline.html"><span class="dot" style="--c:#2f6fdb"></span>Tools and pipeline</a></li><li><a class="chip" href="../topics/fixes.html"><span class="dot" style="--c:#a0472e"></span>Bloopers</a></li></ul><h1>First footage, and the take that filmed the wrong window</h1><p class="standfirst">The Engine session proved the whole pipeline in 11 minutes: kits, live C++ compiles, DLSS and filming the game by itself. Its first clip recorded the wrong window.</p><p class="post-when"><span class="day">Day 1, Thu 12 Nov</span><span class="hour">Hour 2</span><time datetime="2026-11-12T06:36:00+00:00">06:36</time></p><ul class="crew" aria-label="Crew sessions involved"><li><a href="../crew/engine.html"><span class="dot crew-engine"></span>Engine</a></li></ul></header><div class="screen post-hero"><div class="wrap hero-inner"><video src="../media/first-footage-template-map.mp4" poster="../media/first-footage-template-map.jpg" autoplay muted loop playsinline controls preload="metadata"></video></div></div><div class="prose wrap-narrow"><p>This isn't the game yet. It's Unreal's stock first-person template, driven by injected input, filmed by the Engine session with nobody at the keyboard. Nothing in this clip will ship. What matters is that the crew can now run something, move in it and film it on its own, which is how every later task gets checked.</p>
+<figure class="clip"><video src="../media/first-footage-template-map.mp4" poster="../media/first-footage-template-map.jpg" autoplay muted loop playsinline controls preload="metadata"></video><figcaption>Three cuts from the Engine session&#x27;s test clip: walk to the cylinder, turn, walk the wall. The input is scripted.</figcaption></figure>
+
+<h2>Take one</h2>
+<p>The first clip didn't show the game at all. The recorder had grabbed a different window on my desktop. The Engine session spotted it, deleted the clip and its contact sheets, and sent the Devlog and the Director an urgent message before anything was copied:</p>
+<blockquote>
+<p>"If you copied any of them (devlog repo, drafts, site), delete them and don't publish."</p>
+</blockquote>
+<p>Nothing had been. The capture setup now records the game window directly, the clip was re-shot three minutes later, and the Toolsmith was asked to fix the recording script so it can't happen again. Before this clip went on the site, a reviewer checked all 872 frames for anything that wasn't the game.</p>
+<p>That's the "don't suffer silently" rule doing its job in hour 2: say what went wrong at once, fix it, write it down.</p>
+<h2>What the baseline check proved</h2>
+<figure class="shot"><a href="../media/baseline-check-results.jpg" data-lightbox data-caption="The Engine session&#x27;s first task: six checks, two with caveats."><img src="../media/baseline-check-results.jpg" alt="The Engine session&#x27;s first task: six checks, two with caveats." loading="lazy"></a><figcaption>The Engine session&#x27;s first task: six checks, two with caveats.</figcaption></figure>
+<p>Task T-0001 took 11 minutes, from 06:08 to 06:19. The summary in the Engine's own words: "Baseline PASS with caveats."</p>
+<ul>
+<li><strong>Kits work.</strong> A throwaway kit created one material in the running editor and was deleted afterwards.</li>
+<li><strong>C++ compiles live</strong> while the editor runs. The caveat: header changes need the editor closed, and the normal build tool refuses while it's open. That went into the friction log.</li>
+<li><strong>DLSS is supported</strong> on the fresh project, with Ray Reconstruction.</li>
+<li><strong>Filming works</strong>, on take two.</li>
+</ul>
+<figure class="shot"><a href="../media/first-footage-template-arena.jpg" data-lightbox data-caption="The template arena, from the clean take. The real soundstage greybox is being built now."><img src="../media/first-footage-template-arena.jpg" alt="The template arena, from the clean take. The real soundstage greybox is being built now." loading="lazy"></a><figcaption>The template arena, from the clean take. The real soundstage greybox is being built now.</figcaption></figure>
+<p>The first real footage of Reel Time comes from the movement and time tasks, which are in progress.</p></div></article><nav class="post-nav wrap" aria-label="More posts"><a class="prev" href="2026-11-12-0615-pitch-locked.html"><span>Previous</span>Pitch locked: Reel Time, nearly three hours early</a><span></span></nav><section class="block wrap related"><div class="block-head"><h2>More in Tools and pipeline</h2><a href="../topics/pipeline.html">All of them</a></div><div class="cards"><article class="card"><a class="card-media" href="../posts/2026-11-12-0605-dlss-on-unreal-5-9.html" tabindex="-1" aria-hidden="true"><img src="../media/dlss-six-compiles.thumb.jpg" alt="" loading="lazy"></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/pipeline.html"><span class="dot" style="--c:#2f6fdb"></span>Tools and pipeline</a><span class="card-when">Day 1, hour 2</span></div><h3><a href="../posts/2026-11-12-0605-dlss-on-unreal-5-9.html">Porting NVIDIA DLSS from Unreal 5.8 to 5.9 in 75 minutes</a></h3><p class="summary">NVIDIA&#x27;s DLSS 4.5 plugin stops at Unreal 5.8. Six compiles, three editor launches and one crash later it runs on our 5.9 engine, without Frame Generation.</p></div></article><article class="card"><a class="card-media" href="../posts/2026-11-12-0555-pre-production.html" tabindex="-1" aria-hidden="true"><img src="../media/preprod-slate.thumb.jpg" alt="" loading="lazy"></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/crew.html"><span class="dot" style="--c:#6b4fd8"></span>Behind the scenes</a><span class="card-when">Day 1, hour 1</span></div><h3><a href="../posts/2026-11-12-0555-pre-production.html">Pre-production: everything that existed before the clock</a></h3><p class="summary">Two evenings of setup before the jam: a crew of Claude Code sessions, a smoke test that found 11 problems, the rules, the theme reveal and a Q&amp;A. No game.</p></div></article></div></section>
+</main>
+<footer class="site-foot"><div class="wrap foot-inner"><ul class="foot-links"><li><a href="../index.html">Home</a></li><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../search.html">Search</a></li><li><a href="../the-game.html">The game</a></li><li><a href="../how-its-built.html">How it&#x27;s built</a></li><li><a href="../before-the-jam.html">Made before the jam</a></li></ul><p>Built in Unreal Engine 5.9 by one person and a crew of Claude Code sessions, for the 2026 Epic AI MegaJam.</p></div></footer>
+</body>
+</html>
