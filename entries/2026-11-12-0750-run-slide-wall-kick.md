@@ -5,7 +5,6 @@ categories: [gameplay]
 sessions: [gameplay, engine]
 summary: The Gameplay session's first-person character runs, slides under a gap and kicks off a wall, with the camera feel driven by one data asset. Filmed in the 07:30 block.
 cover: media/movement-run-slide-wall-kick.mp4
-featured: true
 draft: false
 ---
 
