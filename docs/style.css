@@ -1,19 +1,19 @@
-/* Devlog: "paper and screen". The log is light steel paper; the game always appears on a dark
+/* Devlog: "paper and screen". The log is paper cream and ink black with tape red, from the game's Claude Design style tile; the game always appears on a dark
    screen band. The hour ruler is the one decorative signature. System fonts only, so the site
    hosts anywhere and works offline. Retune --accent in config.json to match the game. */
 
 :root {
-  --paper: #e9edf1;
-  --paper-2: #dfe5ea;
-  --ink: #17212b;
-  --muted: #566273;
-  --rule: #c4ccd5;
-  --tick-off: #cbd3db;
-  --link: #1d4ed8;
-  --screen: #0e141a;
-  --screen-ink: #e6ebf0;
-  --screen-muted: #9aa7b4;
-  --accent: #f2b705;
+  --paper: #f2e8d5;
+  --paper-2: #e9dcc3;
+  --ink: #1a1714;
+  --muted: #6a5f52;
+  --rule: #cfc0a3;
+  --tick-off: #d9cbb0;
+  --link: #a81b1f;
+  --screen: #1a1714;
+  --screen-ink: #f7f7f3;
+  --screen-muted: #b5aa98;
+  --accent: #d7262b;
   --display: "Bahnschrift", "DIN Condensed", "Avenir Next Condensed", "Roboto Condensed", "Arial Narrow", sans-serif;
   --text: "Charter", "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
   --mono: ui-monospace, "Cascadia Code", Consolas, monospace;
@@ -25,14 +25,14 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --paper: #10161d;
-    --paper-2: #17202a;
-    --ink: #e2e8ee;
-    --muted: #93a0ae;
-    --rule: #283442;
-    --tick-off: #253140;
-    --link: #93b4ff;
-    --screen: #070a0e;
+    --paper: #1a1714;
+    --paper-2: #24201c;
+    --ink: #f2e8d5;
+    --muted: #b5aa98;
+    --rule: #3a342d;
+    --tick-off: #332e28;
+    --link: #ff8a80;
+    --screen: #0d0b0a;
   }
 }
 
