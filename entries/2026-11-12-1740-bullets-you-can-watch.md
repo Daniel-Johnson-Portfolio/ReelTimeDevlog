@@ -1,6 +1,6 @@
 ---
 title: Bullets you can watch: the ray gun and the revolver in slow time
-date: 2026-11-12T18:00:00+00:00
+date: 2026-11-12T17:40:00+00:00
 categories: [gameplay, world]
 sessions: [gameplay, gameplay-2, world, engine]
 summary: Each film has its own gun. Shots are real objects in the world, so when you stand still they hang in the air with everything else.
