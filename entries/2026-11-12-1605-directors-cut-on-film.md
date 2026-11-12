@@ -5,7 +5,6 @@ categories: [gameplay, fixes]
 sessions: [gameplay, gameplay-2, floater-1, ui, engine]
 summary: Four sets of reels failed to show a full take with its replay, the point of the game. The fifth does. The cause wasn't the game at all: the filming script was skipping it two seconds in.
 cover: media/directors-cut-first-replay-on-film.mp4
-featured: true
 draft: false
 ---
 
