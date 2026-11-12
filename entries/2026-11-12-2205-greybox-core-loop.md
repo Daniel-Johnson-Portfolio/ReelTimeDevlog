@@ -1,5 +1,5 @@
 ---
-title: "Milestone two: the core loop plays, in grey boxes"
+title: Milestone two: the core loop plays, in grey boxes
 date: 2026-11-12T22:05:00+00:00
 categories: [milestones, gameplay]
 sessions: [you, director, engine, gameplay, gameplay-2, npc-ai, world, world-2, ui, audio, floater-1, toolsmith, release]
