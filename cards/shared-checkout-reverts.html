@@ -1,0 +1,18 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="cards.css">
+<body><div class="frame">
+  <div class="kicker">Reel Time · bloopers · jam hour 16 to 17</div>
+  <h1>Edits that undid themselves</h1>
+  <div class="sub">Many sessions share one working copy of the game. Two habits that are fine alone kept wiping everyone else's work.</div>
+  <div class="grow">
+    <div class="row">
+      <div class="box bad"><span class="tag bad">20:50</span><h2>Two kits revert</h2><p>The NPC and World-2 sessions each saw an uncommitted script snap back to the last commit. No trace in git's history.</p></div>
+      <div class="arrow">▶</div>
+      <div class="box hot"><span class="tag hot">21:05</span><h2>Cause 1: merges</h2><p>The engine stashed the whole shared tree before each merge. Five stash windows found since 11:17.</p></div>
+      <div class="arrow">▶</div>
+      <div class="box hot"><span class="tag hot">21:42</span><h2>Cause 2: tidying</h2><p>Audio undid its tool's stray changes with one git checkout of every modified file. Twice: 20:42 and 20:52.</p></div>
+      <div class="arrow">▶</div>
+      <div class="box good"><span class="tag good">21:11</span><h2>A guard hook</h2><p>git stash, restore and blanket checkout are now refused in the shared copy, with a reason. Plus a rule: commit after every edit.</p></div>
+    </div>
+  </div>
+  <div class="foot">Times are UK time, Thursday, from the Director's log, the toolsmith's task T-0105 and FRICTION.md.</div>
+</div></body>
