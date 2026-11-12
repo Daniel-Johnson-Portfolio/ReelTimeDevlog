@@ -5,7 +5,6 @@ categories: [world, fixes]
 sessions: [world, engine]
 summary: Two hours in, there's a soundstage built by a script and a first-pass worn-film look on top of it. The look is meant to freeze when time stops. It doesn't yet.
 cover: media/grindhouse-look-pass1.mp4
-featured: true
 draft: false
 ---
 
