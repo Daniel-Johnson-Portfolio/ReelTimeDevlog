@@ -1,0 +1,25 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="cards.css">
+<style>
+table { width: 100%; border-collapse: collapse; font-size: 23px; }
+td { padding: 9px 14px; border-bottom: 1px solid var(--line); vertical-align: top; }
+td.t { font-family: Consolas, monospace; color: var(--accent); white-space: nowrap; width: 90px; }
+td.b { color: var(--dim); width: 44%; }
+td.r { color: #fff; }
+</style>
+<body><div class="frame">
+  <div class="kicker">Reel Time · behind the scenes · day one</div>
+  <h1>Every rule here started as something that broke</h1>
+  <div class="grow">
+    <table>
+      <tr><td class="t">06:58</td><td class="b">One editor, and captures queuing up one at a time</td><td class="r">Film in blocks every two hours</td></tr>
+      <tr><td class="t">08:02</td><td class="b">Two branches defined the same struct; main stopped compiling</td><td class="r">Build on a merge of current main before asking for a merge</td></tr>
+      <tr><td class="t">10:50</td><td class="b">34 tasks waiting on single captures, crew idle</td><td class="r">Film whole levels: one reel covers many tasks</td></tr>
+      <tr><td class="t">10:52</td><td class="b">Kit calls landed in a test editor, not the real one</td><td class="r">Every headless editor gets its own port</td></tr>
+      <tr><td class="t">13:10</td><td class="b">A debug god mode survived between play sessions</td><td class="r">Audit every setting that outlives a session</td></tr>
+      <tr><td class="t">13:22</td><td class="b">Reels recorded the wrong window, twice</td><td class="r">A guard checks a capture shows the game</td></tr>
+      <tr><td class="t">14:07</td><td class="b">A restart lost every session's conversation</td><td class="r">Write a desk note before any stop</td></tr>
+      <tr><td class="t">16:45</td><td class="b">A clash hidden by a fast local build broke main again</td><td class="r">Clean build before a merge request</td></tr>
+    </table>
+  </div>
+  <div class="foot">Thursday 12 November, UK time. Left: what went wrong. Right: the rule the Director wrote the same hour.</div>
+</div></body>
