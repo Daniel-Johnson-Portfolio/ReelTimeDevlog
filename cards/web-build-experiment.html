@@ -1,0 +1,20 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="cards.css">
+<body><div class="frame">
+  <div class="kicker">Reel Time · experiment · jam hour 13 to 16</div>
+  <h1>Reel Time in a browser tab</h1>
+  <div class="sub">Unreal 5.9's web target, tried on day one. It builds and boots. No person has seen a frame of it yet.</div>
+  <div class="grow">
+    <div class="row">
+      <div class="stat"><div class="n">110.6</div><div class="l">MB zipped</div></div>
+      <div class="stat"><div class="n">51</div><div class="l">MB to download</div></div>
+      <div class="stat"><div class="n">~10 s</div><div class="l">to first frame, cold</div></div>
+      <div class="stat"><div class="n">3</div><div class="l">levels: menu, tutorial, Zombie 01</div></div>
+    </div>
+    <div class="row" style="margin-top:40px">
+      <div class="box good"><span class="tag good">Works</span><p>Compiles to WebAssembly, runs on WebGPU, starts in headless Chrome with no console errors.</p></div>
+      <div class="box bad"><span class="tag bad">Unknown</span><p>Every automated screenshot is black. Probably the headless browser, not the game. Not confirmed.</p></div>
+      <div class="box hot"><span class="tag hot">Catch</span><p>Needs a host that sends two special headers. A plain static site can't start it.</p></div>
+    </div>
+  </div>
+  <div class="foot">Numbers from the Release session's handover note, measured on the dev machine.</div>
+</div></body>
