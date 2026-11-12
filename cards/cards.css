@@ -1,0 +1,44 @@
+/* Shared look for the devlog's diagram cards: a dark screen with film sprockets. 1600x900. */
+:root {
+  --bg: #111014; --panel: #1c1a21; --panel2: #25222c; --line: #3a3644;
+  --ink: #f4efe6; --dim: #a9a2b3; --accent: #f2b705; --red: #e2543a; --green: #3fbf7f; --blue: #5b9cf5; --violet: #9a82f0;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 1600px; height: 900px; overflow: hidden; }
+body {
+  background: var(--bg); color: var(--ink);
+  font-family: "Segoe UI", system-ui, sans-serif; font-size: 26px; line-height: 1.35;
+  position: relative;
+}
+body::before, body::after {
+  content: ""; position: absolute; left: 0; right: 0; height: 34px;
+  background:
+    repeating-linear-gradient(90deg, transparent 0 22px, #2c2933 22px 54px, transparent 54px 76px) center / auto 16px no-repeat,
+    #08080a;
+}
+body::before { top: 0; } body::after { bottom: 0; }
+.frame { position: absolute; inset: 34px 0; padding: 40px 64px 36px; display: flex; flex-direction: column; }
+.kicker { font-family: Bahnschrift, "Segoe UI", sans-serif; letter-spacing: .22em; font-size: 20px; color: var(--accent); text-transform: uppercase; }
+h1 { font-family: Bahnschrift, "Segoe UI", sans-serif; font-weight: 700; font-size: 62px; line-height: 1.05; margin: 8px 0 6px; }
+.sub { color: var(--dim); font-size: 26px; max-width: 1300px; }
+.grow { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.foot { color: var(--dim); font-size: 20px; }
+.mono { font-family: Consolas, "Cascadia Mono", monospace; }
+b, strong { color: #fff; }
+.acc { color: var(--accent); } .red { color: var(--red); } .green { color: var(--green); } .dimtxt { color: var(--dim); }
+
+.row { display: flex; gap: 20px; align-items: stretch; }
+.box { background: var(--panel); border: 2px solid var(--line); border-radius: 14px; padding: 20px 22px; flex: 1; }
+.box h2 { font-family: Bahnschrift, "Segoe UI", sans-serif; font-size: 30px; margin-bottom: 6px; }
+.box p { font-size: 22px; color: var(--dim); }
+.box.bad { border-color: var(--red); } .box.good { border-color: var(--green); background: #16261f; } .box.hot { border-color: var(--accent); }
+.tag { display: inline-block; font-family: Bahnschrift, sans-serif; font-size: 18px; letter-spacing: .12em; text-transform: uppercase;
+  padding: 3px 12px; border-radius: 99px; background: var(--panel2); color: var(--dim); margin-bottom: 10px; }
+.tag.bad { background: #4a1f17; color: #ffb3a3; } .tag.good { background: #174a30; color: #a9f0c8; } .tag.hot { background: #4a3a05; color: #ffe08a; }
+.pill { display: inline-block; padding: 8px 20px; border-radius: 99px; border: 2px solid var(--line); background: var(--panel); font-size: 24px; margin: 0 8px 10px 0; }
+.pill.on { border-color: var(--green); color: #c9f7dd; } .pill.off { border-color: var(--red); color: #ffc0b3; text-decoration: line-through; }
+.arrow { align-self: center; font-size: 40px; color: var(--accent); flex: 0 0 auto; }
+.stat { text-align: center; flex: 1; }
+.stat .n { font-family: Bahnschrift, sans-serif; font-size: 84px; font-weight: 700; color: var(--accent); line-height: 1; }
+.stat .l { font-size: 22px; color: var(--dim); margin-top: 6px; }
+.code { background: #0b0b0e; border: 2px solid var(--line); border-radius: 12px; padding: 18px 24px; font-family: Consolas, monospace; font-size: 28px; white-space: pre-wrap; }

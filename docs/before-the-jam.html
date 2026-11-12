@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Made before the jam | Reel Time devlog</title>
+<meta name="description" content="What existed before the clock started, as the jam rules ask.">
+<meta property="og:title" content="Made before the jam | Reel Time devlog">
+<meta property="og:description" content="What existed before the clock started, as the jam rules ask.">
+<link rel="stylesheet" href="style.css">
+<style>:root { --accent: #f2b705; }</style>
+<script src="site.js" defer></script>
+</head>
+<body class="standing">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap head-inner"><a class="brand" href="index.html">Reel Time devlog</a><nav class="site-nav" aria-label="Main"><ul><li><a href="topics.html">Topics</a></li><li><a href="timeline.html">Timeline</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="how-its-built.html">How it's built</a></li></ul></nav><form class="site-search" action="search.html" role="search"><label class="sr-only" for="q-top">Search the devlog</label><input id="q-top" name="q" type="search" placeholder="Search posts"></form></div></header>
+<main id="main">
+<header class="page-head wrap-narrow"><h1>Made before the jam</h1><p class="standfirst">What existed before the clock started, as the jam rules ask.</p></header><div class="prose wrap-narrow"><p>The jam rules ask for anything made before the start to be declared, including prompts and scripts. Everything here is tooling and planning from before Thursday 12 November 2026. None of it is game content: no design documents, code, levels, art or audio for the game existed before the jam started.</p>
+<p>The story behind this list is in <a href="posts/2026-11-12-0555-pre-production.html">Pre-production: everything that existed before the clock</a>.</p>
+<figure class="shot"><a href="media/preprod-timeline.jpg" data-lightbox data-caption="Two evenings of setup, then the clock."><img src="media/preprod-timeline.jpg" alt="Two evenings of setup, then the clock." loading="lazy"></a><figcaption>Two evenings of setup, then the clock.</figcaption></figure>
+<h2>Workflow tooling (prompts and scripts)</h2>
+<ul>
+<li><strong>The crew setup:</strong> shared rules, one instruction file per session role, a task and inbox system, a status board, day and night mode, a jam clock and digest scripts, and Claude Code hooks, subagents and skills.</li>
+<li><strong>A kit template:</strong> an empty script skeleton for importing and building Unreal assets. It contains no game content.</li>
+<li><strong>Release tools:</strong> a packaging and smoke-test script and a script that cuts the gameplay video.</li>
+<li><strong>This site's generator,</strong> its page templates and stylesheet.</li>
+</ul>
+<h2>Briefs and plans, written on Wednesday 11 November</h2>
+<ul>
+<li><strong>A kickoff brief:</strong> ideas only, written by me with Claude after the theme reveal and before the start. It describes the game concept for the Director. No code, assets, levels or other game content were made before the start.</li>
+<li><strong>A technical plan</strong> for the Director. It lists systems, owners and milestones; no code or assets.</li>
+<li><strong>A UI design brief:</strong> a prompt for Claude Design. It was run only after the jam started; every mockup and asset it produced was made during the jam.</li>
+<li><strong>A devlog brief:</strong> instructions for the Devlog session on voice, framing, privacy and hosting.</li>
+</ul>
+<h2>Engine plugins added as tooling</h2>
+<ul>
+<li><strong>NVIDIA DLSS 4.5</strong> (plugin v8.9.0 for Unreal 5.8, by NVIDIA, under the NVIDIA RTX SDK EULA), with its support plugin StreamlineNGXCommon, recompiled for Unreal 5.9 and installed into the engine on Wednesday 11 November. Changes to make it build and load on 5.9: <code>bValidateFormatStrings = false</code> in each module's build rules, explicit integer types in 12 log messages, and the plugins' EngineVersion set to 5.9.0. No game content. The full story: <a href="posts/2026-11-12-0605-dlss-on-unreal-5-9.html">Porting NVIDIA DLSS from Unreal 5.8 to 5.9</a>.</li>
+</ul>
+<p>Third-party assets are listed separately on the Credits page.</p></div>
+</main>
+<footer class="site-foot"><div class="wrap foot-inner"><ul class="foot-links"><li><a href="index.html">Home</a></li><li><a href="topics.html">Topics</a></li><li><a href="timeline.html">Timeline</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="search.html">Search</a></li><li><a href="how-its-built.html">How it&#x27;s built</a></li><li><a href="before-the-jam.html">Made before the jam</a></li></ul><p>Built in Unreal Engine 5.9 by one person and a crew of Claude Code sessions, for the 2026 Epic AI MegaJam.</p></div></footer>
+</body>
+</html>

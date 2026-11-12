@@ -1,0 +1,26 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="cards.css">
+<style>
+.log { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 20px; }
+.it { background: var(--panel); border-left: 6px solid var(--red); border-radius: 8px; padding: 12px 18px; font-size: 21px; line-height: 1.3; }
+.it.fixed { border-left-color: var(--green); }
+.it .s { font-family: Consolas, monospace; font-size: 17px; color: var(--red); display: block; margin-bottom: 2px; }
+.it.fixed .s { color: var(--green); }
+</style>
+<body><div class="frame">
+  <div class="kicker">Reel Time · bloopers</div>
+  <h1>What the smoke test found</h1>
+  <div class="sub">Tuesday 10 November, 22:30 to 22:45. Eleven notes in the friction log; these are eight of them.</div>
+  <div class="grow">
+    <div class="log">
+      <div class="it fixed"><span class="s">[fixed] recording</span>The recorder moved a half-written clip, and kept a file name with spaces in it</div>
+      <div class="it"><span class="s">[open] captures</span>A second clip overwrites the first clip's contact sheets</div>
+      <div class="it"><span class="s">[open] reviews</span>A failed review sends the task's owner no message</div>
+      <div class="it"><span class="s">[open] tasks</span>A task for a session that's switched off just sits, with no warning</div>
+      <div class="it"><span class="s">[open] git</span>Retiring a spare gameplay session leaves its commits on a branch nobody is told about</div>
+      <div class="it"><span class="s">[open] kits</span>Every kit rerun re-imports textures and adds a new large file to the repo</div>
+      <div class="it"><span class="s">[open] terminal</span>Replacing a session leaves a dead tab that I could type into by mistake</div>
+      <div class="it"><span class="s">[open] video</span>The video cutter breaks on file paths with spaces</div>
+    </div>
+  </div>
+  <div class="foot">Paraphrased from the crew's own friction log. The toolsmith session works through the open ones during the jam.</div>
+</div></body>

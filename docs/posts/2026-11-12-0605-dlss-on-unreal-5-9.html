@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Porting NVIDIA DLSS from Unreal 5.8 to 5.9 in 75 minutes | Reel Time devlog</title>
+<meta name="description" content="NVIDIA&#x27;s DLSS 4.5 plugin stops at Unreal 5.8. Six compiles, three editor launches and one crash later it runs on our 5.9 engine, without Frame Generation.">
+<meta property="og:title" content="Porting NVIDIA DLSS from Unreal 5.8 to 5.9 in 75 minutes | Reel Time devlog">
+<meta property="og:description" content="NVIDIA&#x27;s DLSS 4.5 plugin stops at Unreal 5.8. Six compiles, three editor launches and one crash later it runs on our 5.9 engine, without Frame Generation.">
+<link rel="stylesheet" href="../style.css">
+<style>:root { --accent: #f2b705; }</style>
+<script src="../site.js" defer></script>
+</head>
+<body class="post-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap head-inner"><a class="brand" href="../index.html">Reel Time devlog</a><nav class="site-nav" aria-label="Main"><ul><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../how-its-built.html">How it's built</a></li></ul></nav><form class="site-search" action="../search.html" role="search"><label class="sr-only" for="q-top">Search the devlog</label><input id="q-top" name="q" type="search" placeholder="Search posts"></form></div></header>
+<main id="main">
+<article class="post"><header class="post-head wrap-narrow"><ul class="chips"><li><a class="chip" href="../topics/pipeline.html"><span class="dot" style="--c:#2f6fdb"></span>Tools and pipeline</a></li><li><a class="chip" href="../topics/fixes.html"><span class="dot" style="--c:#a0472e"></span>Bloopers</a></li></ul><h1>Porting NVIDIA DLSS from Unreal 5.8 to 5.9 in 75 minutes</h1><p class="standfirst">NVIDIA&#x27;s DLSS 4.5 plugin stops at Unreal 5.8. Six compiles, three editor launches and one crash later it runs on our 5.9 engine, without Frame Generation.</p><p class="post-when"><span class="day">Day 1, Thu 12 Nov</span><span class="hour">Hour 2</span><time datetime="2026-11-12T06:05:00+00:00">06:05</time></p><ul class="crew" aria-label="Crew sessions involved"><li><a href="../crew/you.html"><span class="dot crew-you"></span>Me</a></li></ul></header><div class="screen post-hero"><div class="wrap hero-inner"><a href="../media/dlss-six-compiles.jpg" data-lightbox data-caption="NVIDIA&#x27;s DLSS 4.5 plugin stops at Unreal 5.8. Six compiles, three editor launches and one crash later it runs on our 5.9 engine, without Frame Generation."><img src="../media/dlss-six-compiles.jpg" alt="NVIDIA&#x27;s DLSS 4.5 plugin stops at Unreal 5.8. Six compiles, three editor launches and one crash later it runs on our 5.9 engine, without Frame Generation."></a></div></div><div class="prose wrap-narrow"><p>I asked for this one to be written up "even if it doesn't work". It mostly worked.</p>
+<p><strong>Why bother.</strong> The NVIDIA RTX Award needs an entry that uses DLSS 4.5, an NvRTX feature or NVIDIA ACE. DLSS is the only realistic one for an RTX 2060. NVIDIA's plugin (v8.9.0) supports Unreal 5.5 to 5.8, and the jam engine is a 5.9 source build. The plugin ships with full source, so a port was possible. Claude and I did it on Wednesday 11 November, before the jam, as tooling. It's declared on the <a href="../before-the-jam.html">Made before the jam</a> page.</p>
+<h2>Six compiles</h2>
+<p>The download is 1.1 GB with 11 plugins. We took five of them (20 C++ modules) into an empty test project, so the real project was never at risk.</p>
+<figure class="shot"><a href="../media/dlss-six-compiles.jpg" data-lightbox data-caption="Six compile attempts. The first two failures were ours, the next three were one Unreal 5.9 change, and the sixth passed."><img src="../media/dlss-six-compiles.jpg" alt="Six compile attempts. The first two failures were ours, the next three were one Unreal 5.9 change, and the sixth passed." loading="lazy"></a><figcaption>Six compile attempts. The first two failures were ours, the next three were one Unreal 5.9 change, and the sixth passed.</figcaption></figure>
+<ul>
+<li><strong>Attempt 1:</strong> a quoting mistake in the build command. Ours, not NVIDIA's.</li>
+<li><strong>Attempt 2:</strong> Windows' 260-character path limit. The test folder's path was long enough that build files went past it. Still a thing in 2026.</li>
+<li><strong>Attempt 3:</strong> two minutes in, most of it compiled. Every failure was the same thing: Unreal 5.9 checks log-message format strings at compile time, and the 5.8 code passes 64-bit numbers and enum values to <code>%d</code> and <code>%u</code>.</li>
+<li><strong>Attempts 4 and 5:</strong> more of the same, patched by hand each time.</li>
+<li><strong>Attempt 6:</strong> "Result: Succeeded" in 2 minutes 16 seconds.</li>
+</ul>
+<h2>The fix we should have looked for first</h2>
+<figure class="shot"><a href="../media/dlss-the-switch.jpg" data-lightbox data-caption="Three compiles of hand patches, then the switch Unreal 5.9 provides for exactly this."><img src="../media/dlss-the-switch.jpg" alt="Three compiles of hand patches, then the switch Unreal 5.9 provides for exactly this." loading="lazy"></a><figcaption>Three compiles of hand patches, then the switch Unreal 5.9 provides for exactly this.</figcaption></figure>
+<p>After patching 12 log messages one at a time, we found that 5.9 has a per-module switch for this check. One commented line in each of the 20 modules:</p>
+<pre><code>bValidateFormatStrings = false;
+</code></pre>
+<p>Almost all of NVIDIA's code was source-compatible with 5.9. That check was the only real break.</p>
+<h2>Three launches</h2>
+<figure class="shot"><a href="../media/dlss-three-launches.jpg" data-lightbox data-caption="Launch one was blocked by a version label, launch two crashed on the first frame, launch three came up clean with DLSS only."><img src="../media/dlss-three-launches.jpg" alt="Launch one was blocked by a version label, launch two crashed on the first frame, launch three came up clean with DLSS only." loading="lazy"></a><figcaption>Launch one was blocked by a version label, launch two crashed on the first frame, launch three came up clean with DLSS only.</figcaption></figure>
+<p>The first launch stopped at a dialog: "'DLSS' is Incompatible". The plugin files still declared engine 5.8.0, so that label was updated.</p>
+<p>The second launch loaded in 72 seconds and then crashed the first time the editor drew the screen. Streamline, the layer behind Frame Generation and Reflex, hooks that exact step. DLSS itself doesn't. So the third launch had DLSS only, and the editor came up cleanly in 29 seconds.</p>
+<h2>What we kept</h2>
+<figure class="shot"><a href="../media/dlss-what-shipped.jpg" data-lightbox data-caption="What the DLSS plugin reported when asked directly through the editor&#x27;s MCP tools."><img src="../media/dlss-what-shipped.jpg" alt="What the DLSS plugin reported when asked directly through the editor&#x27;s MCP tools." loading="lazy"></a><figcaption>What the DLSS plugin reported when asked directly through the editor&#x27;s MCP tools.</figcaption></figure>
+<p>DLSS is in, with every mode from DLAA to Ultra Performance, plus Ray Reconstruction. Frame Generation and Reflex are out. A 2060 can't run Frame Generation, so it would have shipped untested, and a crash on a judge's newer card is far worse than a missing toggle. The Streamline plugins were moved out of the engine so no crew session can switch them on by accident.</p>
+<p>Changes to NVIDIA's plugin, in full: the build switch in 20 modules, explicit integer types in 12 log messages, and the version label in five plugin files. It's used under the NVIDIA RTX SDK licence.</p>
+<p><strong>Total:</strong> about 75 minutes from download to a verified DLSS on 5.9.</p></div></article><nav class="post-nav wrap" aria-label="More posts"><a class="prev" href="2026-11-12-0555-pre-production.html"><span>Previous</span>Pre-production: everything that existed before the clock</a><span></span></nav><section class="block wrap related"><div class="block-head"><h2>More in Tools and pipeline</h2><a href="../topics/pipeline.html">All of them</a></div><div class="cards"><article class="card"><a class="card-media" href="../posts/2026-11-12-0555-pre-production.html" tabindex="-1" aria-hidden="true"><img src="../media/preprod-slate.thumb.jpg" alt="" loading="lazy"></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/crew.html"><span class="dot" style="--c:#6b4fd8"></span>Behind the scenes</a><span class="card-when">Day 1, hour 1</span></div><h3><a href="../posts/2026-11-12-0555-pre-production.html">Pre-production: everything that existed before the clock</a></h3><p class="summary">Two evenings of setup before the jam: a crew of Claude Code sessions, a smoke test that found 11 problems, the rules, the theme reveal and a Q&amp;A. No game.</p></div></article></div></section>
+</main>
+<footer class="site-foot"><div class="wrap foot-inner"><ul class="foot-links"><li><a href="../index.html">Home</a></li><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../search.html">Search</a></li><li><a href="../how-its-built.html">How it&#x27;s built</a></li><li><a href="../before-the-jam.html">Made before the jam</a></li></ul><p>Built in Unreal Engine 5.9 by one person and a crew of Claude Code sessions, for the 2026 Epic AI MegaJam.</p></div></footer>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="cards.css">
+<body><div class="frame">
+  <div class="kicker">Reel Time · pre-production</div>
+  <h1>The fix was one line, twenty times</h1>
+  <div class="grow" style="gap:26px">
+    <div class="row">
+      <div class="box bad"><span class="tag bad">what we did first</span><h2>Patch NVIDIA's code by hand</h2>
+        <p style="font-size:24px">4 log messages changed from <span class="mono">%d</span> to <span class="mono">%lld</span><br>8 enum values given explicit integer casts<br>Three compiles, each finding a few more</p></div>
+      <div class="arrow">▶</div>
+      <div class="box good"><span class="tag good">what the engine intended</span><h2>Turn the check off per module</h2>
+        <p style="font-size:24px">Unreal 5.9 has a switch for exactly this in a module's build rules. One line in each of the 20 modules.</p></div>
+    </div>
+    <div class="code"><span class="dimtxt">// in each module's .Build.cs</span>
+<span class="acc">bValidateFormatStrings</span> = <span class="green">false</span>;</div>
+  </div>
+  <div class="foot">Lesson: read the engine's build rules before hand-patching someone else's code.</div>
+</div></body>

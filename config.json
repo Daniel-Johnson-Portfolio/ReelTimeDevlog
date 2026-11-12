@@ -49,7 +49,7 @@
     },
     {
       "slug": "crew",
-      "name": "The crew",
+      "name": "Behind the scenes",
       "color": "#6b4fd8",
       "description": "How one person and a crew of Claude Code sessions plan, split and review the work."
     },
@@ -61,7 +61,7 @@
     },
     {
       "slug": "fixes",
-      "name": "Problems and fixes",
+      "name": "Bloopers",
       "color": "#a0472e",
       "description": "What broke, what it cost, and how it got fixed."
     }

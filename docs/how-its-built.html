@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How it&#x27;s built | Reel Time devlog</title>
+<meta name="description" content="The crew of Claude Code sessions behind this game, and how they work together.">
+<meta property="og:title" content="How it&#x27;s built | Reel Time devlog">
+<meta property="og:description" content="The crew of Claude Code sessions behind this game, and how they work together.">
+<link rel="stylesheet" href="style.css">
+<style>:root { --accent: #f2b705; }</style>
+<script src="site.js" defer></script>
+</head>
+<body class="standing">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap head-inner"><a class="brand" href="index.html">Reel Time devlog</a><nav class="site-nav" aria-label="Main"><ul><li><a href="topics.html">Topics</a></li><li><a href="timeline.html">Timeline</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="how-its-built.html" aria-current=page>How it's built</a></li></ul></nav><form class="site-search" action="search.html" role="search"><label class="sr-only" for="q-top">Search the devlog</label><input id="q-top" name="q" type="search" placeholder="Search posts"></form></div></header>
+<main id="main">
+<header class="page-head wrap-narrow"><h1>How it&#x27;s built</h1><p class="standfirst">The crew of Claude Code sessions behind this game, and how they work together.</p></header><div class="prose wrap-narrow"><p>One person and a crew of Claude Code sessions, each with its own job, its own folders and its own inbox. I talk to two of them. The Director turns what I want into tasks, hands them out, checks the results, and tells me when something's ready to look at. The Devlog writes this site.</p>
+<figure class="shot"><a href="media/crew-map.jpg" data-lightbox data-caption="Who talks to whom. Every arrow is a file dropped in an inbox folder."><img src="media/crew-map.jpg" alt="Who talks to whom. Every arrow is a file dropped in an inbox folder." loading="lazy"></a><figcaption>Who talks to whom. Every arrow is a file dropped in an inbox folder.</figcaption></figure>
+<h2>The crew</h2>
+<figure class="crew-table"><p class="crew-summary">0 tasks done, 0 kits run by the engine, 4 commits, 1 decision (0 made as assumptions), 1 tool problem fixed. Updated Thu 12 Nov, 05:49.</p><div class="table-wrap"><table><thead><tr><th scope="col">Session</th><th scope="col">What it does</th><th scope="col" class="num">Tasks done</th><th scope="col" class="num">Commits</th></tr></thead><tbody><tr><th scope="row"><span class="dot crew-director"></span><a href="crew/director.html">Director</a></th><td>Your single front door: plans, decides, assigns, tracks, reviews and reports to you.</td><td class="num">0</td><td class="num">0</td></tr><tr><th scope="row"><span class="dot crew-engine"></span><a href="crew/engine.html">Engine</a></th><td>Owns the open editor, builds and main branch; runs kits and merges; captures review media.</td><td class="num">0</td><td class="num">0</td></tr><tr><th scope="row"><span class="dot crew-gameplay"></span><a href="crew/gameplay.html">Gameplay</a></th><td>Core rules: player, controls, core loop, game state, win and lose.</td><td class="num">0</td><td class="num">0</td></tr><tr><th scope="row"><span class="dot crew-ui"></span><a href="crew/ui.html">UI</a></th><td>Every screen: HUD, menus, splash, UI animation, built as kits from designs.</td><td class="num">0</td><td class="num">0</td></tr><tr><th scope="row"><span class="dot crew-npc-ai"></span><a href="crew/npc-ai.html">NPC AI</a></th><td>NPC behaviour: StateTrees, perception, navigation, spawning.</td><td class="num">0</td><td class="num">0</td></tr><tr><th scope="row"><span class="dot crew-world"></span><a href="crew/world.html">World</a></th><td>Level layout, progression, lighting and the overall look, built as kits.</td><td class="num">0</td><td class="num">0</td></tr><tr><th scope="row"><span class="dot crew-audio"></span><a href="crew/audio.html">Audio</a></th><td>Sound effects, music and voice as kits; a planned workstream from day 2.</td><td class="num">0</td><td class="num">0</td></tr><tr><th scope="row"><span class="dot crew-floater-1"></span><a href="crew/floater-1.html">Floater</a></th><td>Generalist: overflow tasks from any domain under a path lease, cross-domain fixes, testing.</td><td class="num">0</td><td class="num">0</td></tr><tr><th scope="row"><span class="dot crew-devlog"></span><a href="crew/devlog.html">Devlog</a></th><td>Writes the public devlog, entered for the Glass Box prize.</td><td class="num">0</td><td class="num">0</td></tr><tr><th scope="row"><span class="dot crew-release"></span><a href="crew/release.html">Release</a></th><td>Packaging, smoke tests, the gameplay video, credits, declaration and submission prep. Wakes on day 2.</td><td class="num">0</td><td class="num">0</td></tr><tr><th scope="row"><span class="dot crew-toolsmith"></span><a href="crew/toolsmith.html">Toolsmith</a></th><td>Fixes what FRICTION.md reports: tools, hooks, skills, subagents.</td><td class="num">0</td><td class="num">0</td></tr></tbody></table></div></figure>
+
+<h2>How work moves</h2>
+<figure class="shot"><a href="media/task-journey.jpg" data-lightbox data-caption="A task&#x27;s journey, from a request to something a player can see."><img src="media/task-journey.jpg" alt="A task&#x27;s journey, from a request to something a player can see." loading="lazy"></a><figcaption>A task&#x27;s journey, from a request to something a player can see.</figcaption></figure>
+<ul>
+<li><strong>Tasks:</strong> every piece of work is a small file with an owner, the folders it may touch, and a definition of done.</li>
+<li><strong>Kits:</strong> only the engine session touches the Unreal editor. Everyone else hands it a "kit", a script that builds their assets, so their work stays readable and can be rebuilt from scratch.</li>
+<li><strong>Reports:</strong> when a session finishes, the Director hears about it automatically and has a reviewer check the screenshots against the definition of done.</li>
+</ul>
+<h2>Models</h2>
+<p>Every session is Claude Code. By day the Director and the Devlog run on Claude Fable 5.2 and most of the builders on Opus 5.5, with Sonnet 5.5 on the lighter jobs. Nothing done on a model below Opus counts as done until an Opus-level model has reviewed it.</p>
+<h2>Decide, don't wait</h2>
+<p>Sessions make reasonable assumptions instead of waiting for answers, and write them down. I look over the assumptions later, not before.</p>
+<h2>Day and night</h2>
+<p>At night the crew keeps working. The Director fills every queue before I go to bed, nobody waits for me, and I get a digest in the morning: what got done, which assumptions were made, and what broke.</p></div>
+</main>
+<footer class="site-foot"><div class="wrap foot-inner"><ul class="foot-links"><li><a href="index.html">Home</a></li><li><a href="topics.html">Topics</a></li><li><a href="timeline.html">Timeline</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="search.html">Search</a></li><li><a href="how-its-built.html">How it&#x27;s built</a></li><li><a href="before-the-jam.html">Made before the jam</a></li></ul><p>Built in Unreal Engine 5.9 by one person and a crew of Claude Code sessions, for the 2026 Epic AI MegaJam.</p></div></footer>
+</body>
+</html>

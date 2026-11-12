@@ -2,12 +2,12 @@
 title: How it's built
 summary: The crew of Claude Code sessions behind this game, and how they work together.
 order: 10
-draft: true
+draft: false
 ---
 
-(The devlog session rewrites this page as the jam goes. Keep the @crew line where the live table goes.)
+One person and a crew of Claude Code sessions, each with its own job, its own folders and its own inbox. I talk to two of them. The Director turns what I want into tasks, hands them out, checks the results, and tells me when something's ready to look at. The Devlog writes this site.
 
-One person and a crew of Claude Code sessions, each with its own job, its own folders and its own inbox. I only talk to one of them, the Director. It turns what I want into tasks, hands them out, checks the results, and tells me when something's ready to look at.
+![Who talks to whom. Every arrow is a file dropped in an inbox folder.](media/crew-map.jpg)
 
 ## The crew
 
@@ -15,9 +15,15 @@ One person and a crew of Claude Code sessions, each with its own job, its own fo
 
 ## How work moves
 
+![A task's journey, from a request to something a player can see.](media/task-journey.jpg)
+
 - **Tasks:** every piece of work is a small file with an owner, the folders it may touch, and a definition of done.
 - **Kits:** only the engine session touches the Unreal editor. Everyone else hands it a "kit", a script that builds their assets, so their work stays readable and can be rebuilt from scratch.
 - **Reports:** when a session finishes, the Director hears about it automatically and has a reviewer check the screenshots against the definition of done.
+
+## Models
+
+Every session is Claude Code. By day the Director and the Devlog run on Claude Fable 5.2 and most of the builders on Opus 5.5, with Sonnet 5.5 on the lighter jobs. Nothing done on a model below Opus counts as done until an Opus-level model has reviewed it.
 
 ## Decide, don't wait
 

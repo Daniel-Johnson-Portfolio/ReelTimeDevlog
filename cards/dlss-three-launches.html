@@ -1,0 +1,20 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="cards.css">
+<style>.box h2 { font-size: 34px; } .box p { font-size: 23px; margin-top: 8px; } .big { font-family: Bahnschrift, sans-serif; font-size: 64px; font-weight: 700; line-height: 1.1; margin-top: 14px; }</style>
+<body><div class="frame">
+  <div class="kicker">Reel Time · pre-production</div>
+  <h1>Three editor launches</h1>
+  <div class="sub">Compiling was the easy half. Then the editor had to load it.</div>
+  <div class="grow">
+    <div class="row">
+      <div class="box bad"><span class="tag bad">launch 1 · blocked</span><h2>“‘DLSS’ is Incompatible”</h2>
+        <p>The plugin files still said they were for engine 5.8.0. They're now built for 5.9, so the label was updated in all five plugins.</p></div>
+      <div class="box bad"><span class="tag bad">launch 2 · crashed</span><h2>Loaded, then died on the first frame</h2>
+        <p>An access violation on the rendering thread, in the step that puts the frame on screen. Streamline hooks that step. DLSS itself doesn't.</p>
+        <div class="big red">72 s</div></div>
+      <div class="box good"><span class="tag good">launch 3 · clean</span><h2>DLSS only</h2>
+        <p>Frame Generation and Reflex off, so Streamline never loads. The editor came up and the DLSS library loaded.</p>
+        <div class="big green">29 s</div></div>
+    </div>
+  </div>
+  <div class="foot">Isolate before you debug: turning features off one at a time found the culprit in one extra launch.</div>
+</div></body>

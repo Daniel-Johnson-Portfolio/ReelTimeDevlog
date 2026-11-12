@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pre-production: everything that existed before the clock | Reel Time devlog</title>
+<meta name="description" content="Two evenings of setup before the jam: a crew of Claude Code sessions, a smoke test that found 11 problems, the rules, the theme reveal and a Q&amp;A. No game.">
+<meta property="og:title" content="Pre-production: everything that existed before the clock | Reel Time devlog">
+<meta property="og:description" content="Two evenings of setup before the jam: a crew of Claude Code sessions, a smoke test that found 11 problems, the rules, the theme reveal and a Q&amp;A. No game.">
+<link rel="stylesheet" href="../style.css">
+<style>:root { --accent: #f2b705; }</style>
+<script src="../site.js" defer></script>
+</head>
+<body class="post-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap head-inner"><a class="brand" href="../index.html">Reel Time devlog</a><nav class="site-nav" aria-label="Main"><ul><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../how-its-built.html">How it's built</a></li></ul></nav><form class="site-search" action="../search.html" role="search"><label class="sr-only" for="q-top">Search the devlog</label><input id="q-top" name="q" type="search" placeholder="Search posts"></form></div></header>
+<main id="main">
+<article class="post"><header class="post-head wrap-narrow"><ul class="chips"><li><a class="chip" href="../topics/crew.html"><span class="dot" style="--c:#6b4fd8"></span>Behind the scenes</a></li><li><a class="chip" href="../topics/pipeline.html"><span class="dot" style="--c:#2f6fdb"></span>Tools and pipeline</a></li></ul><h1>Pre-production: everything that existed before the clock</h1><p class="standfirst">Two evenings of setup before the jam: a crew of Claude Code sessions, a smoke test that found 11 problems, the rules, the theme reveal and a Q&amp;A. No game.</p><p class="post-when"><span class="day">Day 1, Thu 12 Nov</span><span class="hour">Hour 1</span><time datetime="2026-11-12T05:55:00+00:00">05:55</time></p><ul class="crew" aria-label="Crew sessions involved"><li><a href="../crew/you.html"><span class="dot crew-you"></span>Me</a></li></ul></header><div class="screen post-hero"><div class="wrap hero-inner"><a href="../media/preprod-slate.jpg" data-lightbox data-caption="Two evenings of setup before the jam: a crew of Claude Code sessions, a smoke test that found 11 problems, the rules, the theme reveal and a Q&amp;A. No game."><img src="../media/preprod-slate.jpg" alt="Two evenings of setup before the jam: a crew of Claude Code sessions, a smoke test that found 11 problems, the rules, the theme reveal and a Q&amp;A. No game."></a></div></div><div class="prose wrap-narrow"><p>I'm Daniel Johnson, and for the next 93 hours I'm making a game called Reel Time with a crew of Claude Code sessions. This post is the one-stop record of what existed before the clock started at 05:00 on Thursday 12 November. The short version: tooling, plans and one engine plugin. No game.</p>
+<p>The jam's rules allow exactly that (§7(h)):</p>
+<blockquote>
+<p>"Entrants may prepare AI tools, agent configurations, Model Context Protocol ("MCP") settings, prompt libraries, and scripts before the Contest Period. [...] All other game content, including gameplay, levels, and art assets (other than noted sourced assets), must be created during the Contest Period."</p>
+</blockquote>
+<figure class="shot"><a href="../media/preprod-timeline.jpg" data-lightbox data-caption="Two evenings of setup, then the clock. The game project&#x27;s first commit is at 05:27 on Thursday, 27 minutes into the jam."><img src="../media/preprod-timeline.jpg" alt="Two evenings of setup, then the clock. The game project&#x27;s first commit is at 05:27 on Thursday, 27 minutes into the jam." loading="lazy"></a><figcaption>Two evenings of setup, then the clock. The game project&#x27;s first commit is at 05:27 on Thursday, 27 minutes into the jam.</figcaption></figure>
+<h2>The crew</h2>
+<p>Each Claude Code session has one job, its own folders and an inbox folder. I talk to two of them: the Director, who turns what I say into tasks, and the Devlog, who writes this site. Only the Engine session touches the Unreal Editor. Everyone else hands it a "kit", a script that builds their assets and can be rerun.</p>
+<figure class="shot"><a href="../media/crew-map.jpg" data-lightbox data-caption="Who talks to whom. Every arrow is a file dropped in an inbox folder."><img src="../media/crew-map.jpg" alt="Who talks to whom. Every arrow is a file dropped in an inbox folder." loading="lazy"></a><figcaption>Who talks to whom. Every arrow is a file dropped in an inbox folder.</figcaption></figure>
+<figure class="shot"><a href="../media/task-journey.jpg" data-lightbox data-caption="A task&#x27;s journey, from a request to something a player can see."><img src="../media/task-journey.jpg" alt="A task&#x27;s journey, from a request to something a player can see." loading="lazy"></a><figcaption>A task&#x27;s journey, from a request to something a player can see.</figcaption></figure>
+<p>In numbers: 12 role files, 28 coordination scripts, 7 hooks, 3 subagents and 2 skills. By day the Director and Devlog run on Claude Fable 5.2 and most builders on Opus 5.5. Anything done on a smaller model has to be reviewed at Opus level before it counts as done.</p>
+<h2>The smoke tests</h2>
+<p>On Tuesday night the setup got a smoke test, and 11 problems went into the crew's friction log within 15 minutes. One was fixed straight away: the recorder was moving clips before they'd finished writing. The rest are open for the Toolsmith session.</p>
+<figure class="shot"><a href="../media/smoke-test-friction.jpg" data-lightbox data-caption="Eight of the eleven problems from the smoke test on Tuesday 10 November."><img src="../media/smoke-test-friction.jpg" alt="Eight of the eleven problems from the smoke test on Tuesday 10 November." loading="lazy"></a><figcaption>Eight of the eleven problems from the smoke test on Tuesday 10 November.</figcaption></figure>
+<p>My favourite: to keep a test cheap I ran the Director on Haiku, the smallest model. It closed the Unreal Editor itself, then owned up to it. The crew's rules now say only the Engine starts, stops or restarts the editor, and a hook blocks anyone else who tries. Its own description:</p>
+<blockquote>
+<p>Not a security boundary: a guard rail against well-meant shortcuts ("I'll just close the editor").</p>
+</blockquote>
+<h2>The rules</h2>
+<p>The official rules are a 16-page PDF. They were cut down to one sheet that quotes each rule by section, so a session can cite the real rule instead of guessing. The ones that shape everything: nothing game-specific before the start, one submission only, a Teen rating, no trademarks, a 30 to 60 second video, and a deadline of 01:59 UK time on Monday. Late entries are disqualified.</p>
+<h2>The theme and the Q&amp;A</h2>
+<p>The theme, <strong>"Director's Cut"</strong>, was revealed at 19:00 UK time on Wednesday. Thinking about it before the start is allowed; building isn't. So that evening was a long Q&amp;A with Claude, and the answers were written into a kickoff brief for the Director. Ideas only.</p>
+<p>Where it landed: you're a stunt double on a run of movie shoots. Time only runs while you move, because the camera only rolls while the star moves. One hit and the director yells "CUT!" and calls another take. Clear the scene and you watch your take replayed as a film. My note on scope from that Q&amp;A:</p>
+<blockquote>
+<p>"Gameplay is clean; the art is where the crunch is."</p>
+</blockquote>
+<p>The brief opens by admitting it will be wrong in places: "A starting point, not a contract."</p>
+<h2>Also made before the start</h2>
+<ul>
+<li>A technical plan for the Director, a UI design brief, and a brief for this devlog.</li>
+<li>NVIDIA DLSS, ported from Unreal 5.8 to 5.9. That has <a href="2026-11-12-0605-dlss-on-unreal-5-9.html">its own post</a>.</li>
+</ul>
+<p>Everything here is declared on the <a href="../before-the-jam.html">Made before the jam</a> page, as the rules ask.</p></div></article><nav class="post-nav wrap" aria-label="More posts"><span></span><a class="next" href="2026-11-12-0605-dlss-on-unreal-5-9.html"><span>Next</span>Porting NVIDIA DLSS from Unreal 5.8 to 5.9 in 75 minutes</a></nav><section class="block wrap related"><div class="block-head"><h2>More in Behind the scenes</h2><a href="../topics/crew.html">All of them</a></div><div class="cards"><article class="card"><a class="card-media" href="../posts/2026-11-12-0605-dlss-on-unreal-5-9.html" tabindex="-1" aria-hidden="true"><img src="../media/dlss-six-compiles.thumb.jpg" alt="" loading="lazy"></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/pipeline.html"><span class="dot" style="--c:#2f6fdb"></span>Tools and pipeline</a><span class="card-when">Day 1, hour 2</span></div><h3><a href="../posts/2026-11-12-0605-dlss-on-unreal-5-9.html">Porting NVIDIA DLSS from Unreal 5.8 to 5.9 in 75 minutes</a></h3><p class="summary">NVIDIA&#x27;s DLSS 4.5 plugin stops at Unreal 5.8. Six compiles, three editor launches and one crash later it runs on our 5.9 engine, without Frame Generation.</p></div></article></div></section>
+</main>
+<footer class="site-foot"><div class="wrap foot-inner"><ul class="foot-links"><li><a href="../index.html">Home</a></li><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../search.html">Search</a></li><li><a href="../how-its-built.html">How it&#x27;s built</a></li><li><a href="../before-the-jam.html">Made before the jam</a></li></ul><p>Built in Unreal Engine 5.9 by one person and a crew of Claude Code sessions, for the 2026 Epic AI MegaJam.</p></div></footer>
+</body>
+</html>

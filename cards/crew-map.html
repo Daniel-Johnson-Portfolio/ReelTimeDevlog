@@ -1,0 +1,52 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="cards.css">
+<style>
+svg { width: 100%; height: 100%; }
+.n rect { fill: #1c1a21; stroke: #3a3644; stroke-width: 2.5; rx: 14; }
+.n text { fill: #f4efe6; font-family: Bahnschrift, "Segoe UI", sans-serif; font-size: 28px; font-weight: 700; text-anchor: middle; }
+.n .s { font-family: "Segoe UI", sans-serif; font-size: 18px; font-weight: 400; fill: #a9a2b3; }
+.me rect { stroke: #f2b705; fill: #2b2408; } .dir rect { stroke: #9a82f0; } .eng rect { stroke: #3fbf7f; } .dev rect { stroke: #5b9cf5; }
+.e { stroke: #a9a2b3; stroke-width: 3; fill: none; marker-end: url(#a); }
+.e.two { marker-start: url(#b); }
+.lab { fill: #f2b705; font-family: "Segoe UI", sans-serif; font-size: 19px; text-anchor: middle; }
+</style>
+<body><div class="frame">
+  <div class="kicker">Reel Time · the crew</div>
+  <h1>Who talks to whom</h1>
+  <div class="grow">
+  <svg viewBox="0 0 1472 610">
+    <defs>
+      <marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0L10 5L0 10z" fill="#a9a2b3"/></marker>
+      <marker id="b" viewBox="0 0 10 10" refX="1" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M10 0L0 5L10 10z" fill="#a9a2b3"/></marker>
+    </defs>
+
+    <g class="n me"><rect x="20" y="230" width="200" height="110"/><text x="120" y="282">Me</text><text class="s" x="120" y="312">desk or phone</text></g>
+
+    <g class="n dir"><rect x="330" y="60" width="270" height="110"/><text x="465" y="110">Director</text><text class="s" x="465" y="140">plans, assigns, reviews</text></g>
+    <g class="n dev"><rect x="330" y="420" width="270" height="110"/><text x="465" y="470">Devlog</text><text class="s" x="465" y="500">writes this site</text></g>
+
+    <path class="e two" d="M220 255 L330 135"/><text class="lab" x="232" y="180">what I want</text>
+    <path class="e two" d="M220 315 L330 450"/><text class="lab" x="218" y="412">direct line</text>
+
+    <g class="n"><rect x="720" y="20" width="300" height="320" style="fill:#16151a"/><text x="870" y="60">The builders</text>
+      <text class="s" x="870" y="100" style="font-size:22px">Gameplay · World · UI</text>
+      <text class="s" x="870" y="134" style="font-size:22px">NPC AI · Audio · Floater</text>
+      <text class="s" x="870" y="168" style="font-size:22px">Release · Toolsmith</text>
+      <text class="s" x="870" y="222">each owns its own folders</text>
+      <text class="s" x="870" y="248">and has its own inbox</text>
+      <text class="s" x="870" y="298">nobody writes into Content/</text></g>
+    <path class="e two" d="M600 115 L720 115"/><text class="lab" x="660" y="100">tasks</text><text class="lab" x="660" y="146">reports</text>
+
+    <g class="n eng"><rect x="1150" y="60" width="300" height="110"/><text x="1300" y="110">Engine</text><text class="s" x="1300" y="140">the only one in the editor</text></g>
+    <path class="e" d="M1020 115 L1150 115"/><text class="lab" x="1085" y="100">kits, merges</text>
+
+    <g class="n"><rect x="1150" y="270" width="300" height="90"/><text x="1300" y="312" style="font-size:24px">Unreal Editor 5.9</text><text class="s" x="1300" y="340">over MCP</text></g>
+    <path class="e two" d="M1300 170 L1300 270"/>
+
+    <g class="n"><rect x="820" y="430" width="300" height="90"/><text x="970" y="472" style="font-size:24px">Review folder</text><text class="s" x="970" y="500">stills and clips of each task</text></g>
+    <path class="e" d="M1250 360 L1090 430"/><text class="lab" x="1232" y="412">captures</text>
+    <path class="e" d="M820 475 L600 475"/><text class="lab" x="710" y="462">new media</text>
+    <path class="e" d="M820 460 L540 170"/><text class="lab" x="640" y="340" style="text-anchor:end">checked work</text>
+  </svg>
+  </div>
+  <div class="foot">Every arrow is a file in an inbox folder. Sessions never talk to each other any other way.</div>
+</div></body>

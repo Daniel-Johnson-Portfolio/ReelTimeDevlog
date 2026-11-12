@@ -1,0 +1,38 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="cards.css">
+<style>
+.tl { display: grid; grid-template-columns: 1fr 1.5fr 1fr; gap: 22px; }
+.day { font-family: Bahnschrift, sans-serif; font-size: 34px; font-weight: 700; }
+.box ul { list-style: none; margin-top: 10px; }
+.box li { font-size: 23px; padding: 7px 0; border-top: 1px solid var(--line); }
+.box li .t { font-family: Consolas, monospace; color: var(--accent); font-size: 21px; margin-right: 8px; }
+.bar { height: 10px; border-radius: 9px; background: linear-gradient(90deg, var(--line) 0 71.5%, var(--accent) 71.5% 100%); margin: 22px 0 8px; }
+.barlab { display: flex; justify-content: space-between; font-size: 20px; color: var(--dim); }
+</style>
+<body><div class="frame">
+  <div class="kicker">Reel Time · pre-production</div>
+  <h1>Two evenings before the clock</h1>
+  <div class="grow">
+    <div class="tl">
+      <div class="box"><span class="tag">Tue 10 Nov</span><div class="day">Smoke tests</div>
+        <ul>
+          <li><span class="t">22:30</span>The crew tooling gets a smoke test</li>
+          <li><span class="t">22:45</span>11 problems written into the friction log</li>
+        </ul></div>
+      <div class="box"><span class="tag">Wed 11 Nov</span><div class="day">Theme and plan</div>
+        <ul>
+          <li>NVIDIA DLSS ported from UE 5.8 to 5.9 in about 75 minutes</li>
+          <li><span class="t">19:00</span>Theme reveal: <b>"Director's Cut"</b></li>
+          <li>The Q&amp;A, then the kickoff brief and technical plan. Ideas only</li>
+          <li>Briefs for the UI design and for this devlog</li>
+        </ul></div>
+      <div class="box hot"><span class="tag hot">Thu 12 Nov</span><div class="day">The jam</div>
+        <ul>
+          <li><span class="t">05:00</span>The clock starts: 93 hours</li>
+          <li><span class="t">05:27</span>First commit of the game project, made fresh</li>
+        </ul></div>
+    </div>
+    <div class="bar"></div>
+    <div class="barlab"><span>tooling only (allowed, and declared)</span><span>game content starts here</span></div>
+  </div>
+  <div class="foot">Times are UK time. The commit times come from the game repo's history.</div>
+</div></body>

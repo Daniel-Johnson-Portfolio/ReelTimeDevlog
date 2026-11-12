@@ -1,0 +1,25 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="cards.css">
+<style>
+.c { display: grid; grid-template-columns: repeat(6, 1fr); gap: 14px; }
+.box { padding: 16px 16px 18px; }
+.box .num { font-family: Bahnschrift, sans-serif; font-size: 76px; font-weight: 700; line-height: 1; color: var(--red); }
+.box.good .num { color: var(--green); }
+.box h2 { font-size: 24px; margin: 8px 0 6px; }
+.box p { font-size: 19px; line-height: 1.3; }
+</style>
+<body><div class="frame">
+  <div class="kicker">Reel Time · pre-production</div>
+  <h1>DLSS on Unreal 5.9: six compiles</h1>
+  <div class="sub">NVIDIA's DLSS 4.5 plugin supports Unreal 5.5 to 5.8. The jam engine is a 5.9 source build.</div>
+  <div class="grow">
+    <div class="c">
+      <div class="box bad"><span class="tag bad">failed</span><div class="num">1</div><h2>A quoting mistake</h2><p>The build tool couldn't find the project. Our mistake.</p></div>
+      <div class="box bad"><span class="tag bad">failed</span><div class="num">2</div><h2>Path too long</h2><p>Windows' 260‑character limit. Moved to a short folder.</p></div>
+      <div class="box bad"><span class="tag bad">failed · 2 min</span><div class="num">3</div><h2>Mostly compiled</h2><p>5.9 checks log format strings at compile time. Four fixed by hand.</p></div>
+      <div class="box bad"><span class="tag bad">failed</span><div class="num">4</div><h2>More of the same</h2><p>The same error in more places. Fixed with casts.</p></div>
+      <div class="box bad"><span class="tag bad">failed</span><div class="num">5</div><h2>And more</h2><p>Twelve log messages patched by now.</p></div>
+      <div class="box good"><span class="tag good">2 min 16 s</span><div class="num">6</div><h2>Succeeded</h2><p>One build switch per module. All 20 modules built for 5.9.</p></div>
+    </div>
+  </div>
+  <div class="foot">About 75 minutes from download to a verified DLSS, with six compiles and three editor launches.</div>
+</div></body>
