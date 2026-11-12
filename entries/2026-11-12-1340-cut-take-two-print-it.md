@@ -5,7 +5,6 @@ categories: [gameplay, interface]
 sessions: [gameplay, ui, npc-ai, engine]
 summary: The 13:30 reel shows most of a take for the first time: zombies walk in, one hit ends it with a CUT card, take two starts at once, and the scene ends on a dailies card.
 cover: media/cut-card-and-instant-retake.mp4
-featured: true
 draft: false
 ---
 
