@@ -246,6 +246,7 @@ def expand_directives(md, names, collected):
         return f'\n<figure class="post-gallery"><ul>{"".join(items)}</ul></figure>\n'
 
     md = CREW_LINE.sub(lambda m: "\n" + crew_block(names, link=True) + "\n", md)
+    md = COST_LINE.sub(lambda m: "\n" + cost_block() + "\n", md)
     md = PLAY_LINE.sub(lambda m: "\n" + play_block() + "\n", md)
     md = VIDEO.sub(video, md)
     md = COMPARE.sub(compare, md)
@@ -282,6 +283,44 @@ def with_media_prefix(text, prefix):
 
 def plain_text(body_html):
     return re.sub(r"\s+", " ", html.unescape(re.sub(r"<[^>]+>", " ", body_html))).strip()
+
+
+# ---------- cost panel ----------
+
+COST_LINE = re.compile(r"^@cost\s*$", re.M)
+
+
+def usd(v):
+    return f"${v:,.0f}"
+
+
+def cost_figures():
+    """Measured (data/usage.json) plus the hand-made band for the hours before the ledger (data/usage_estimate.json)."""
+    mp, ep = HERE / "data" / "usage.json", HERE / "data" / "usage_estimate.json"
+    if not mp.exists():
+        return None
+    m = json.loads(mp.read_text(encoding="utf-8"))
+    e = json.loads(ep.read_text(encoding="utf-8")) if ep.exists() else {"low": 0, "mid": 0, "high": 0}
+    return m, e
+
+
+def cost_block():
+    figs = cost_figures()
+    if not figs:
+        return '<p class="note">Cost figures appear here once tools/usage_snapshot.py has run.</p>'
+    m, e = figs
+    total = {k: m["measured_usd"] + e.get(k, 0) for k in ("low", "mid", "high")}
+    as_of = m["as_of"][:16].replace("T", " ")
+    models = "".join(f"<tr><td>{esc(k)}</td><td>{usd(v)}</td></tr>" for k, v in m["by_model"].items())
+    roles = "".join(f"<tr><td>{esc(k)}</td><td>{usd(v)}</td></tr>" for k, v in list(m["by_role"].items())[:8])
+    return ('<figure class="crew-table cost-panel"><table>'
+            f'<caption>At API prices, as of {esc(as_of)} UTC. Measured: {usd(m["measured_usd"])} over {m["sessions"]} sessions. '
+            f'With the estimate for the hours before the ledger: {usd(total["low"])} to {usd(total["high"])}, '
+            f'most likely about {usd(total["mid"])}.</caption>'
+            f'<thead><tr><th>Model (measured)</th><th>Cost</th></tr></thead><tbody>{models}</tbody></table>'
+            f'<table><thead><tr><th>Session (measured)</th><th>Cost</th></tr></thead><tbody>{roles}</tbody></table>'
+            '<figcaption>Updated every time the devlog publishes. The crew runs on a subscription; nothing here was billed per token.</figcaption>'
+            '</figure>')
 
 
 # ---------- crew table ----------
@@ -549,6 +588,10 @@ class Site:
             start_links.append(("the-game.html", "The game", "What it is, how it plays, where to get it"))
         if "how-its-built" in self.page_slugs:
             start_links.append(("how-its-built.html", "How it's built", "The crew of Claude sessions and how they work"))
+        figs, cost_post = cost_figures(), self.cfg.get("links", {}).get("cost_post", "")
+        if figs and cost_post:
+            mid = figs[0]["measured_usd"] + figs[1].get("mid", 0)
+            start_links.append((f"posts/{cost_post}.html", "What it costs", f"About {usd(mid)} at API prices so far"))
         start_links += [("timeline.html", "Timeline", "Every post, hour by hour"),
                         ("gallery.html", "Gallery", f"{len(self.gallery)} shots and clips from the build")]
         start = "".join(f'<li><a href="{u}"><span class="start-title">{t}</span><span class="start-desc">{esc(d)}</span></a></li>'

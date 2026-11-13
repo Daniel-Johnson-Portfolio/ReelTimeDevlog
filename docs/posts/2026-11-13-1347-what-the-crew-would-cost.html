@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What the crew would cost at API prices | Reel Time devlog</title>
+<meta name="description" content="About $1,200 so far for 33 hours of a fourteen-session crew, if it were billed per token. $577 of that is measured; the rest is an estimate with its working shown. The figure on this site now updates every time it publishes.">
+<meta property="og:title" content="What the crew would cost at API prices | Reel Time devlog">
+<meta property="og:description" content="About $1,200 so far for 33 hours of a fourteen-session crew, if it were billed per token. $577 of that is measured; the rest is an estimate with its working shown. The figure on this site now updates every time it publishes.">
+<link rel="stylesheet" href="../style.css">
+<style>:root { --accent: #d7262b; }</style>
+<script src="../site.js" defer></script>
+</head>
+<body class="post-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap head-inner"><a class="brand" href="../index.html">Reel Time devlog</a><nav class="site-nav" aria-label="Main"><ul><li><a href="../the-game.html">The game</a></li><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../how-its-built.html">How it's built</a></li></ul></nav><form class="site-search" action="../search.html" role="search"><label class="sr-only" for="q-top">Search the devlog</label><input id="q-top" name="q" type="search" placeholder="Search posts"></form></div></header>
+<main id="main">
+<article class="post"><header class="post-head wrap-narrow"><ul class="chips"><li><a class="chip" href="../topics/crew.html"><span class="dot" style="--c:#6b4fd8"></span>Behind the scenes</a></li><li><a class="chip" href="../topics/pipeline.html"><span class="dot" style="--c:#2f6fdb"></span>Tools and pipeline</a></li></ul><h1>What the crew would cost at API prices</h1><p class="standfirst">About $1,200 so far for 33 hours of a fourteen-session crew, if it were billed per token. $577 of that is measured; the rest is an estimate with its working shown. The figure on this site now updates every time it publishes.</p><p class="post-when"><span class="day">Day 2, Fri 13 Nov</span><span class="hour">Hour 33</span><time datetime="2026-11-13T13:47:00+00:00">13:47</time></p><ul class="crew" aria-label="Crew sessions involved"><li><a href="../crew/toolsmith.html"><span class="dot crew-toolsmith"></span>Toolsmith</a></li><li><a href="../crew/director.html"><span class="dot crew-director"></span>Director</a></li><li><a href="../crew/devlog.html"><span class="dot crew-devlog"></span>Devlog</a></li><li><a href="../crew/you.html"><span class="dot crew-you"></span>Me</a></li></ul></header><div class="screen post-hero"><div class="wrap hero-inner"><a href="../media/crew-cost-by-session.jpg" data-lightbox data-caption="About $1,200 so far for 33 hours of a fourteen-session crew, if it were billed per token. $577 of that is measured; the rest is an estimate with its working shown. The figure on this site now updates every time it publishes."><img src="../media/crew-cost-by-session.jpg" alt="About $1,200 so far for 33 hours of a fourteen-session crew, if it were billed per token. $577 of that is measured; the rest is an estimate with its working shown. The figure on this site now updates every time it publishes."></a></div></div><div class="prose wrap-narrow"><p>I asked the crew to work out what this game would cost if every token were paid for at API prices. It runs on a subscription, so nothing here is billed per token. But it's the number a reader would want, and nobody was recording it until late this morning.</p>
+<figure class="shot"><a href="../media/crew-cost-by-session.jpg" data-lightbox data-caption="Each session&#x27;s cost at API prices, as Claude Code reports it. The Director and the Devlog run on Fable, the builders on Opus."><img src="../media/crew-cost-by-session.jpg" alt="Each session&#x27;s cost at API prices, as Claude Code reports it. The Director and the Devlog run on Fable, the builders on Opus." loading="lazy"></a><figcaption>Each session&#x27;s cost at API prices, as Claude Code reports it. The Director and the Devlog run on Fable, the builders on Opus.</figcaption></figure>
+<h2>The running total</h2>
+<figure class="crew-table cost-panel"><table><caption>At API prices, as of 2026-11-13 13:45 UTC. Measured: $577 over 20 sessions. With the estimate for the hours before the ledger: $827 to $2,027, most likely about $1,207.</caption><thead><tr><th>Model (measured)</th><th>Cost</th></tr></thead><tbody><tr><td>Opus 5.5</td><td>$353</td></tr><tr><td>Fable 5.2</td><td>$223</td></tr><tr><td>Sonnet 5.5</td><td>$1</td></tr></tbody></table><table><thead><tr><th>Session (measured)</th><th>Cost</th></tr></thead><tbody><tr><td>director</td><td>$205</td></tr><tr><td>gameplay</td><td>$153</td></tr><tr><td>engine</td><td>$102</td></tr><tr><td>world-2</td><td>$37</td></tr><tr><td>world</td><td>$19</td></tr><tr><td>devlog</td><td>$18</td></tr><tr><td>gameplay-3</td><td>$10</td></tr><tr><td>npc-ai</td><td>$9</td></tr></tbody></table><figcaption>Updated every time the devlog publishes. The crew runs on a subscription; nothing here was billed per token.</figcaption></figure>
+
+<h2>How it's counted</h2>
+<p><strong>Measured.</strong> At 11:34 today the toolsmith had every session start writing a row to a ledger every four minutes: role, model, and the cost Claude Code itself reports for that session. Numbers only, nothing from the conversation. A session's figure covers its whole life, not just the time since 11:34. The Director has run since the jam started at 06:00 yesterday, and the engine and the first Gameplay session for 27 hours, so a lot of the jam is in the measured part already.</p>
+<p><strong>Estimated.</strong> Sessions that were closed or restarted before 11:34 left no figure. For those I counted the hours each role was open and multiplied by what the ledger shows each model costing per hour:</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>Session-hours</th>
+<th>Per hour</th>
+<th>Low</th>
+<th>Mid</th>
+<th>High</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Opus builders</td>
+<td>about 190</td>
+<td>$2.30 to $5.90</td>
+<td>$220</td>
+<td>$560</td>
+<td>$1,290</td>
+</tr>
+<tr>
+<td>Sonnet (audio, toolsmith)</td>
+<td>about 60</td>
+<td>$0.35 to $0.60</td>
+<td>$10</td>
+<td>$20</td>
+<td>$40</td>
+</tr>
+<tr>
+<td>Earlier Devlog sessions, Fable</td>
+<td>about 25</td>
+<td>$2 to $4</td>
+<td>$25</td>
+<td>$50</td>
+<td>$115</td>
+</tr>
+</tbody>
+</table>
+<p>Low assumes half those hours were spent parked, which costs nothing, at the cheapest rate measured. Mid assumes three quarters at the median rate. High assumes every hour at the dearest rate, plus 15% in case subagents aren't included.</p>
+<p><strong>Guessed.</strong> Whether subagents (the reviewers that watch reels, the API scouts) are inside Claude Code's figure isn't confirmed. I think they are.</p>
+<h2>What surprised me</h2>
+<p><strong>The Director costs the most.</strong> $205, more than any builder. It runs on Fable, which costs two and a half times Opus per token, and it reads everything: every report, review and log.</p>
+<p><strong>Rereading costs more than writing.</strong> Almost all the spend is cache reads: each turn rereads a session's whole context, at a tenth of the input price. A session with a long memory costs more per hour than a busy one with a short memory. That's an argument for the crew's habit of starting sessions fresh with a desk note.</p>
+<p><strong>Stalls cost nothing.</strong> The three usage-limit stalls on Thursday stopped everything, so they don't add to the cost. They added hours instead.</p>
+<h2>Per piece of work</h2>
+<p>The jam has 971 commits so far and 73 tasks closed. At about $1,200, that's roughly $1.25 a commit and $16 a finished task.</p>
+<p>Over the last two hours the whole crew spent about $35 an hour. If it keeps that pace to Monday's deadline, the rest of the jam adds about $2,000.</p>
+<p>The panel above updates every time the devlog publishes, and there's a link to this post on the home page.</p></div></article><nav class="post-nav wrap" aria-label="More posts"><a class="prev" href="2026-11-13-1320-the-diner-has-a-door.html"><span>Previous</span>The diner has a door</a><span></span></nav><section class="block wrap related"><div class="block-head"><h2>More in Behind the scenes</h2><a href="../topics/crew.html">All of them</a></div><div class="cards"><article class="card"><a class="card-media" href="../posts/2026-11-13-1133-the-lock-nobody-was-holding.html" tabindex="-1" aria-hidden="true"><img src="../media/stale-locks-watchdog.thumb.jpg" alt="" loading="lazy"></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/fixes.html"><span class="dot" style="--c:#a0472e"></span>Bloopers</a><span class="card-when">Day 2, hour 31</span></div><h3><a href="../posts/2026-11-13-1133-the-lock-nobody-was-holding.html">The lock nobody was holding</a></h3><p class="summary">An empty git lock file has blocked every commit in the shared checkout at least ten times since last night. The tool that&#x27;s allowed to delete it failed its first review, then starved, then learned to ask who is older.</p></div></article><article class="card"><a class="card-media" href="../posts/2026-11-13-0740-playtest-two.html" tabindex="-1" aria-hidden="true"><img src="../media/ufo01-diner-autoplayer-0530.thumb.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"></span></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/gameplay.html"><span class="dot" style="--c:#d2462f"></span>Gameplay</a><span class="card-when">Day 2, hour 27</span></div><h3><a href="../posts/2026-11-13-0740-playtest-two.html">Playtest two: the enemies turned up, and they aren&#x27;t smart enough</a></h3><p class="summary">I played the build the crew froze at 06:00 after a night on its own. Eight notes came out of it, starting with dumb enemies, a UFO level with no way in, and a frame rate that has to reach 60.</p></div></article><article class="card"><a class="card-media" href="../posts/2026-11-13-0238-the-night-shift.html" tabindex="-1" aria-hidden="true"><img src="../media/night-shift.thumb.jpg" alt="" loading="lazy"></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/crew.html"><span class="dot" style="--c:#6b4fd8"></span>Behind the scenes</a><span class="card-when">Day 1, hour 22</span></div><h3><a href="../posts/2026-11-13-0238-the-night-shift.html">The night shift: how the crew works while I sleep</a></h3><p class="summary">I signed off at 22:30 with a playtest booked for 07:00; every two hours since, the engine has filmed every level, a reviewer has marked what&#x27;s broken, and the Director has sent the fixes out before the next block.</p></div></article></div></section>
+</main>
+<footer class="site-foot"><div class="wrap foot-inner"><ul class="foot-links"><li><a href="../index.html">Home</a></li><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../search.html">Search</a></li><li><a href="../the-game.html">The game</a></li><li><a href="../how-its-built.html">How it&#x27;s built</a></li><li><a href="../before-the-jam.html">Made before the jam</a></li><li><a href="../credits.html">Credits and licences</a></li></ul><p>Built in Unreal Engine 5.9 by one person and a crew of Claude Code sessions, for the 2026 Epic AI MegaJam.</p></div></footer>
+</body>
+</html>

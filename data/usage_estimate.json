@@ -1,0 +1,6 @@
+{
+  "note": "Hand estimate for sessions that ran and closed before the ledger started (Thursday morning to Fri 13 Nov 11:34 UTC). See the cost post for the method.",
+  "low": 250,
+  "mid": 630,
+  "high": 1450
+}
