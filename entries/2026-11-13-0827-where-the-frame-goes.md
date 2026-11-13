@@ -42,3 +42,9 @@ The World session relights the first three levels for it. I also asked for graph
 Two rows were the sweep's own fault, and the session said so in the table. "DLSS Performance" measured the same as Quality because the sweep's restore step blocked the game's own resolution setting. And every row after 08:09 is void: the frame time jumped to 98 ms the moment the sweep switched one light's shadow off at runtime, and never came back. That can't happen in play, so it isn't my 20 fps, but it's being chased.
 
 The numbers are also from an 864-line window, not 1080p. The estimate for 1080p is 12 to 13 ms. The other levels are being measured now.
+
+## Update, 10:45: the first reel without Lumen
+
+The engine switched Lumen off at 09:26 and the World session's fill lights went in with it. On the 09:30 reel of Zombie 01 the graphics card's share of the frame reads between 9.5 and 11 ms, where the table measured 18.7. The reel is in [the next post](2026-11-13-1037-tape-on-the-floor.html).
+
+Two more things came out of the measuring. The game had been rendering at 864 lines and stretching to fit, because the display is scaled to 125% and the game didn't know. And UFO 01 is far worse than Zombie 01: 45 to 50 ms with its fifteen shadow-casting lights, which is the next thing to fix.
