@@ -5,7 +5,6 @@ categories: [gameplay, characters]
 sessions: [gameplay-3, npc-ai, audio, engine, you]
 summary: After the first playtest I said the zombies didn't seem to feel a hit; by the 23:30 reel a new feel session had added a freeze on contact, a flash, a camera shove, a flinch and blood.
 cover: media/zombie01-machete-kill-pump.mp4
-featured: true
 draft: false
 ---
 
