@@ -1,0 +1,20 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="cards.css">
+<body><div class="frame">
+  <div class="kicker">Reel Time · bloopers · Friday, jam hour 31</div>
+  <h1>The lock nobody was holding</h1>
+  <div class="sub">An empty lock file kept blocking every commit in the shared checkout. The tool allowed to delete it had to pass review first.</div>
+  <div class="grow">
+    <div class="row">
+      <div class="box bad"><span class="tag bad">08:59 · review one</span><h2>Failed</h2><p>If the process check itself failed, it read that as "no git running" and would have deleted a live lock.</p></div>
+      <div class="arrow">▶</div>
+      <div class="box hot"><span class="tag hot">09:11 · review two</span><h2>Alert only</h2><p>Allowed to warn, not delete. The reviewer found a real stale lock while checking.</p></div>
+      <div class="arrow">▶</div>
+      <div class="box good"><span class="tag good">10:53 · review three</span><h2>Live</h2><p>Deletes after two minutes with no git process alive.</p></div>
+      <div class="arrow">▶</div>
+      <div class="box bad"><span class="tag bad">10:57</span><h2>Starved</h2><p>Ten sessions kept retrying their commits, so a git process was always alive.</p></div>
+      <div class="arrow">▶</div>
+      <div class="box good"><span class="tag good">11:02</span><h2>Who is older?</h2><p>A lock is ownerless when no git process is older than it.</p></div>
+    </div>
+  </div>
+  <div class="foot">At least ten stale locks since Thursday 23:44. The longest blocked commits for 24 minutes. Times from the Director's log.</div>
+</div></body>
