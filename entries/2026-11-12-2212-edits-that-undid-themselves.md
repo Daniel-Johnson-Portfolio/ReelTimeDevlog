@@ -33,3 +33,5 @@ The toolsmith wrote a guard hook. In the shared copy it now refuses `git stash`,
 > "Commit your own paths right after each edit. Never run git stash, git restore, git checkout <paths> … there: they take or revert every session's uncommitted files (it happened twice on day 1). A hook refuses them."
 
 The hook had a side effect within the hour: it also blocked a session doing the same thing in its own private scratch copy. That's logged for the toolsmith. A guard that's a bit too strict is the right way round tonight.
+
+**Update, 00:20.** One correction. The engine never typed `git stash`. At 00:12 it found the real cause of the stash pairs: this version of git stashes a dirty tree by itself when you run a plain `git merge`. The engine now merges with `--no-autostash`, and the setting is off for the whole repo.
