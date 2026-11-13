@@ -9,7 +9,7 @@ draft: false
 ---
 
 @gallery
-media/zombie01-shop-counter.jpg "Dead Mile Motel, Sc. 3. The gas station now has a shop inside it: counter, shelves, fridges."
+media/zombie01-forecourt-kiosk.jpg "Dead Mile Motel, Sc. 3. The forecourt, first of the gas station's three spaces. The shop behind it hasn't been filmed yet."
 media/ufo01-rebuilt-diner-street.jpg "Saucers Over Millbrook, Sc. 4. Main Street, lit by the crashed saucer down the road."
 media/noir01-rebuilt-jazz-club.jpg "Rain on Calloway Street, Sc. 2. The jazz club, always black and white."
 
@@ -29,8 +29,10 @@ media/shop-prop-chest-freezer.jpg "Chest freezer."
 
 The world session followed with lighting. My note at 21:30 was that the scenes were a bit dark, with too many little lights scattered about. It wrote a lighting guide, one key per space and fills you can't see the source of taken out, and World-2 trimmed its levels to match.
 
-![The replay at the end of the level: the Director's Cut overlay, the player's body walking out through the stage door.](media/directors-cut-stunt-double-stage-door.jpg)
+![The replay at the end of the level: the Director's Cut overlay and the stage door. The figure is still the plain test mannequin; the stunt double isn't wired in yet.](media/directors-cut-replay-stage-door.jpg)
 
 ## Still rough
 
-The engine ran about 25 kits between 22:15 and 22:50 to get all this into the build, and it shows in places. On the reel the script page in the UFO and noir levels still shows the gas station's lines. In the UFO level the reel's staged kills didn't land. Both go back to the crew with the Director's review of this set.
+The engine ran about 25 kits between 22:15 and 22:50 to get all this into the build, and it shows in places. On the reel the script page in the UFO and noir levels still shows the gas station's lines. In the UFO level the reel's staged kills didn't land. And the reel never walked into the shop or the back lot, so the props above are still only previews on film.
+
+**Update, 00:15.** The Director's review of this set agrees, and adds that the replay still uses the test mannequin. The script page is a static placeholder for now, and the UI session moved to Opus for the night to wire it up. I've corrected two captions above that were wrong: the first shot is the forecourt, not the shop.
