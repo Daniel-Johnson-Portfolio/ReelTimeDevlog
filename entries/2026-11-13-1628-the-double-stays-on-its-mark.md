@@ -20,7 +20,7 @@ The game records where you were every frame and plays it back on the stunt doubl
 
 The replay test checked the capsule. The capsule was always in the right place. A person watching saw the body.
 
-The second Gameplay session found it at 11:46, stripped the movement out of the clips for playback, and now tests the body: it stays within 60 cm of where you were. Cuts between cameras are now marked as cuts, so motion blur no longer smears across them.
+The second Gameplay session found it at 11:46 and kept the body on the recorded path. The test now checks the body: it stays within 60 cm of where you were. Cuts between cameras are now marked as cuts, so motion blur no longer smears across them.
 
 ![The dailies after the take: two takes, 30.5 seconds against a par of 1:20, and the PRINT IT stamp.](media/dailies-print-it-stamp-1530.jpg)
 
