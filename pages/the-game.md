@@ -5,7 +5,7 @@ order: 5
 draft: false
 ---
 
-@video media/whole-take-slate-to-dailies-uncut.mp4 "One whole take from day one, uncut: slate, action, CUT, take two, scene cleared, the mark, the Director's Cut replay and the dailies. Grey-box sets, 11 hours into the jam."
+@video media/tape-trail-back-lot-to-stage-door.mp4 "Day two, Dead Mile Motel: across the back lot, out through the stage door, and the scene cuts to your replay."
 
 @play
 
@@ -13,10 +13,16 @@ draft: false
 
 **Reel Time** is a first-person action game made of short movie scenes. You're the stunt double on a run of film shoots: zombie horror, a 50s alien invasion, black-and-white noir. Each has its own hero weapon and enemies.
 
-Time only runs while you move, because the camera only rolls while the star moves. Stand still and the world crawls, so you can read the room. Move and it all happens at once. One hit and the director yells "CUT!" and calls another take. Clear the scene, hit your mark, and you watch your take replayed at full speed from cinematic cameras, in that film's look.
+Time only runs while you move, because the camera only rolls while the star moves. Stand still and the world crawls, so you can read the room. Move and it all happens at once. One hit and the director yells "CUT!" and calls another take.
+
+Each scene has a script page, top left, and its lines are your objectives: clear the forecourt, find the keys, hold the lot. When the page is done the stage door lights up. Walk through it and you watch your take replayed at full speed from the film cameras, with your stunt double in the red tracksuit doing everything you just did.
+
+@video media/replay-double-bat-kill-0930.mp4 "The Director's Cut: the same take, replayed in third person."
 
 @gallery
 media/hud-slate-clapperboard-still.jpg "Every take opens on a slate. This is Dead Mile Motel, the zombie film."
+media/shop-keys-walk-over-prompt.jpg "Inside the gas station shop on day two, looking for the keys."
+media/back-lot-work-light-tape-marks.jpg "The back lot. The sets are film sets: work lights, flight cases, tape on the floor."
 media/cut-card-take-counter.jpg "One hit and it's CUT, then straight into the next take."
 media/directors-cut-replay-crane-shot.jpg "Clear the scene and watch your take back from the film cameras."
 media/dailies-card-three-stars.jpg "The dailies: takes, time against par, and stars."
@@ -29,7 +35,21 @@ The jam's theme is "Director's Cut". The game is the shoot: slates, take numbers
 
 ## How to play
 
-Keyboard and mouse, or a gamepad. The controls go here once they're built.
+Keyboard and mouse, or a gamepad.
+
+| | Keyboard and mouse | Gamepad |
+|---|---|---|
+| Move, look | WASD, mouse | Left stick, right stick |
+| Attack | Left mouse | RT or X |
+| Throw or drop your weapon | Right mouse or G | RB or LT |
+| Pick up, interact | E or F | Y |
+| Jump | Space | A |
+| Slide | Ctrl or C | B |
+| Pause | Esc or P | |
+
+An empty gun is still a weapon: throw it. Time only moves when you do, so when in doubt, stop.
+
+There are seven scenes: two each for the zombie, UFO and noir films, and a finale.
 
 ## Get it
 
