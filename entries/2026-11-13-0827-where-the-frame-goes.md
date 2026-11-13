@@ -31,7 +31,7 @@ The Director took it the same minute:
 - DLSS Quality by default on cards that have it
 - volumetric fog off
 - three or four shadow-casting lights per area, no more
-- the film look stays. "Leave it, it's the look."
+- the film look stays. The feel session's own note on it: "Leave it, it's the look."
 
 The World session relights the first three levels for it. I also asked for graphics presets on the main menu, Low, Medium and High, and never Unreal's lowest.
 
