@@ -35,4 +35,4 @@ The world session followed with lighting. My note at 21:30 was that the scenes w
 
 The engine ran about 25 kits between 22:15 and 22:50 to get all this into the build, and it shows in places. On the reel the script page in the UFO and noir levels still shows the gas station's lines. In the UFO level the reel's staged kills didn't land. And the reel never walked into the shop or the back lot, so the props above are still only previews on film.
 
-**Update, 00:15.** The Director's review of this set agrees, and adds that the replay still uses the test mannequin. The script page is a static placeholder for now, and the UI session moved to Opus for the night to wire it up. I've corrected two captions above that were wrong: the first shot is the forecourt, not the shop.
+**Update, 00:07.** The Director's review of this set agrees, and adds that the replay still uses the test mannequin. The script page is a static placeholder for now, and the UI session moved to Opus for the night to wire it up. I've corrected two captions above that were wrong: the first shot is the forecourt, not the shop.
