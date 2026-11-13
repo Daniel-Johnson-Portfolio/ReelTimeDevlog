@@ -5,7 +5,6 @@ categories: [gameplay, interface]
 sessions: [ui, gameplay-2, gameplay-3, gameplay, npc-ai, engine]
 summary: The 01:30 reel runs Dead Mile Motel end to end for the first time: the script page ticks its lines off, the stage door opens, and the replay stars the stunt double instead of a mannequin.
 cover: media/stunt-double-exits-stage-door.mp4
-featured: true
 draft: false
 ---
 
