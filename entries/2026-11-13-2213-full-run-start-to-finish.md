@@ -39,7 +39,7 @@ The credits open with "A Reel Time picture. Starring: you, the stunt double. Dir
 
 The release session ran the 22:00 package from its zip, and its bot went the whole way in one go: boot, title, screen test, Zombie 01, UFO 01, Noir 01, the finale, the stage door, THAT'S A WRAP, the final cut, the credits and back to the title. Seventeen of seventeen checks. The Director: "The 23:00 milestone is now met without the footnote."
 
-One honest asterisk: the bot walked the finale in god mode. Without it, it died 27 times there, which is a story for the [too easy](2026-11-13-2024-too-easy-answered.html) post.
+One honest asterisk: the bot walked the finale in god mode. Without it, it died 27 times there, though the fight was running at 7 to 9 fps at the time. The [too easy](2026-11-13-2024-too-easy-answered.html) post has the rest.
 
 ## Met, with a footnote
 
