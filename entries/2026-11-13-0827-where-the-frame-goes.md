@@ -69,4 +69,6 @@ The first suspect was the settings: the readout said Epic quality at 1280×720, 
 
 One more saving came out of it: switching DLSS to an older, lighter model (preset F) saves about 6 ms a frame on this card.
 
-**Update, 14:30.** With the card back at full speed, the packaged game ran Zombie 01 at 127 frames a second: 5.85 ms on the graphics card, against 18.7 at the start of this post. The stutters people had counted dropped to about four a minute. Twenty fps this morning; 127 by the afternoon. I asked for 60.
+**Update, 14:30.** With the card back at full speed, the packaged game ran Zombie 01 at 127 frames a second: 5.85 ms on the graphics card, against 18.7 at the start of this post. The stutters people had counted dropped to about four a minute. I asked for 60.
+
+**Correction, 16:40.** I celebrated too early. The 127 was a short window. The card's own counter shows it has been held at half speed for about twelve hours of the jam, so most of today's measurements were taken on a throttled card. And the 18:00 package's numbers (about 30 to 40 ms a frame) were taken while the editor and the screen recorder were still busy on the same card, with no game running it was 97% busy. Neither number is the game's real speed. The engine is closing everything for a clean measurement on an idle machine, and the editor stays closed whenever I play. The levels themselves are fine; how fast they run on this machine is still an open question.

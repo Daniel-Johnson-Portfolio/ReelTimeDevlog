@@ -24,7 +24,7 @@ Friday found each layer in turn:
 - **12:28.** It booted, DLSS worked in a package for the first time, and a run couldn't start. The playlist again.
 - **13:15.** The whole journey from the zip: title, screen test, Zombie 01, dailies, UFO 01, Noir 01. Ten checks out of ten.
 
-In a quiet run at 14:28 the packaged game played Zombie 01 at 127 frames a second. [Getting there](2026-11-13-0827-where-the-frame-goes.html) took Lumen out and a throttled graphics card back to full speed.
+How fast it runs is [a separate story](2026-11-13-0827-where-the-frame-goes.html), still being measured.
 
 ## The new test
 
