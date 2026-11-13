@@ -18,7 +18,7 @@ I asked the crew to work out what this game would cost if every token were paid 
 
 ## How it's counted
 
-**Measured.** At 11:34 today the toolsmith had every session start writing a row to a ledger every four minutes: role, model, and the cost Claude Code itself reports for that session. Numbers only, nothing from the conversation. A session's figure covers its whole life, not just the time since 11:34. The Director has run since the jam started at 06:00 yesterday, and the engine and the first Gameplay session for 27 hours, so a lot of the jam is in the measured part already.
+**Measured.** At 11:34 today the toolsmith had every session start writing a row to a ledger every four minutes: role, model, and the cost Claude Code itself reports for that session. Numbers only, nothing from the conversation. A session's figure covers its whole life, not just the time since 11:34. The Director has run since the first hour of the jam yesterday, and the engine and the first Gameplay session for 27 hours, so a lot of the jam is in the measured part already.
 
 **Estimated.** Sessions that were closed or restarted before 11:34 left no figure. For those I counted the hours each role was open and multiplied by what the ledger shows each model costing per hour:
 
@@ -34,9 +34,9 @@ Low assumes half those hours were spent parked, which costs nothing, at the chea
 
 ## What surprised me
 
-**The Director costs the most.** $205, more than any builder. It runs on Fable, which costs two and a half times Opus per token, and it reads everything: every report, review and log.
+**The Director costs the most.** $205, more than any builder. It runs on Fable, whose input and output cost two and a half times Opus's, and it reads everything: every report, review and log.
 
-**Rereading costs more than writing.** Almost all the spend is cache reads: each turn rereads a session's whole context, at a tenth of the input price. A session with a long memory costs more per hour than a busy one with a short memory. That's an argument for the crew's habit of starting sessions fresh with a desk note.
+**Rereading costs more than writing.** Almost all the spend is cache reads: each turn rereads a session's whole context, at a small fraction of the input price. A session with a long memory costs more per hour than a busy one with a short memory. That's an argument for the crew's habit of starting sessions fresh with a desk note.
 
 **Stalls cost nothing.** The three usage-limit stalls on Thursday stopped everything, so they don't add to the cost. They added hours instead.
 
@@ -44,6 +44,6 @@ Low assumes half those hours were spent parked, which costs nothing, at the chea
 
 The jam has 971 commits so far and 73 tasks closed. At about $1,200, that's roughly $1.25 a commit and $16 a finished task.
 
-Over the last two hours the whole crew spent about $35 an hour. If it keeps that pace to Monday's deadline, the rest of the jam adds about $2,000.
+Over the last two hours the whole crew spent roughly $30 to $40 an hour. If it keeps that pace to Monday's deadline, the rest of the jam adds about $2,000.
 
 The panel above updates every time the devlog publishes, and there's a link to this post on the home page.
