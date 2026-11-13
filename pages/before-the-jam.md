@@ -27,6 +27,6 @@ The story behind this list is in [Pre-production: everything that existed before
 
 ## Engine plugins added as tooling
 
-- **NVIDIA DLSS 4.5** (plugin v8.9.0 for Unreal 5.8, by NVIDIA, under the NVIDIA RTX SDK EULA), with its support plugin StreamlineNGXCommon, recompiled for Unreal 5.9 and installed into the engine on Wednesday 11 November. Changes to make it build and load on 5.9: `bValidateFormatStrings = false` in each module's build rules, explicit integer types in 12 log messages, and the plugins' EngineVersion set to 5.9.0. No game content. The full story: [Porting NVIDIA DLSS from Unreal 5.8 to 5.9](posts/2026-11-12-0605-dlss-on-unreal-5-9.html).
+- **NVIDIA DLSS 4.5** (plugin v8.9.0 for Unreal 5.8, by NVIDIA, under the NVIDIA RTX SDK EULA), with its support plugin StreamlineNGXCommon, recompiled for Unreal 5.9 and installed into the engine on Wednesday 11 November. Changes to make it build and load on 5.9: `bValidateFormatStrings = false` in each module's build rules, explicit integer types in 12 log messages, and the plugins' EngineVersion set to 5.9.0. No game content. During the jam (Thursday) the same plugin was copied into the project as a project plugin by a setup script, so the packaged game builds and ships the DLSS library; the plugin itself is unchanged from the pre-jam install. The full story: [Porting NVIDIA DLSS from Unreal 5.8 to 5.9](posts/2026-11-12-0605-dlss-on-unreal-5-9.html).
 
 Third-party assets are listed separately on the Credits page.
