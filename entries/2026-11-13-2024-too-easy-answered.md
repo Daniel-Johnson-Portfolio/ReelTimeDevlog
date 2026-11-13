@@ -53,3 +53,5 @@ The NPC session found something underneath the balance. When you die, the scene 
 The fix puts the whole cast back on its marks at every take, clears bolts and acid pools between takes, and makes enemies behind you wait 1.2 seconds before they swing. It goes in at the next merge window. Some of "too easy" was the numbers; some of it was a take 2 with nobody in it.
 
 **20:45, the same test again.** With the new weapon, enemy and no-guns data in, the autoplayer replayed every level. Before, it needed one take on six of the seven. Now: Zombie 01 1, Zombie 02 2, UFO 01 2, UFO 02 3, Noir 01 2, Noir 02 1, finale 2. It dies more, and that's before the take-2 fix.
+
+**22:35: too far the other way.** The 22:00 package was the first with the take-2 fix in it, and the autoplayer took it through to the finale, then died 27 times there. Until now, each retake had quietly made a level easier. With the full cast back on every take, the finale's three bosses could all reach you at once. The Director's decision: stagger them (the zombie lead on entry, the alien after, the noir boss last), give the bot a dodge, and aim for "harder, not impossible".
