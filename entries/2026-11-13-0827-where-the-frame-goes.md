@@ -56,3 +56,11 @@ The feel session got a quiet machine and measured the game on its own, at a true
 That corrects the paragraph above. The 45 to 55 ms readings on the reels weren't the levels. They were the editor, its extra viewport and the screen recorder all sharing one graphics card with the game. The session's verdict: "Nothing in the level costs 40 ms." My 20 fps this morning was the same thing, since I played inside the editor.
 
 So there were two problems wearing one number. Lumen really was too expensive, and that's fixed. And the editor was never a fair place to judge frame rate, which is why the next playtest runs on a packaged build.
+
+## Update, 13:40: the packaged game didn't get the memo
+
+At 13:15 a packaged build played the whole journey from the zip for the first time: title, screen test, Zombie 01, the dailies, UFO 01, Noir 01. Ten checks out of ten.
+
+Then the frame rate: 34 fps in Zombie 01, 13 in Noir 01, and 7.7 in UFO 01.
+
+The 65 to 90 fps above was real, but it was measured with the game launched from the project on the Medium preset. The packaged game ignored both fixes. It started on Unreal's Epic settings at 1280×720 and never applied our preset. So the levels are fast enough. The settings just aren't reaching the packaged game, and that's now the top fix for the 16:15 package.
