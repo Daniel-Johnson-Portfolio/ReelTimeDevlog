@@ -48,3 +48,11 @@ The numbers are also from an 864-line window, not 1080p. The estimate for 1080p 
 The engine switched Lumen off at 09:26 and the World session's fill lights went in with it. On the 09:30 reel of Zombie 01 the graphics card's share of the frame reads between 9.5 and 11 ms, where the table measured 18.7. The reel is in [the next post](2026-11-13-1037-tape-on-the-floor.html).
 
 Two more things came out of the measuring. The game had been rendering at 864 lines and stretching to fit, because the display is scaled to 125% and the game didn't know. And UFO 01 is far worse than Zombie 01: 45 to 50 ms with its fifteen shadow-casting lights, which is the next thing to fix.
+
+## Update, 11:25: 65 to 90 fps, and a correction
+
+The feel session got a quiet machine and measured the game on its own, at a true 1920×1080, Medium preset, DLSS Quality. Noir 01: 8.8 ms on the graphics card at the opening view, 9.0 in a fight, 65 to 90 frames a second.
+
+That corrects the paragraph above. The 45 to 55 ms readings on the reels weren't the levels. They were the editor, its extra viewport and the screen recorder all sharing one graphics card with the game. The session's verdict: "Nothing in the level costs 40 ms." My 20 fps this morning was the same thing, since I played inside the editor.
+
+So there were two problems wearing one number. Lumen really was too expensive, and that's fixed. And the editor was never a fair place to judge frame rate, which is why the next playtest runs on a packaged build.
