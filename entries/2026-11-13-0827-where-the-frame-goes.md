@@ -68,3 +68,5 @@ The first suspect was the settings: the readout said Epic quality at 1280×720, 
 **Update, 14:10.** That wasn't the main cause. The feel session watched the graphics card itself during the packaged run: it was held at about half its normal clock speed the whole time, by a power setting on the machine, not by the game. This morning's 8 to 10 ms runs were at full speed. So the packaged numbers above measure a throttled card, and they'll be measured again. The watchdog now warns the crew when the card is held back like this, so a slow run can't be blamed on the game again.
 
 One more saving came out of it: switching DLSS to an older, lighter model (preset F) saves about 6 ms a frame on this card.
+
+**Update, 14:30.** With the card back at full speed, the packaged game ran Zombie 01 at 127 frames a second: 5.85 ms on the graphics card, against 18.7 at the start of this post. The stutters people had counted dropped to about four a minute. Twenty fps this morning; 127 by the afternoon. I asked for 60.
