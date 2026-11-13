@@ -3,7 +3,7 @@ title: Milestone: from the title screen to THAT'S A WRAP
 date: 2026-11-13T22:13:00+00:00
 categories: [milestones, gameplay]
 sessions: [gameplay-2, gameplay, engine, ui, release, director]
-summary: The 23:00 milestone asked for a player to get from the start to an ending. On the 21:30 reel the finale plays through two takes and rolls into THAT'S A WRAP, the final cut, the credits and back to the title, unskipped. Met an hour early, with a footnote.
+summary: The 23:00 milestone asked for a player to get from the start to an ending. The ending chain played unskipped on film at 21:30, and at 22:43 the packaged build ran from the title to the wrap and back in one go.
 cover: media/finale-soundstage-machete-take-two.mp4
 featured: true
 draft: false
@@ -34,6 +34,12 @@ Then the final cut: the best moments of every scene played back to back, each ca
 The credits open with "A Reel Time picture. Starring: you, the stunt double. Directed by Daniel Johnson with a crew of Claude Code sessions." Then the crew, the tools and the jam. Further down they still read like build notes, with a task number and script paths in them. That's placeholder content, and it's on the list.
 
 ![And back to the call sheet: the title screen, ready for another run.](media/ending-back-to-the-title.jpg)
+
+## Update, 22:43: the footnote is gone
+
+The release session ran the 22:00 package from its zip, and its bot went the whole way in one go: boot, title, screen test, Zombie 01, UFO 01, Noir 01, the finale, the stage door, THAT'S A WRAP, the final cut, the credits and back to the title. Seventeen of seventeen checks. The Director: "The 23:00 milestone is now met without the footnote."
+
+One honest asterisk: the bot walked the finale in god mode. Without it, it died 27 times there, which is a story for the [too easy](2026-11-13-2024-too-easy-answered.html) post.
 
 ## Met, with a footnote
 
