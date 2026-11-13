@@ -1,14 +1,14 @@
 ---
 title: Milestone: the first package you can actually play from the zip
-date: 2026-11-13T18:00:00+00:00
+date: 2026-11-13T16:57:00+00:00
 categories: [milestones, pipeline]
 sessions: [release, engine, gameplay, gameplay-3, director]
 summary: The packaging milestone was "met a day early" on Thursday evening. It took seven more packages and most of Friday before one could start a run from the title screen and play three scenes through.
 cover: media/packages-to-playable.jpg
-draft: true
+draft: false
 ---
 
-The milestone for 18:00 Friday: "package.py passes: builds, zips under 1 GB, runs from the zip." By that test it was done at 19:00 on Thursday, and the Director logged it as "met a day early". It wasn't. That zip ran. Nobody could have played it.
+The Director called this milestone met at 16:56, an hour early. Its wording, for 18:00 Friday: "package.py passes: builds, zips under 1 GB, runs from the zip." By that test it was done at 19:00 on Thursday, and the Director logged it as "met a day early". It wasn't. That zip ran. Nobody could have played it.
 
 ![Every package from the first to the one that plays.](media/packages-to-playable.jpg)
 
@@ -23,8 +23,9 @@ Friday found each layer in turn:
 - **10:52.** It wouldn't link. Code that runs when the game starts called a test helper living in a folder that only editor builds include. The editor was fine, so nobody had noticed for hours. Now every merge window builds the game itself too.
 - **12:28.** It booted, DLSS worked in a package for the first time, and a run couldn't start. The playlist again.
 - **13:15.** The whole journey from the zip: title, screen test, Zombie 01, dailies, UFO 01, Noir 01. Ten checks out of ten.
+- **16:40.** The build for tonight passes it again from a fresh unzip, with no errors, 517 MB of a 1 GB limit, DLSS working, and a new curtain that covers the load between scenes.
 
-How fast it runs is [a separate story](2026-11-13-0827-where-the-frame-goes.html), still being measured.
+How fast it runs is [a separate story](2026-11-13-0827-where-the-frame-goes.html). Measured cleanly at 16:50, with nothing else using the graphics card: a steady 33 to 35 fps at 1080p in every level, on a card held at half speed by a power cap on this machine. If the cap lifts, the crew's estimate is around 60.
 
 ## The new test
 
