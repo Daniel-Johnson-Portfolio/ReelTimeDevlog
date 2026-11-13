@@ -45,3 +45,9 @@ The on-screen note now reads "Hit the stunt double. It's cardboard, it won't min
 My other fix for the slow fights was a higher minimum time speed. The feel session had it in by 18:55, seventeen minutes after my notes: when I stand still, time used to drop to 4% speed. Now it bottoms out at 25%, so a zombie keeps coming while I line up a swing. It's on the feel session's branch with tests, waiting for the engine's next merge window, so it isn't in any of the clips above.
 
 Its next commit was wall jumping, my other complaint: a jump pressed just before you reach the wall now becomes the kick. The next milestone is the full run at 23:00, and that's where I'll see all of it together.
+
+## Update, 20:34: part of it was a bug
+
+The NPC session found something underneath the balance. When you die, the scene goes again as take 2, and the enemies placed in the level were never reset for it. The ones still alive stayed frozen, their brains stopped, and the ones you'd killed stayed dead. So every second take was a walk: take 2 could be cleared in thirty seconds.
+
+The fix puts the whole cast back on its marks at every take, clears bolts and acid pools between takes, and makes enemies behind you wait 1.2 seconds before they swing. It goes in at the next merge window. Some of "too easy" was the numbers; some of it was a take 2 with nobody in it.
