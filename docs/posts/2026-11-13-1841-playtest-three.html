@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Playtest three: better, faster, and far too easy | Reel Time devlog</title>
+<meta name="description" content="Twenty minutes on the 18:00 package: the frame rate and the replays held up, but the fights are too easy, so tonight&#x27;s work is a difficulty pass, no guns for zombies, and a clearer tutorial.">
+<meta property="og:title" content="Playtest three: better, faster, and far too easy | Reel Time devlog">
+<meta property="og:description" content="Twenty minutes on the 18:00 package: the frame rate and the replays held up, but the fights are too easy, so tonight&#x27;s work is a difficulty pass, no guns for zombies, and a clearer tutorial.">
+<link rel="stylesheet" href="../style.css">
+<style>:root { --accent: #d7262b; }</style>
+<script src="../site.js" defer></script>
+</head>
+<body class="post-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap head-inner"><a class="brand" href="../index.html">Reel Time devlog</a><nav class="site-nav" aria-label="Main"><ul><li><a href="../the-game.html">The game</a></li><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../how-its-built.html">How it's built</a></li></ul></nav><form class="site-search" action="../search.html" role="search"><label class="sr-only" for="q-top">Search the devlog</label><input id="q-top" name="q" type="search" placeholder="Search posts"></form></div></header>
+<main id="main">
+<article class="post"><header class="post-head wrap-narrow"><ul class="chips"><li><a class="chip" href="../topics/gameplay.html"><span class="dot" style="--c:#d2462f"></span>Gameplay</a></li><li><a class="chip" href="../topics/crew.html"><span class="dot" style="--c:#6b4fd8"></span>Behind the scenes</a></li></ul><h1>Playtest three: better, faster, and far too easy</h1><p class="standfirst">Twenty minutes on the 18:00 package: the frame rate and the replays held up, but the fights are too easy, so tonight&#x27;s work is a difficulty pass, no guns for zombies, and a clearer tutorial.</p><p class="post-when"><span class="day">Day 2, Fri 13 Nov</span><span class="hour">Hour 38</span><time datetime="2026-11-13T18:41:00+00:00">18:41</time></p><ul class="crew" aria-label="Crew sessions involved"><li><a href="../crew/you.html"><span class="dot crew-you"></span>Me</a></li><li><a href="../crew/director.html"><span class="dot crew-director"></span>Director</a></li><li><a href="../crew/gameplay-1.html"><span class="dot crew-gameplay-1"></span>gameplay-1</a></li><li><a href="../crew/gameplay-2.html"><span class="dot crew-gameplay-2"></span>gameplay-2</a></li><li><a href="../crew/gameplay-3.html"><span class="dot crew-gameplay-3"></span>gameplay-3</a></li><li><a href="../crew/npc-ai.html"><span class="dot crew-npc-ai"></span>NPC AI</a></li><li><a href="../crew/world-2.html"><span class="dot crew-world-2"></span>world-2</a></li></ul></header><div class="screen post-hero"><div class="wrap hero-inner"><video src="../media/replay-on-the-path-print-it-1530.mp4" poster="../media/replay-on-the-path-print-it-1530.jpg" autoplay muted loop playsinline controls preload="metadata"></video></div></div><div class="prose wrap-narrow"><p>At 18:19 I sat down with the build from the <a href="2026-11-13-1657-first-package-from-the-zip.html">18:00 milestone</a>, the zip the release session had already played from start to finish. Twenty minutes later I gave the Director my notes. The first line was the one I'd been hoping to say since <a href="2026-11-13-0740-playtest-two.html">this morning</a>:</p>
+<blockquote>
+<p>"Decent playtest. Definitely felt a fair bit better than this morning."</p>
+</blockquote>
+<p>Performance was great, and the replay, the thing the whole game rests on, held:</p>
+<blockquote>
+<p>"The replays are a whole lot better. Not necessarily perfect because the animations aren't quite there, but they are pretty good."</p>
+</blockquote>
+<figure class="clip"><video src="../media/replay-on-the-path-print-it-1530.mp4" poster="../media/replay-on-the-path-print-it-1530.jpg" autoplay muted loop playsinline controls preload="metadata"></video><figcaption>The replay in this build: the double runs the path I ran and lands on its marks. This morning it ran off in the wrong direction and snapped back.</figcaption></figure>
+
+<figure class="shot"><a href="../media/playtest-three-notes.jpg" data-lightbox data-caption="My notes from playtest three, sorted."><img src="../media/playtest-three-notes.jpg" alt="My notes from playtest three, sorted." loading="lazy"></a><figcaption>My notes from playtest three, sorted.</figcaption></figure>
+<h2>Too easy</h2>
+<p>The main note wasn't a bug. It was the balance:</p>
+<blockquote>
+<p>"Because it's such a slow game, it feels like I'm just walking to a zombie, stopping, because then time basically stops, swing in, I just kill it. There's not much resistance."</p>
+</blockquote>
+<p>Time only moves when I move. That's the theme, and it suits it, but it also means every fight can be lined up at leisure. I'm not ready to drop it ("it's cool, it really suits the theme"), so the first fix is the cheap one: raise the minimum time speed, so the world never quite stops while I think.</p>
+<p>And the zombies shouldn't have guns to drop: "they're melee zombies, unless we have some sort of zombie that's ranged, which I'm totally fine for."</p>
+<figure class="clip"><video src="../media/zombie01-machete-kill-pump.mp4" poster="../media/zombie01-machete-kill-pump.jpg" autoplay muted loop playsinline controls preload="metadata"></video><figcaption>The problem in one clip: walk up, swing, done. Nothing pushes back.</figcaption></figure>
+
+<h2>The tutorial</h2>
+<p>Small things in the screen test. The slide needs a Shift and a Ctrl prompt. The target I'm meant to hit sits back in the room I just slid out of, so I had to go back for it. And it's a blank board: "you don't really know exactly what to hit". It becomes a stunt double cutout, with the line "hit the stunt double".</p>
+<h2>Tonight's queue</h2>
+<p>I asked for about fourteen hours of work, since the crew runs on its own until the morning. The Director split it up straight away:</p>
+<ul>
+<li><strong>Difficulty pass</strong> (the feel session): a higher minimum time speed, enemies that push back</li>
+<li><strong>No guns in the zombie levels, plus a spitter zombie</strong> that fights at range (the NPC session, the second World session for placement)</li>
+<li><strong>Tutorial rework</strong> (Gameplay): slide prompts, the target after the slide, the stunt double cutout</li>
+<li><strong>Replay animations</strong> (the second Gameplay session): no more T-posed characters in the replay</li>
+<li><strong>Movement polish</strong> (the feel session): wall jumping first</li>
+</ul>
+<p>The next milestone is a full run, start to finish, at 23:00. That's when I'll see which of these has landed.</p></div></article><nav class="post-nav wrap" aria-label="More posts"><a class="prev" href="2026-11-13-1657-first-package-from-the-zip.html"><span>Previous</span>Milestone: the first package you can actually play from the zip</a><span></span></nav><section class="block wrap related"><div class="block-head"><h2>More in Gameplay</h2><a href="../topics/gameplay.html">All of them</a></div><div class="cards"><article class="card"><a class="card-media" href="../posts/2026-11-13-1628-the-double-stays-on-its-mark.html" tabindex="-1" aria-hidden="true"><img src="../media/replay-on-the-path-print-it-1530.thumb.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"></span></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/gameplay.html"><span class="dot" style="--c:#d2462f"></span>Gameplay</a><span class="card-when">Day 2, hour 36</span></div><h3><a href="../posts/2026-11-13-1628-the-double-stays-on-its-mark.html">The double stays on its mark</a></h3><p class="summary">My playtest note said the replay double ran off in directions I never went, then snapped back. The cause was in the animations, not the recording, and the old test was checking the wrong thing.</p></div></article><article class="card"><a class="card-media" href="../posts/2026-11-13-1320-the-diner-has-a-door.html" tabindex="-1" aria-hidden="true"><img src="../media/ufo01-walk-into-the-comet-diner.thumb.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"></span></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/world.html"><span class="dot" style="--c:#1f8a4c"></span>World and visuals</a><span class="card-when">Day 2, hour 33</span></div><h3><a href="../posts/2026-11-13-1320-the-diner-has-a-door.html">The diner has a door</a></h3><p class="summary">UFO 01 was impossible at 07:28 because nothing could get into the diner. On the 12:30 reel the autoplayer walks in, finds the fuse, and leaves through the stage door to a CUT! PRINT IT card.</p></div></article><article class="card"><a class="card-media" href="../posts/2026-11-13-1037-tape-on-the-floor.html" tabindex="-1" aria-hidden="true"><img src="../media/tape-trail-back-lot-to-stage-door.thumb.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"></span></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/gameplay.html"><span class="dot" style="--c:#d2462f"></span>Gameplay</a><span class="card-when">Day 2, hour 30</span></div><h3><a href="../posts/2026-11-13-1037-tape-on-the-floor.html">Tape on the floor: my playtest notes, three hours on</a></h3><p class="summary">Four of this morning&#x27;s eight playtest notes were on film by 10:00, starting with a trail of tape marks to the objective. Six of the seven levels now finish by their own script.</p></div></article></div></section>
+</main>
+<footer class="site-foot"><div class="wrap foot-inner"><ul class="foot-links"><li><a href="../index.html">Home</a></li><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../search.html">Search</a></li><li><a href="../the-game.html">The game</a></li><li><a href="../how-its-built.html">How it&#x27;s built</a></li><li><a href="../before-the-jam.html">Made before the jam</a></li><li><a href="../credits.html">Credits and licences</a></li></ul><p>Built in Unreal Engine 5.9 by one person and a crew of Claude Code sessions, for the 2026 Epic AI MegaJam.</p></div></footer>
+</body>
+</html>
