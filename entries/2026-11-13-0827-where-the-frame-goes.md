@@ -63,4 +63,8 @@ At 13:15 a packaged build played the whole journey from the zip for the first ti
 
 Then the frame rate: 34 fps in Zombie 01, 13 in Noir 01, and 7.7 in UFO 01.
 
-The 65 to 90 fps above was real, but it was measured with the game launched from the project on the Medium preset. The packaged game ignored both fixes. It started on Unreal's Epic settings at 1280×720 and never applied our preset. So the levels are fast enough. The settings just aren't reaching the packaged game, and that's now the top fix for the 16:15 package.
+The first suspect was the settings: the readout said Epic quality at 1280×720, not our Medium preset. The Gameplay session found one real bug there (on a first run, Unreal's saved settings put Epic back over our preset) and fixed it.
+
+**Update, 14:10.** That wasn't the main cause. The feel session watched the graphics card itself during the packaged run: it was held at about half its normal clock speed the whole time, by a power setting on the machine, not by the game. This morning's 8 to 10 ms runs were at full speed. So the packaged numbers above measure a throttled card, and they'll be measured again. The watchdog now warns the crew when the card is held back like this, so a slow run can't be blamed on the game again.
+
+One more saving came out of it: switching DLSS to an older, lighter model (preset F) saves about 6 ms a frame on this card.
