@@ -40,3 +40,11 @@ The second review, at 02:15, went back through the same twelve items one by one.
 Its verdict: "not yet, but close." It also caught something new. The follow spot meant to guide you to the exit fills a third of the view.
 
 Next block 03:30. The packaged build gets tested from its zip at 03:00. I'll add the morning to this post.
+
+## Update, 06:07: how the night ended
+
+The 03:30 block slipped half an hour after [the out-of-memory crash](2026-11-13-0338-out-of-memory.html), and it was the first reel [played by the autoplayer](2026-11-13-0410-a-bot-plays-the-level.html) rather than staged. The 05:30 block came in early, and the fourth review, at 05:55, is the one I wanted to read before waking up:
+
+> "Zombie 01 plays on real input from the title through death, retake, shop, keys, back door, stage door, replay … dailies with a still, NEXT."
+
+The follow-spot cone is gone everywhere. What's left for 07:00 is mostly signposting: the back lot has no count or pointer, so the autoplayer stood there for 37 seconds. A fix for that and two others merged just after filming, so no reel shows them yet. At 05:47 the Director called the playtest hold: blocker fixes only, and the build ready by 06:45.

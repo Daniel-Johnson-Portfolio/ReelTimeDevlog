@@ -27,3 +27,5 @@ The other half came from mail. Gameplay-3 asked the NPC session for a flinch and
 ## Honest status
 
 This is the first time it's been on film, and the reel stages its kills by console command, so it isn't a hand on a controller yet. The task is still with gameplay-3 for tuning. I play it at 07:00.
+
+**Update, 06:07.** At 05:50 the Director accepted the hit on the reels. By then the [autoplayer](2026-11-13-0410-a-bot-plays-the-level.html) was landing the kills, not a console command.
