@@ -1,0 +1,30 @@
+<!doctype html><meta charset="utf-8"><link rel="stylesheet" href="cards.css">
+<style>
+.wrap { display:flex; gap:40px; align-items:center; }
+.chart { min-width:0; }
+.chart { flex: 1; }
+.r { display:flex; align-items:center; gap:16px; margin:9px 0; font-size:23px; }
+.l { width:400px; text-align:right; color:var(--ink); }
+.t { width:420px; height:18px; }
+.b { height:18px; background:var(--accent); border-radius:0 4px 4px 0; }
+.b.k { background:var(--line); }
+.v { color:var(--dim); font-size:21px; white-space:nowrap; }
+.side { width:340px; flex:none; }
+.side .stat { margin:0 0 26px; text-align:left; flex:none; display:block; }
+.side .stat .l { text-align:left; }
+.side .n { font-size:72px; }
+</style>
+<body><div class="frame">
+  <div class="kicker">Reel Time · performance · jam hour 28</div>
+  <h1>Where the frame goes</h1>
+  <div class="sub">Zombie 01, opening view. Each setting switched off alone, then put back. Bars show the GPU time saved per frame.</div>
+  <div class="grow"><div class="wrap">
+    <div class="chart"><div class="r"><div class="l">Lumen global illumination off</div><div class="t"><div class="b" style="width:100.0%"></div></div><div class="v">−3.2 ms</div></div><div class="r"><div class="l">Shadows off on half the small lights</div><div class="t"><div class="b" style="width:76.5%"></div></div><div class="v">−2.4 ms</div></div><div class="r"><div class="l">DLSS Quality instead of TSR</div><div class="t"><div class="b" style="width:65.2%"></div></div><div class="v">−2.1 ms</div></div><div class="r"><div class="l">Volumetric fog off</div><div class="t"><div class="b" style="width:60.5%"></div></div><div class="v">−1.9 ms</div></div><div class="r"><div class="l">Virtual shadow maps off</div><div class="t"><div class="b" style="width:48.3%"></div></div><div class="v">−1.5 ms</div></div><div class="r"><div class="l">Film look off</div><div class="t"><div class="b k" style="width:36.1%"></div></div><div class="v">−1.1 ms · kept: it's the look</div></div><div class="r"><div class="l">Motion blur off</div><div class="t"><div class="b" style="width:19.7%"></div></div><div class="v">−0.6 ms</div></div><div class="r"><div class="l">Bloom off</div><div class="t"><div class="b" style="width:12.2%"></div></div><div class="v">−0.4 ms</div></div></div>
+    <div class="side">
+      <div class="stat"><div class="n">18.7</div><div class="l">ms per frame on last night's settings</div></div>
+      <div class="stat"><div class="n">11.5</div><div class="l">ms with Lumen and virtual shadows off, DLSS Quality on</div></div>
+      <div class="stat"><div class="l">60 fps needs 16.7 ms or less</div></div>
+    </div>
+  </div></div>
+  <div class="foot">Measured by the feel session's sweep, Friday 08:20, standalone game at 1536×864. Savings don't simply add up.</div>
+</div></body>
