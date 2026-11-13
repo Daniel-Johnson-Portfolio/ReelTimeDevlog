@@ -55,3 +55,5 @@ The bigger result isn't on film. The Gameplay session's autoplayer has now playe
 UFO 01 was "impossible" at 07:28. Zombie 02 has a walkway the bot can't climb yet. And the finale had never been reached by playing at all, because the playlist that orders the scenes was stale and didn't include it.
 
 Still not on film: the CUT! PRINT IT card at the stage door, smarter enemies, and me walking through that diner door myself.
+
+**Update, 11:10.** Seven of seven. The second World session fixed the walkway's navigation and Zombie 02 now completes in 49 seconds with no forced lines.
