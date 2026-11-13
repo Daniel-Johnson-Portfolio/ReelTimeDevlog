@@ -22,13 +22,13 @@ There's a second prototype behind a switch, a "where am I going" key that makes 
 
 ![The shop. KEYS · WALK OVER on the counter; a film can elsewhere says [E] PICK UP.](media/shop-keys-walk-over-prompt.jpg)
 
-The prompts are in. The glow is built, but I can't see it on this reel, and the keys prompt sometimes shows before the keys are in view. Half done. The "press G to drop" prompt for an empty gun passes its test; this level only has a machete, so it isn't on film yet.
+The prompts are in. The glow is built, but I can't see it on this reel, and the keys prompt sometimes shows before the keys are in view. Half done. The same reel also shows a regression: the script page top-left has lost its lines, because a UI kit was only half applied. The "press G to drop" prompt for an empty gun passes its test; this level only has a machete, so it isn't on film yet.
 
 ## "Continuing to run a direction I didn't"
 
 @video media/replay-double-bat-kill-0930.mp4 "The replay of the same take. The double finishes the last zombie by the truck and walks to the door."
 
-On this reel the double never runs the wrong way. One flying kick still pops it out of frame for a moment, and the cuts between cameras are too fast. I'll judge it properly when I play.
+The end of the replay looks right. The rest doesn't yet: the crew's independent reviewer counted the double snapping or flying four times in 25 seconds, and the cuts between cameras blur. Not fixed. It went back to the second Gameplay session for the next filming block.
 
 ## Lights on stands
 
