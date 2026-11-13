@@ -43,7 +43,7 @@ Two rows were the sweep's own fault, and the session said so in the table. "DLSS
 
 The numbers are also from an 864-line window, not 1080p. The estimate for 1080p is 12 to 13 ms. The other levels are being measured now.
 
-## Update, 10:45: the first reel without Lumen
+## Update, 10:40: the first reel without Lumen
 
 The engine switched Lumen off at 09:26 and the World session's fill lights went in with it. On the 09:30 reel of Zombie 01 the graphics card's share of the frame reads between 9.5 and 11 ms, where the table measured 18.7. The reel is in [the next post](2026-11-13-1037-tape-on-the-floor.html).
 
