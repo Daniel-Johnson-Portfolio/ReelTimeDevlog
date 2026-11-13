@@ -58,6 +58,10 @@ def main():
     if not (HERE / ".git").exists():
         sys.exit("The devlog folder isn't a git repo yet. Run setup_neighborhood.py, or: git -C devlog init")
 
+    try:  # refresh the measured cost figure for the @cost panel and the home link; publishing never fails on it
+        subprocess.run([sys.executable, str(HERE / "tools" / "usage_snapshot.py")], capture_output=True, text=True, timeout=30)
+    except Exception:
+        pass
     n = build.build(drafts=False)
     problems = safety_scan()
     if problems and not a.force:
