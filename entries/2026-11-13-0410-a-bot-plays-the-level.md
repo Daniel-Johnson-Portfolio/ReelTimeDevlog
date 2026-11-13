@@ -5,7 +5,6 @@ categories: [gameplay, pipeline]
 sessions: [gameplay, engine, gameplay-3, director]
 summary: The reels used to fake their kills by console command; at 03:46 a new autoplayer from the gameplay session played Dead Mile Motel with real inputs, died once, finished the script and walked out through the stage door, after staring at the tanker for 86 seconds.
 cover: media/autoplayer-hit-flash-back-lot.mp4
-featured: true
 draft: false
 ---
 

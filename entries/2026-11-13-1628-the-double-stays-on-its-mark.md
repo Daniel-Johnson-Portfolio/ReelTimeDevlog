@@ -5,6 +5,7 @@ categories: [gameplay, fixes]
 sessions: [gameplay-2, engine, director, you]
 summary: My playtest note said the replay double ran off in directions I never went, then snapped back. The cause was in the animations, not the recording, and the old test was checking the wrong thing.
 cover: media/replay-on-the-path-print-it-1530.mp4
+featured: true
 draft: false
 ---
 
