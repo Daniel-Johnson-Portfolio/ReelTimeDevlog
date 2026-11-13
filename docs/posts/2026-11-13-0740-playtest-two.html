@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Playtest two: the enemies turned up, and they aren&#x27;t smart enough | Reel Time devlog</title>
+<meta name="description" content="I played the build the crew froze at 06:00 after a night on its own. Eight notes came out of it, starting with dumb enemies, a UFO level with no way in, and a frame rate that has to reach 60.">
+<meta property="og:title" content="Playtest two: the enemies turned up, and they aren&#x27;t smart enough | Reel Time devlog">
+<meta property="og:description" content="I played the build the crew froze at 06:00 after a night on its own. Eight notes came out of it, starting with dumb enemies, a UFO level with no way in, and a frame rate that has to reach 60.">
+<link rel="stylesheet" href="../style.css">
+<style>:root { --accent: #d7262b; }</style>
+<script src="../site.js" defer></script>
+</head>
+<body class="post-page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-head"><div class="wrap head-inner"><a class="brand" href="../index.html">Reel Time devlog</a><nav class="site-nav" aria-label="Main"><ul><li><a href="../the-game.html">The game</a></li><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../how-its-built.html">How it's built</a></li></ul></nav><form class="site-search" action="../search.html" role="search"><label class="sr-only" for="q-top">Search the devlog</label><input id="q-top" name="q" type="search" placeholder="Search posts"></form></div></header>
+<main id="main">
+<article class="post"><header class="post-head wrap-narrow"><ul class="chips"><li><a class="chip" href="../topics/gameplay.html"><span class="dot" style="--c:#d2462f"></span>Gameplay</a></li><li><a class="chip" href="../topics/crew.html"><span class="dot" style="--c:#6b4fd8"></span>Behind the scenes</a></li></ul><h1>Playtest two: the enemies turned up, and they aren&#x27;t smart enough</h1><p class="standfirst">I played the build the crew froze at 06:00 after a night on its own. Eight notes came out of it, starting with dumb enemies, a UFO level with no way in, and a frame rate that has to reach 60.</p><p class="post-when"><span class="day">Day 2, Fri 13 Nov</span><span class="hour">Hour 27</span><time datetime="2026-11-13T07:40:00+00:00">07:40</time></p><ul class="crew" aria-label="Crew sessions involved"><li><a href="../crew/you.html"><span class="dot crew-you"></span>Me</a></li><li><a href="../crew/director.html"><span class="dot crew-director"></span>Director</a></li><li><a href="../crew/engine.html"><span class="dot crew-engine"></span>Engine</a></li></ul></header><div class="screen post-hero"><div class="wrap hero-inner"><video src="../media/ufo01-diner-autoplayer-0530.mp4" poster="../media/ufo01-diner-autoplayer-0530.jpg" autoplay muted loop playsinline controls preload="metadata"></video></div></div><div class="prose wrap-narrow"><p>I went to bed at 22:30 on Thursday with one instruction: a playtest at 07:00, with a report of what changed. The crew stopped adding things at 05:15, fixed blockers only until 06:00, and left me a launcher and a morning report. (<a href="2026-11-13-0238-the-night-shift.html">The night shift</a> has what they built.)</p>
+<p>The report was honest about what it couldn't promise:</p>
+<blockquote>
+<p>"UFO 01 and Noir 01 have never been completed by the autoplayer. Three real blockers were found and fixed in the last hour, none seen on film."</p>
+</blockquote>
+<figure class="shot"><a href="../media/playtest-two-notes.jpg" data-lightbox data-caption="My eight notes from playtest two, sorted."><img src="../media/playtest-two-notes.jpg" alt="My eight notes from playtest two, sorted." loading="lazy"></a><figcaption>My eight notes from playtest two, sorted.</figcaption></figure>
+<h2>What I told the Director</h2>
+<p><a href="2026-11-12-2045-playtest-one.html">Last time</a> there were no enemies at all. This time:</p>
+<blockquote>
+<p>"Number 1 piece of feedback is enemies aren't smart enough."</p>
+</blockquote>
+<p>And one of them is too much the other way: "The Alien with the shield is a bit too hard to kill."</p>
+<p><strong>One level can't be finished.</strong></p>
+<blockquote>
+<p>"The first UFO level is impossible to complete as the mesh for the diner doesn't have a way in."</p>
+</blockquote>
+<p>That was one of the three blockers "fixed in the last hour". The autoplayer had found a 0.9 m panel across the diner door at about 05:30, the level kit was changed, and nothing walked through the door afterwards. The fix didn't work in practice. The engine session is now finding out what blocks it.</p>
+<figure class="shot"><a href="../media/ufo01-aliens-in-diner.jpg" data-lightbox data-caption="UFO 01 on the 05:30 reel: the autoplayer inside the diner with two aliens, on the build before the fix. On mine I couldn&#x27;t get in."><img src="../media/ufo01-aliens-in-diner.jpg" alt="UFO 01 on the 05:30 reel: the autoplayer inside the diner with two aliens, on the build before the fix. On mine I couldn&#x27;t get in." loading="lazy"></a><figcaption>UFO 01 on the 05:30 reel: the autoplayer inside the diner with two aliens, on the build before the fix. On mine I couldn&#x27;t get in.</figcaption></figure>
+<p><strong>Finding my way.</strong> "It's a lot better but I still find it hard to navigate, maybe we need to prototype some different navigation methods." Pickups like the keys "need a simple interaction prompt and a yellow glow".</p>
+<p><strong>An empty gun.</strong> It should say "press G to drop", and a weapon nearby should glow so I know where to go next.</p>
+<p><strong>The replay.</strong> "I see my character continuing to run a direction I didn't and snap back often." The replay is the game's whole idea, so that one's a top priority.</p>
+<p><strong>Performance.</strong> "It's quite bad, with lighting, post processing and DLSS being the big hitters… I don't mind if we want to go for a non-Lumen approach but we need to be hitting at least 60 fps on this machine."</p>
+<h2>What happened next</h2>
+<p>The notes were with the Director at 07:28. By 07:36 the work was out:</p>
+<ul>
+<li>the diner door, plus a doorway proof for every level, to the second World session</li>
+<li>the DLSS fix, then pickup glow, prompts and "G to drop", to Gameplay</li>
+<li>replay accuracy, then two navigation prototypes, to the second Gameplay session</li>
+<li>a table of what each level costs the graphics card, due within the hour, to the feel session</li>
+<li>smarter enemies and the shield alien to the NPC session</li>
+<li>a warning to the lighting session that a budget is coming</li>
+</ul>
+<p>The Director also asked me two things back: did I play the standalone game or in the editor (the editor runs at roughly half the frame rate), and what exactly felt dumb about the enemies.</p>
+<p>The lesson from playtest one was "we tested the levels, not the journey between them". This one is close to it: a fix isn't done until something has walked through the door.</p></div></article><nav class="post-nav wrap" aria-label="More posts"><a class="prev" href="2026-11-13-0412-boards-to-build.html"><span>Previous</span>The menus, from the design boards to the build</a><span></span></nav><section class="block wrap related"><div class="block-head"><h2>More in Gameplay</h2><a href="../topics/gameplay.html">All of them</a></div><div class="cards"><article class="card"><a class="card-media" href="../posts/2026-11-13-0410-a-bot-plays-the-level.html" tabindex="-1" aria-hidden="true"><img src="../media/autoplayer-hit-flash-back-lot.thumb.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"></span></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/gameplay.html"><span class="dot" style="--c:#d2462f"></span>Gameplay</a><span class="card-when">Day 1, hour 24</span></div><h3><a href="../posts/2026-11-13-0410-a-bot-plays-the-level.html">At 4 a.m. a bot played the level for the camera</a></h3><p class="summary">The reels used to fake their kills by console command; at 03:46 a new autoplayer from the gameplay session played Dead Mile Motel with real inputs, died once, finished the script and walked out through the stage door, after staring at the tanker for 86 seconds.</p></div></article><article class="card"><a class="card-media" href="../posts/2026-11-13-0140-scene-three-slate-to-dailies.html" tabindex="-1" aria-hidden="true"><img src="../media/stunt-double-exits-stage-door.thumb.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"></span></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/gameplay.html"><span class="dot" style="--c:#d2462f"></span>Gameplay</a><span class="card-when">Day 1, hour 21</span></div><h3><a href="../posts/2026-11-13-0140-scene-three-slate-to-dailies.html">Scene three, from the slate to the dailies</a></h3><p class="summary">The 01:30 reel runs Dead Mile Motel end to end for the first time: the script page ticks its lines off, the stage door opens, and the replay stars the stunt double instead of a mannequin.</p></div></article><article class="card"><a class="card-media" href="../posts/2026-11-12-2325-the-hit-answers-back.html" tabindex="-1" aria-hidden="true"><img src="../media/zombie01-machete-kill-pump.thumb.jpg" alt="" loading="lazy"><span class="play" aria-hidden="true"></span></a><div class="card-body"><div class="card-meta"><a class="chip" href="../topics/gameplay.html"><span class="dot" style="--c:#d2462f"></span>Gameplay</a><span class="card-when">Day 1, hour 19</span></div><h3><a href="../posts/2026-11-12-2325-the-hit-answers-back.html">The machete hit, now the zombie feels it</a></h3><p class="summary">After the first playtest I said the zombies didn&#x27;t seem to feel a hit; by the 23:30 reel a new feel session had added a freeze on contact, a flash, a camera shove, a flinch and blood.</p></div></article></div></section>
+</main>
+<footer class="site-foot"><div class="wrap foot-inner"><ul class="foot-links"><li><a href="../index.html">Home</a></li><li><a href="../topics.html">Topics</a></li><li><a href="../timeline.html">Timeline</a></li><li><a href="../gallery.html">Gallery</a></li><li><a href="../search.html">Search</a></li><li><a href="../the-game.html">The game</a></li><li><a href="../how-its-built.html">How it&#x27;s built</a></li><li><a href="../before-the-jam.html">Made before the jam</a></li><li><a href="../credits.html">Credits and licences</a></li></ul><p>Built in Unreal Engine 5.9 by one person and a crew of Claude Code sessions, for the 2026 Epic AI MegaJam.</p></div></footer>
+</body>
+</html>
