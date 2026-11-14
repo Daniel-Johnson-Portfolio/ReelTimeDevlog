@@ -34,3 +34,19 @@ The fixed version was filmed at 14:45 and the engine's reviewer passed all three
 The best evidence came from somewhere else. The Release session's packaged-build test scored 19 out of 21 this afternoon, and both failures were the test's own fault: its bot stands still between steps, and it kept getting killed.
 
 Still open from the same review: the gunmen in the first UFO level never fire, and some shamblers walk straight past you. Both are due before tonight's playtest.
+
+## Update, 17:10: the table
+
+The Enemies session measured it in all seven levels: stand still from the start and time the first hit. The target is 10 to 15 seconds.
+
+| Level | 16:10 | 17:03 |
+|---|---|---|
+| Zombie 01 | 19.0 s | 15.5 s (old level data) |
+| Zombie 02 | nothing in 20 s | 10.8 s |
+| UFO 01 | 13.7 s | 8.2 s |
+| UFO 02 | 12.0 s | 9.8 s |
+| Noir 01 | 12.8 s | 10.8 s |
+| Noir 02 | 10.0 s | 8.1 s |
+| Finale | 19.8 s | 12.1 s |
+
+Between the two runs it let any awake enemy be sent, not just certain ones, sped up the rush, and started the pressure after five seconds.
