@@ -5,7 +5,6 @@ categories: [milestones, gameplay]
 sessions: [gameplay-2, gameplay, engine, ui, release, director]
 summary: The 23:00 milestone asked for a player to get from the start to an ending. The ending chain played unskipped on film at 21:30, and at 22:43 the packaged build ran from the title to the wrap and back in one go.
 cover: media/finale-soundstage-machete-take-two.mp4
-featured: true
 draft: false
 ---
 
