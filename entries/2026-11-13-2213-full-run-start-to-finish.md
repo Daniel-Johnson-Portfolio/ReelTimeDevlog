@@ -35,6 +35,18 @@ The credits open with "A Reel Time picture. Starring: you, the stunt double. Dir
 
 ![And back to the call sheet: the title screen, ready for another run.](media/ending-back-to-the-title.jpg)
 
+## Update, 23:30: the ending, fixed
+
+Ninety minutes after the Director's list, the engine filmed the ending again. The headline is clear of its boxes now:
+
+@video media/ending-thats-a-wrap-fixed.mp4 "THAT'S A WRAP at 23:30: five takes, 2 minutes 27, 12 of 24 stars, and nothing hidden."
+
+The credits are names and licences only: the crew, the tools, the voice, the fonts, and the jam. They end on a new closing card.
+
+![The closing card: REEL TIME, a film by Daniel Johnson, made with Unreal Engine.](media/ending-closing-card-reel-time.jpg)
+
+Still rough: two titles drawn over each other in the final cut, about four seconds of a frozen clip behind the credits, and a single gameplay frame flashing up between the closing card and the title.
+
 ## Update, 22:43: the footnote is gone
 
 The release session ran the 22:00 package from its zip, and its bot went the whole way in one go: boot, title, screen test, Zombie 01, UFO 01, Noir 01, the finale, the stage door, THAT'S A WRAP, the final cut, the credits and back to the title. Seventeen of seventeen checks. The Director: "The 23:00 milestone is now met without the footnote."
