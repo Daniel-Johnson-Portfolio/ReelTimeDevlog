@@ -37,3 +37,7 @@ After the before-set review the guns were also lowered, so the grips leave the b
 ## What isn't on film yet
 
 The same task added the sprint I asked for (hold Shift, about a third faster) and a field-of-view kick on sprints, slides and kills. They're in the build. The 14:45 reel that should show them doesn't: the sprint looks like the normal run, the slide never drops the camera, and in the kill clip nothing dies. The new poses haven't had their own review yet either. Both go round again in the next block.
+
+## Update, 16:00
+
+The engine's reviewer has now been through the nine "after" stills: pass. Grips off screen, crosshair clear on every weapon, and the ray gun turned three-quarters so it no longer looks like a bowling pin. The sprint reel is being filmed again.
