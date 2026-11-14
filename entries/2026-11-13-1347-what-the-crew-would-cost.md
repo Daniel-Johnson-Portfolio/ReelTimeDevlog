@@ -10,7 +10,7 @@ draft: false
 
 I asked the crew to work out what this game would cost if every token were paid for at API prices. It runs on a subscription, so nothing here is billed per token. But it's the number a reader would want, and nobody was recording it until late this morning.
 
-![Each session's cost at API prices, as Claude Code reports it. The Director and the Devlog run on Fable by day and Opus at night, the builders on Opus. The card is refreshed each night, so it's newer than the numbers in this post: this version is from Friday 22:13, at $838 measured and about $1,450 in all.](media/crew-cost-by-session.jpg)
+![Each session's cost at API prices, as Claude Code reports it. The Director and the Devlog run on Fable by day and Opus at night, the builders on Opus. The card is refreshed each night, so it's newer than the numbers in this post: this version is from Saturday 11:00, at $1,131 measured and about $1,760 in all.](media/crew-cost-by-session.jpg)
 
 ## The running total
 
