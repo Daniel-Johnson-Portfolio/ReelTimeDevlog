@@ -1,28 +1,28 @@
 {
-  "generated": "2026-11-14T03:02:09+00:00",
+  "generated": "2026-11-14T03:11:54+00:00",
   "ledger_from": "2026-11-13T11:34+00:00",
-  "as_of": "2026-11-14T03:01+00:00",
-  "measured_usd": 997.68,
+  "as_of": "2026-11-14T03:11+00:00",
+  "measured_usd": 1006.63,
   "sessions": 81,
-  "session_hours": 257.9,
+  "session_hours": 259.1,
   "by_model": {
-    "Opus 5.5": 695.79,
+    "Opus 5.5": 704.59,
     "Fable 5.2": 295.64,
-    "Sonnet 5.5": 6.26
+    "Sonnet 5.5": 6.4
   },
   "by_role": {
     "director": 264.0,
-    "gameplay": 197.96,
-    "engine": 145.15,
+    "gameplay": 198.5,
+    "engine": 145.65,
     "world-2": 85.11,
-    "world": 52.5,
+    "world": 53.35,
+    "gameplay-2": 50.23,
     "npc-ai": 48.7,
-    "gameplay-2": 46.15,
-    "devlog": 44.67,
-    "gameplay-3": 44.51,
-    "ui": 33.21,
+    "gameplay-3": 45.86,
+    "devlog": 45.46,
+    "ui": 33.9,
     "release": 29.45,
-    "audio": 5.31,
+    "audio": 5.44,
     "toolsmith": 0.95
   }
 }
