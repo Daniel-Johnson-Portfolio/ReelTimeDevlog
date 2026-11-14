@@ -29,6 +29,10 @@ media/dailies-card-three-stars.jpg "The dailies: takes, time against par, and st
 media/ufo-set-technicolor-look.jpg "Saucers Over Millbrook, the 1950s UFO film, in Technicolor."
 media/noir-set-black-and-white-look.jpg "The noir film, in black and white."
 
+Before the first film there's a screen test, where the director talks you through the moves, and you finish by knocking over a cardboard cut-out of your own stunt double. After the finale on the soundstage, the picture wraps: a last dailies card, THAT'S A WRAP, and the final cut, the best of every scene played back to back while the credits roll.
+
+@video media/ending-thats-a-wrap-fixed.mp4 "The end of the run: THAT'S A WRAP, with your takes, running time and stars."
+
 ## How it uses the theme
 
 The jam's theme is "Director's Cut". The game is the shoot: slates, take numbers, "CUT!" restarts, and a director's cut of your own performance after every scene.
