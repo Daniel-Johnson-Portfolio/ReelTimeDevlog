@@ -5,7 +5,7 @@ order: 30
 draft: false
 ---
 
-Every session adds a line to the crew's credits file the moment it brings something in. This page follows that file. Last updated Friday 13 November, 00:45 UK time, from the release session's 22:15 sync.
+Every session adds a line to the crew's credits file the moment it brings something in. This page follows that file. Last updated Sunday 15 November, 04:00 UK time, from the release session's Saturday 17:50 sync.
 
 ## Third-party assets
 
@@ -21,6 +21,7 @@ Every session adds a line to the crew's credits file the moment it brings someth
 | Bebas Neue (Ryoichi Tsunekawa, Dharma Type) | Google Fonts | SIL OFL 1.1 | UI: labels, HUD, slate fields |
 | Courier Prime (Alan Dague-Greene, Quote-Unquote Apps) | Google Fonts | SIL OFL 1.1 | UI: body text, menus, subtitles |
 | Caveat (Impallari Type) | Google Fonts | SIL OFL 1.1 | UI: the Director's handwritten notes |
+| Kokoro-82M v1.0 text-to-speech model, voice am_onyx | hexgrad, run locally through kokoro-onnx | Apache License 2.0 | The in-game director's spoken lines. The generated audio ships; the model doesn't |
 
 ## Tools used
 
@@ -31,5 +32,6 @@ Every session adds a line to the crew's credits file the moment it brings someth
 | Unreal Engine 5.9 with the Unreal MCP server | The engine, and editor automation |
 | NVIDIA DLSS 4.5 (Super Resolution, DLAA) | Upscaling option in settings. Installed as tooling before the jam |
 | Blender 5.2 with MPFB 2 | All enemy bodies, clothes, hats and make-up textures, scripted with no window open |
-| Blender 5.2, scripted | Set props for the zombie and UFO films (gas pump, tanker, the gas station's shop fittings and more), the stunt double, and the stage door |
-| Kokoro-82M v1.0 text-to-speech (Apache-2.0, run locally) | Director voice candidates; listed as an asset only if one ships |
+| Blender 5.2, scripted | Set props for the zombie and UFO films (gas pump, tanker, the gas station's shop fittings and more), the stunt double, the stage door, and the lettering on our own posters and signs |
+| Kokoro-82M v1.0 text-to-speech (Apache-2.0, run locally) | The in-game director's voice |
+| Python with NumPy and SciPy (BSD licence) | The original score and all the sound effects, synthesised in code by the audio session. No sampled third-party audio |

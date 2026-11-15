@@ -15,7 +15,7 @@
 <a class="skip" href="#main">Skip to content</a>
 <header class="site-head"><div class="wrap head-inner"><a class="brand" href="index.html">Reel Time devlog</a><nav class="site-nav" aria-label="Main"><ul><li><a href="the-game.html">The game</a></li><li><a href="topics.html">Topics</a></li><li><a href="timeline.html">Timeline</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="how-its-built.html">How it's built</a></li></ul></nav><form class="site-search" action="search.html" role="search"><label class="sr-only" for="q-top">Search the devlog</label><input id="q-top" name="q" type="search" placeholder="Search posts"></form></div></header>
 <main id="main">
-<header class="page-head wrap-narrow"><h1>Credits and licences</h1><p class="standfirst">Everything in the game that the crew didn&#x27;t make, and where it came from.</p></header><div class="prose wrap-narrow"><p>Every session adds a line to the crew's credits file the moment it brings something in. This page follows that file. Last updated Friday 13 November, 00:45 UK time, from the release session's 22:15 sync.</p>
+<header class="page-head wrap-narrow"><h1>Credits and licences</h1><p class="standfirst">Everything in the game that the crew didn&#x27;t make, and where it came from.</p></header><div class="prose wrap-narrow"><p>Every session adds a line to the crew's credits file the moment it brings something in. This page follows that file. Last updated Sunday 15 November, 04:00 UK time, from the release session's Saturday 17:50 sync.</p>
 <h2>Third-party assets</h2>
 <table>
 <thead>
@@ -87,6 +87,12 @@
 <td>SIL OFL 1.1</td>
 <td>UI: the Director's handwritten notes</td>
 </tr>
+<tr>
+<td>Kokoro-82M v1.0 text-to-speech model, voice am_onyx</td>
+<td>hexgrad, run locally through kokoro-onnx</td>
+<td>Apache License 2.0</td>
+<td>The in-game director's spoken lines. The generated audio ships; the model doesn't</td>
+</tr>
 </tbody>
 </table>
 <h2>Tools used</h2>
@@ -120,11 +126,15 @@
 </tr>
 <tr>
 <td>Blender 5.2, scripted</td>
-<td>Set props for the zombie and UFO films (gas pump, tanker, the gas station's shop fittings and more), the stunt double, and the stage door</td>
+<td>Set props for the zombie and UFO films (gas pump, tanker, the gas station's shop fittings and more), the stunt double, the stage door, and the lettering on our own posters and signs</td>
 </tr>
 <tr>
 <td>Kokoro-82M v1.0 text-to-speech (Apache-2.0, run locally)</td>
-<td>Director voice candidates; listed as an asset only if one ships</td>
+<td>The in-game director's voice</td>
+</tr>
+<tr>
+<td>Python with NumPy and SciPy (BSD licence)</td>
+<td>The original score and all the sound effects, synthesised in code by the audio session. No sampled third-party audio</td>
 </tr>
 </tbody>
 </table></div>
