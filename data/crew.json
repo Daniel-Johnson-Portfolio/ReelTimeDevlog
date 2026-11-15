@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-14T21:50:28+00:00",
+  "generated": "2026-11-15T05:40:07+00:00",
   "crew": [
     {
       "role": "director",
@@ -7,7 +7,7 @@
       "mode": "always_on",
       "tasks_done": 0,
       "tasks_total": 0,
-      "commits": 14
+      "commits": 15
     },
     {
       "role": "engine",
@@ -15,7 +15,7 @@
       "mode": "always_on",
       "tasks_done": 2,
       "tasks_total": 3,
-      "commits": 183
+      "commits": 199
     },
     {
       "role": "gameplay",
@@ -23,31 +23,31 @@
       "mode": "always_on",
       "tasks_done": 18,
       "tasks_total": 36,
-      "commits": 163
+      "commits": 183
     },
     {
       "role": "ui",
       "about": "Every screen: HUD, menus, splash, UI animation, built as kits from designs.",
       "mode": "always_on",
-      "tasks_done": 5,
-      "tasks_total": 23,
-      "commits": 157
+      "tasks_done": 8,
+      "tasks_total": 25,
+      "commits": 166
     },
     {
       "role": "npc-ai",
       "about": "NPC behaviour: StateTrees, perception, navigation, spawning.",
       "mode": "always_on",
       "tasks_done": 5,
-      "tasks_total": 20,
-      "commits": 112
+      "tasks_total": 21,
+      "commits": 120
     },
     {
       "role": "world",
       "about": "Level layout, progression, lighting and the overall look, built as kits.",
       "mode": "always_on",
-      "tasks_done": 14,
+      "tasks_done": 18,
       "tasks_total": 20,
-      "commits": 154
+      "commits": 165
     },
     {
       "role": "audio",
@@ -91,15 +91,15 @@
     }
   ],
   "totals": {
-    "tasks_done": 98,
-    "tasks_total": 205,
-    "commits": 1366,
-    "kits_run": 340,
-    "merges": 195,
-    "decisions": 38,
-    "assumptions": 15,
+    "tasks_done": 106,
+    "tasks_total": 209,
+    "commits": 1454,
+    "kits_run": 366,
+    "merges": 214,
+    "decisions": 40,
+    "assumptions": 17,
     "friction_open": 22,
     "friction_fixed": 11,
-    "review_folders": 159
+    "review_folders": 164
   }
 }
