@@ -676,8 +676,15 @@ class Site:
                 media = f'<img src="{esc(mp + cover[6:])}" alt="{esc(f["summary"])}">'
             else:
                 media = ""
+            hero_film = self.cfg.get("hero_film", "")
+            if hero_film:
+                # a film with sound in the home page's big slot: plays only on click, so it isn't wrapped in a link
+                film = with_media_prefix(video_tag(hero_film, 'controls playsinline preload="none"'), mp)
+                media_html = f'<div class="featured-media">{film}</div>'
+            else:
+                media_html = f'<a class="featured-media" href="posts/{f["slug"]}.html" tabindex="-1" aria-hidden="true">{media}</a>'
             out.append(f'<section class="screen featured" aria-label="Latest from the build"><div class="wrap featured-inner">'
-                       f'<a class="featured-media" href="posts/{f["slug"]}.html" tabindex="-1" aria-hidden="true">{media}</a>'
+                       f'{media_html}'
                        f'<div class="featured-text">{self.chips(f["categories"], root)}'
                        f'<h2><a href="posts/{f["slug"]}.html">{esc(f["title"])}</a></h2>'
                        f'<p>{esc(f["summary"])}</p>{self.when_html(f)}{self.crew_list(f["sessions"], root)}</div></div></section>')
