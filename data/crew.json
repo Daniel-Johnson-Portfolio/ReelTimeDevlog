@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15T16:47:07+00:00",
+  "generated": "2026-11-15T18:12:40+00:00",
   "crew": [
     {
       "role": "director",
@@ -15,13 +15,13 @@
       "mode": "always_on",
       "tasks_done": 2,
       "tasks_total": 3,
-      "commits": 216
+      "commits": 220
     },
     {
       "role": "gameplay",
       "about": "Core rules: player, controls, core loop, game state, win and lose.",
       "mode": "always_on",
-      "tasks_done": 20,
+      "tasks_done": 21,
       "tasks_total": 40,
       "commits": 193
     },
@@ -31,7 +31,7 @@
       "mode": "always_on",
       "tasks_done": 9,
       "tasks_total": 26,
-      "commits": 174
+      "commits": 175
     },
     {
       "role": "npc-ai",
@@ -79,7 +79,7 @@
       "mode": "on_call",
       "tasks_done": 4,
       "tasks_total": 7,
-      "commits": 81
+      "commits": 88
     },
     {
       "role": "toolsmith",
@@ -91,15 +91,15 @@
     }
   ],
   "totals": {
-    "tasks_done": 117,
-    "tasks_total": 227,
-    "commits": 1555,
-    "kits_run": 388,
-    "merges": 231,
+    "tasks_done": 119,
+    "tasks_total": 228,
+    "commits": 1570,
+    "kits_run": 389,
+    "merges": 233,
     "decisions": 40,
     "assumptions": 17,
     "friction_open": 22,
-    "friction_fixed": 11,
-    "review_folders": 179
+    "friction_fixed": 12,
+    "review_folders": 182
   }
 }
