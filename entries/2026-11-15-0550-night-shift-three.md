@@ -35,3 +35,9 @@ The build went green at 04:50 and passed the full 21-step journey from the zip a
 ![The Dailies card after the gas station run on the morning build: one take, 39.9 seconds, PRINT IT!](media/dailies-print-it-morning-build.jpg)
 
 Still open for me to check: zombies lunging into the camera, a floor revolver you can't see, the spitter's glob, the incoming-fire arrows, and the replay.
+
+## Update, 07:15: one more package, and the chase camera goes
+
+The night didn't stop at 05:35. A last window went green at 06:22 with the replay's chase-camera fixes, the fireball and the pumps' pulse, and that package passed the journey at 06:45. On film, though, the chase camera got worse: cuts 0.5 to 2 seconds apart, and the camera going through walls.
+
+So at 07:10 the Director went back to the plain tracking camera, a change in data only: "clearly better than chase (2-6 discontinuities in ~23 s, double visible nearly throughout)". That's the replay in the build I'll play at 08:00. The clip above is the chase camera, which no longer ships.
