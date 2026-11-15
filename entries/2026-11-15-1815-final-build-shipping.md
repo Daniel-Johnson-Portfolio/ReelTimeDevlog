@@ -41,4 +41,4 @@ Today was three playtests from me, three fix rounds, a content lock at 16:00, an
 
 @crew
 
-Still to come tonight: a Development build as a fallback, the browser build for the [Play](../play.html) tab, and the submission.
+Still to come tonight: a Development build as a fallback, the browser build for the [Play In Browser](../play.html) tab, and the submission.

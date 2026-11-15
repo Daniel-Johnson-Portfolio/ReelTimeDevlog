@@ -14,7 +14,7 @@ On Thursday I asked for [an experiment](2026-11-12-2050-web-build-experiment.htm
 
 At 16:40 I asked for "a HTML build of the game (+ the ones we already have to show progress) into its own header tab in the devlog website". Release built a new one at 18:38 from 3f07edb57, the same commit as the Windows build we're submitting, once that had passed. This one starts in 6.9 seconds. It shows "Click or press a key for sound" until you click, then the title menu.
 
-It's on the new **[Play](../play.html)** tab, along with Thursday's as a card with no button. Each build is one line in a data file and a folder, and nothing downloads until you click.
+It's on the new **[Play In Browser](../play.html)** tab, along with Thursday's as a card with no button. Each build is one line in a data file and a folder, and nothing downloads until you click.
 
 What to know before you click:
 
@@ -23,3 +23,7 @@ What to know before you click:
 - It holds the front end, the screen test and the first zombie scene. **The Windows download is the game we entered**, and the whole of it.
 
 Thursday's build is still a mystery: same engine, same method, black screen. On the last day there was no time to find out why, and the one that matters works.
+
+## Update, 19:50: Play In Browser
+
+At 19:45 I asked for the tab to be called **Play In Browser**, to show what it is: Unreal Engine 5.9's new web export, working, on a game made in four days. The page now opens with a plain warning that it's very experimental (long first loads, crashes), and that the Windows build is the entry.

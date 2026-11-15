@@ -569,7 +569,7 @@ class Site:
         if "the-game" in self.page_slugs:
             links.append(("the-game", "The game"))
         if "play" in self.page_slugs:
-            links.append(("play", "Play"))
+            links.append(("play", "Play In Browser"))
         links += [("topics", "Topics"), ("timeline", "Timeline"), ("gallery", "Gallery")]
         if "how-its-built" in self.page_slugs:
             links.append(("how-its-built", "How it's built"))
