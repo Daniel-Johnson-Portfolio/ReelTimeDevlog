@@ -9,7 +9,7 @@ These are **browser builds made for this devlog**. The jam entry itself is the *
 
 **Before you click:**
 
-- You need **Chrome or Edge** with WebGPU, on a computer with a real graphics card. Phones and tablets won't run it.
+- Use **Chrome**, with WebGPU, on a computer with a real graphics card. It was stable in Chrome when I played it. Edge runs it at about the same frame rate but crashed often. Phones and tablets won't run it.
 - Each one is a big download, and nothing loads until you click. Sizes are on each build.
 - Once it has loaded, click once more: the page waits for a click before it starts the sound.
 - Controls: **keyboard and mouse**. WASD to move, the mouse to look, Space to jump, Ctrl to slide, left mouse to attack, right mouse to throw, E to grab a weapon, Esc to pause. Click the game first so it takes the mouse.

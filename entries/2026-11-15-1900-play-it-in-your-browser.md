@@ -18,7 +18,7 @@ It's on the new **[Play](../play.html)** tab, along with Thursday's as a card wi
 
 What to know before you click:
 
-- It needs **Chrome or Edge with WebGPU** and a real graphics card. Phones won't run it.
+- Use **Chrome**, with WebGPU and a real graphics card. I played it at 19:35: "significantly more stable in Chrome, frame rates are similar but Edge crashes a lot, Chrome is yet to crash in my testing". Phones won't run it.
 - It's about **220 MB**, split into pieces under 50 MB to stay well inside GitHub's 100 MB file limit. A service worker joins them up in the browser.
 - It holds the front end, the screen test and the first zombie scene. **The Windows download is the game we entered**, and the whole of it.
 
