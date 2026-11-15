@@ -1,5 +1,5 @@
 {
-  "generated": "2026-11-15T05:40:07+00:00",
+  "generated": "2026-11-15T16:47:07+00:00",
   "crew": [
     {
       "role": "director",
@@ -15,47 +15,47 @@
       "mode": "always_on",
       "tasks_done": 2,
       "tasks_total": 3,
-      "commits": 199
+      "commits": 216
     },
     {
       "role": "gameplay",
       "about": "Core rules: player, controls, core loop, game state, win and lose.",
       "mode": "always_on",
-      "tasks_done": 18,
-      "tasks_total": 36,
-      "commits": 183
+      "tasks_done": 20,
+      "tasks_total": 40,
+      "commits": 193
     },
     {
       "role": "ui",
       "about": "Every screen: HUD, menus, splash, UI animation, built as kits from designs.",
       "mode": "always_on",
-      "tasks_done": 8,
-      "tasks_total": 25,
-      "commits": 166
+      "tasks_done": 9,
+      "tasks_total": 26,
+      "commits": 174
     },
     {
       "role": "npc-ai",
       "about": "NPC behaviour: StateTrees, perception, navigation, spawning.",
       "mode": "always_on",
-      "tasks_done": 5,
-      "tasks_total": 21,
-      "commits": 120
+      "tasks_done": 8,
+      "tasks_total": 24,
+      "commits": 131
     },
     {
       "role": "world",
       "about": "Level layout, progression, lighting and the overall look, built as kits.",
       "mode": "always_on",
       "tasks_done": 18,
-      "tasks_total": 20,
-      "commits": 165
+      "tasks_total": 21,
+      "commits": 171
     },
     {
       "role": "audio",
       "about": "Sound effects, music and voice as kits; a planned workstream from day 2.",
       "mode": "always_on",
-      "tasks_done": 5,
-      "tasks_total": 16,
-      "commits": 63
+      "tasks_done": 6,
+      "tasks_total": 18,
+      "commits": 70
     },
     {
       "role": "floater-1",
@@ -78,8 +78,8 @@
       "about": "Packaging, smoke tests, the gameplay video, credits, declaration and submission prep. Wakes on day 2.",
       "mode": "on_call",
       "tasks_done": 4,
-      "tasks_total": 6,
-      "commits": 71
+      "tasks_total": 7,
+      "commits": 81
     },
     {
       "role": "toolsmith",
@@ -91,15 +91,15 @@
     }
   ],
   "totals": {
-    "tasks_done": 106,
-    "tasks_total": 209,
-    "commits": 1454,
-    "kits_run": 366,
-    "merges": 214,
+    "tasks_done": 117,
+    "tasks_total": 227,
+    "commits": 1555,
+    "kits_run": 388,
+    "merges": 231,
     "decisions": 40,
     "assumptions": 17,
     "friction_open": 22,
     "friction_fixed": 11,
-    "review_folders": 164
+    "review_folders": 179
   }
 }
