@@ -24,6 +24,8 @@ Special lines in the markdown body:
   media/a.jpg "Caption"
   @crew                                              the live crew table (data/crew.json)
   @play                                              "play in your browser", if links.play_web is set
+  @builds                                            every browser build in data/web_builds.json, oldest first,
+                                                     each loading only on click (files in play/<id>/, copied to docs/play/)
 Plain markdown images ![caption](media/shot.jpg) become captioned figures that open full size.
 
 media/ is the local working folder (tools/media.py writes there, not committed). The build copies
@@ -127,6 +129,7 @@ GALLERY = re.compile(r'^@gallery[ \t]*\n((?:[ \t]*media/\S+(?:[ \t]+"[^"]*")?[ \
 GALLERY_ITEM = re.compile(r'^[ \t]*(media/\S+)(?:[ \t]+"([^"]*)")?', re.M)
 CREW_LINE = re.compile(r"^@crew\s*$", re.M)
 PLAY_LINE = re.compile(r"^@play\s*$", re.M)
+BUILDS_LINE = re.compile(r"^@builds\s*$", re.M)
 PLAY = {"url": "", "embed": ""}  # set from config.json links by Site
 
 
@@ -142,6 +145,35 @@ def play_block():
             '<p class="play-note">An experimental web build: best in Chrome or Edge, and a big download. '
             'The Windows build is the full game.</p>'
             f'<div class="play-actions">{actions}</div>{embed}</div></figure>')
+def web_builds():
+    f = HERE / "data" / "web_builds.json"
+    if not f.exists():
+        return []
+    return sorted(json.loads(f.read_text(encoding="utf-8")), key=lambda b: b.get("date", ""))
+
+
+def builds_block():
+    """One card per browser build, oldest first. Nothing loads until the reader clicks."""
+    builds = web_builds()
+    if not builds:
+        return ('<figure class="play-panel"><div class="play-inner"><p class="play-title">Browser builds</p>'
+                '<p class="play-note">None yet. The first one is being made and will appear here.</p></div></figure>')
+    cards = []
+    for i, b in enumerate(builds, 1):
+        meta = " &middot; ".join(esc(x) for x in (b.get("when", ""), b.get("commit", ""), b.get("size", "")) if x)
+        src = b.get("url") or f'play/{b["id"]}/{b.get("entry", "index.html")}'
+        if b.get("pending"):
+            action = f'<p class="play-note">{esc(b.get("pending_note", "Not online yet: it goes up once it has been checked in a real browser."))}</p>'
+        else:
+            action = (f'<div class="play-actions"><a class="play-btn" href="{esc(src)}" target="_blank" rel="noopener">'
+                      f'Play build {i} in a new tab ({esc(b.get("download", b.get("size", "")))})</a></div>')
+        cards.append(
+            f'<figure class="play-panel build-card" id="build-{esc(b["id"])}"><div class="play-inner">'
+            f'<p class="play-title">Build {i}: {esc(b.get("title", b["id"]))}</p>'
+            f'<p class="play-note">{meta}</p><p class="build-desc">{esc(b.get("description", ""))}</p>{action}</div></figure>')
+    return "\n".join(cards)
+
+
 IMG_MD = re.compile(r"!\[([^\]]*)\]\((media/[^)\s]+)\)")
 IMG_PARA = re.compile(r"<p>\s*(<img\b[^>]*>)\s*</p>")
 ATTR = re.compile(r'(\w[\w-]*)="([^"]*)"')
@@ -248,6 +280,7 @@ def expand_directives(md, names, collected):
     md = CREW_LINE.sub(lambda m: "\n" + crew_block(names, link=True) + "\n", md)
     md = COST_LINE.sub(lambda m: "\n" + cost_block() + "\n", md)
     md = PLAY_LINE.sub(lambda m: "\n" + play_block() + "\n", md)
+    md = BUILDS_LINE.sub(lambda m: "\n" + builds_block() + "\n", md)
     md = VIDEO.sub(video, md)
     md = COMPARE.sub(compare, md)
     md = GALLERY.sub(gallery, md)
@@ -535,6 +568,8 @@ class Site:
         links = []
         if "the-game" in self.page_slugs:
             links.append(("the-game", "The game"))
+        if "play" in self.page_slugs:
+            links.append(("play", "Play"))
         links += [("topics", "Topics"), ("timeline", "Timeline"), ("gallery", "Gallery")]
         if "how-its-built" in self.page_slugs:
             links.append(("how-its-built", "How it's built"))
@@ -834,6 +869,14 @@ class Site:
         self.build_pages()
         shutil.copy2(HERE / "template" / "style.css", self.out / "style.css")
         shutil.copy2(HERE / "template" / "site.js", self.out / "site.js")
+        for b in web_builds():
+            if b.get("url") or b.get("pending"):
+                continue
+            src, dst = HERE / "play" / b["id"], self.out / "play" / b["id"]
+            if src.exists():
+                shutil.copytree(src, dst, dirs_exist_ok=True)
+            elif not dst.exists():
+                self.warnings.append(f"play/{b['id']} is listed in data/web_builds.json but missing")
         if not self.drafts:
             (self.out / ".nojekyll").write_text("", encoding="utf-8")  # lets GitHub Pages serve the folder as-is
             for name in sync_media(self.refs):

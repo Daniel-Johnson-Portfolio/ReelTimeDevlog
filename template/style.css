@@ -441,3 +441,5 @@ a.chip:hover { color: var(--ink); border-color: var(--muted); }
   .strip { grid-template-columns: 1fr 1fr; }
   .cards { gap: 1.75rem; }
 }
+.build-card { margin: 1.5rem 0; }
+.build-desc { margin: 0 0 1rem; }

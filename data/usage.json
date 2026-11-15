@@ -1,12 +1,12 @@
 {
-  "generated": "2026-11-15T16:48:46+00:00",
+  "generated": "2026-11-15T16:51:05+00:00",
   "ledger_from": "2026-11-13T11:34+00:00",
-  "as_of": "2026-11-15T16:46+00:00",
-  "measured_usd": 1728.66,
+  "as_of": "2026-11-15T16:50+00:00",
+  "measured_usd": 1730.12,
   "sessions": 249,
-  "session_hours": 587.1,
+  "session_hours": 587.3,
   "by_model": {
-    "Opus 5.5": 1290.8,
+    "Opus 5.5": 1292.26,
     "Fable 5.2": 420.62,
     "Sonnet 5.5": 17.25
   },
@@ -20,8 +20,8 @@
     "world": 120.09,
     "gameplay-3": 110.15,
     "ui": 73.29,
-    "devlog": 70.89,
-    "release": 55.93,
+    "devlog": 71.99,
+    "release": 56.29,
     "audio": 13.52,
     "toolsmith": 3.73
   }
