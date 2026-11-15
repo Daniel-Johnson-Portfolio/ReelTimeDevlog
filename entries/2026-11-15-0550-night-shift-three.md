@@ -36,7 +36,7 @@ The build went green at 04:50 and passed the full 21-step journey from the zip a
 
 Still open for me to check: zombies lunging into the camera, a floor revolver you can't see, the spitter's glob, the incoming-fire arrows, and the replay.
 
-## Update, 07:15: one more package, and the chase camera goes
+## Update, 07:10: one more package, and the chase camera goes
 
 The night didn't stop at 05:35. A last window went green at 06:22 with the replay's chase-camera fixes, the fireball and the pumps' pulse, and that package passed the journey at 06:45. On film, though, the chase camera got worse: cuts 0.5 to 2 seconds apart, and the camera going through walls.
 
