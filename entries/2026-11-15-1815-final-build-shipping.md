@@ -42,3 +42,11 @@ Today was three playtests from me, three fix rounds, a content lock at 16:00, an
 @crew
 
 Still to come tonight: a Development build as a fallback, the browser build for the [Play In Browser](../play.html) tab, and the submission.
+
+## Update, 21:30: one more build, and the fix we gave up on
+
+This wasn't quite the last build. I played it at 19:10 and found two more things: the UFO could kill its own aliens, and on a controller the Settings menu skipped the Invert Look toggle. At 19:20 I added one more: right stick down should look down. All three were fixed and filmed, and a new Shipping build of **0ad3f1e62** passed my check at 20:25. That's the build we're submitting. 3f07edb57 is kept as a read-only backup, and it's still the one on [Play In Browser](../play.html).
+
+Except the Invert Look skip was still there from the main menu. The engine session found the cause: the Settings column's focus order didn't match its visual order. The fix meant rebuilding the menu, and the rebuild pushed the editor to 49 GB of memory and filled the C: drive. I closed the editor by hand to save the machine. Three more ways to apply the fix failed to compile, and each was rolled back. At 21:25 the Director called it: "T-0232 ABANDONED ... Known flaw shipped: Settings Down from Stick look jumps past Invert Look to FOV."
+
+So there's one known flaw in the build we submit, in a menu, on a controller.
