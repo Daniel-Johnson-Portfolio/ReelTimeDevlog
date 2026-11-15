@@ -7,7 +7,8 @@
     "size": "172 MB",
     "title": "Day one evening",
     "description": "The build from playtest one: the front end, the screen test and the first zombie scene only. Greybox sets, the first zombie, a rough HUD and a rough cut of the replay, and a mannequin for the player.",
-    "pending": true
+    "pending": true,
+    "pending_note": "Not playable, so not online. Checked in Chrome on Sunday at 17:30: it downloads (169 MB), starts in 11 seconds with WebGPU on and no errors, and runs at 121 fps, but the screen stays black the whole time. It's listed here because it was our first try."
   },
   {
     "id": "2026-11-15-final",
