@@ -5,3 +5,5 @@
 __pycache__/
 .DS_Store
 Thumbs.db
+# browser builds: copied into docs/play/ by build.py; the copy in docs/ is the one committed
+/play/

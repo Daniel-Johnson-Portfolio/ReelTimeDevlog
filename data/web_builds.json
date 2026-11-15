@@ -11,13 +11,13 @@
     "pending_note": "Not playable, so not online. Checked in Chrome on Sunday at 17:30: it downloads (169 MB), starts in 11 seconds with WebGPU on and no errors, and runs at 121 fps, but the screen stays black the whole time. It's listed here because it was our first try."
   },
   {
-    "id": "2026-11-15-final",
-    "date": "2026-11-15T20:00",
-    "when": "Sunday 15 November (today)",
-    "commit": "the final build",
-    "title": "The finished game",
-    "description": "The same game as the jam entry, on the Low graphics preset so it can run in a browser. It gets made once the Windows final has passed its checks.",
-    "pending": true,
-    "pending_note": "Not built yet: this is made after the Windows final passes, tonight."
+    "id": "2026-11-15",
+    "date": "2026-11-15T18:38",
+    "when": "Sunday 15 November, 18:38 (hour 86)",
+    "commit": "game commit 3f07edb57, the same as the Windows entry",
+    "size": "220 MB",
+    "title": "The final build, in your browser",
+    "description": "Experimental browser version of the final build, with the front end, the screen test and the first zombie scene (Dead Mile Motel). It starts in about 7 seconds once downloaded. The page says 'Click or press a key for sound' until you click, so click once to start. The Windows download is the whole game.",
+    "download": "about 220 MB"
   }
 ]

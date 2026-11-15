@@ -11,6 +11,7 @@ These are **browser builds made for this devlog**. The jam entry itself is the *
 
 - You need **Chrome or Edge** with WebGPU, on a computer with a real graphics card. Phones and tablets won't run it.
 - Each one is a big download, and nothing loads until you click. Sizes are on each build.
+- Once it has loaded, click once more: the page waits for a click before it starts the sound.
 - Controls: **keyboard and mouse**. WASD to move, the mouse to look, Space to jump, Ctrl to slide, left mouse to attack, right mouse to throw, E to grab a weapon, Esc to pause. Click the game first so it takes the mouse.
 - Time only moves while you do. If it looks frozen, try moving.
 
@@ -18,4 +19,6 @@ These are **browser builds made for this devlog**. The jam entry itself is the *
 
 ## How these were made
 
-Unreal Engine 5.9 can build for the web with WebGPU. The release session's first attempt was on Thursday evening, and three more on Saturday were stopped by the build tool's lock, because only one build can run at a time on this machine and the Windows builds came first. The browser build of the finished game is made after the Windows final, on the Low preset.
+We're on the MegaJam Preview of Unreal Engine 5.9, which can build for the web with WebGPU. The release session's first try was on Thursday evening. It starts and runs, but the screen stays black, so it isn't online. Three more tries on Saturday were stopped by the build tool's lock: only one build runs at a time on this machine, and the Windows builds came first.
+
+The final one was built on Sunday at 18:38 from the same commit as the Windows entry, after that had passed its checks. It's split into pieces under 50 MB so GitHub Pages can serve it, and a small service worker puts them back together in your browser.

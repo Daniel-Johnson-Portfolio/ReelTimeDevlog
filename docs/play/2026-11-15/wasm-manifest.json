@@ -1,0 +1,16 @@
+[
+  {"path": "/Engine/Config/StagedBuild_ReelTime.ini", "url": "Engine/Config/StagedBuild_ReelTime.ini", "size": 3, "sha1": "57218c316b6921e2cd61027a2387edc31a2d9471"},
+  {"path": "/Engine/Content/Renderer/TessellationTable.bin", "url": "Engine/Content/Renderer/TessellationTable.bin", "size": 259568, "sha1": "3a3402ca2d3531ab8352c818ea1181288bd78c72"},
+  {"path": "/Engine/GlobalShaderCache-SP_WEBGPU_ES3_1_DEFERRED.bin", "url": "Engine/GlobalShaderCache-SP_WEBGPU_ES3_1_DEFERRED.bin", "size": 855282, "sha1": "e7606f5d0281a5d0eae0885846fd3dbbc793d230"},
+  {"path": "/ReelTime/Content/Paks/ReelTime-Wasm.pak", "url": "ReelTime/Content/Paks/ReelTime-Wasm.pak", "size": 9656140, "sha1": "ea49706dcbcc0f7f67ce988755d5a68629d40a7c"},
+  {"path": "/ReelTime/Content/Paks/ReelTime-Wasm.ucas", "url": "ReelTime/Content/Paks/ReelTime-Wasm.ucas", "size": 53955408, "sha1": "6afd15d4973eae924261ecd5d1ae063ee302db25"},
+  {"path": "/ReelTime/Content/Paks/ReelTime-Wasm.utoc", "url": "ReelTime/Content/Paks/ReelTime-Wasm.utoc", "size": 313255, "sha1": "3a3a01b013d96f9e32823ee7c8d3ad698996634d"},
+  {"path": "/ReelTime/Content/Paks/global.ucas", "url": "ReelTime/Content/Paks/global.ucas", "size": 16, "sha1": "e129f27c5103bc5cc44bcdf0a15e160d445066ff"},
+  {"path": "/ReelTime/Content/Paks/global.utoc", "url": "ReelTime/Content/Paks/global.utoc", "size": 206, "sha1": "feefe947075479c18ecefc4229e5e36a5e043313"},
+  {"path": "/ReelTime/Content/ShaderArchive-Global-SF_WEBGPU_ES3_1_DEFERRED-SP_WEBGPU_ES3_1_DEFERRED.ushaderbytecode", "url": "ReelTime/Content/ShaderArchive-Global-SF_WEBGPU_ES3_1_DEFERRED-SP_WEBGPU_ES3_1_DEFERRED.ushaderbytecode", "size": 5682546, "sha1": "3adfa03cad004b059eadc8e2330b2660bf3d0202"},
+  {"path": "/ReelTime/Content/ShaderArchive-ReelTime-SF_WEBGPU_ES3_1_DEFERRED-SP_WEBGPU_ES3_1_DEFERRED.ushaderbytecode", "url": "ReelTime/Content/ShaderArchive-ReelTime-SF_WEBGPU_ES3_1_DEFERRED-SP_WEBGPU_ES3_1_DEFERRED.ushaderbytecode", "size": 2617143, "sha1": "f3ebbba16d929183b0641e37153f9f0420e94876"},
+  {"path": "/ReelTime/Content/ShaderAssetInfo-Global-SF_WEBGPU_ES3_1_DEFERRED-SP_WEBGPU_ES3_1_DEFERRED.assetinfo.json", "url": "ReelTime/Content/ShaderAssetInfo-Global-SF_WEBGPU_ES3_1_DEFERRED-SP_WEBGPU_ES3_1_DEFERRED.assetinfo.json", "size": 18290, "sha1": "976dfc1664a977c96093d60cc2abdae98a954a08"},
+  {"path": "/ReelTime/Content/ShaderAssetInfo-ReelTime-SF_WEBGPU_ES3_1_DEFERRED-SP_WEBGPU_ES3_1_DEFERRED.assetinfo.json", "url": "ReelTime/Content/ShaderAssetInfo-ReelTime-SF_WEBGPU_ES3_1_DEFERRED-SP_WEBGPU_ES3_1_DEFERRED.assetinfo.json", "size": 19137, "sha1": "6ad84b692606f422ea091b62e152d54761ba8f33"},
+  {"path": "/ReelTime/Content/ShaderTypeInfo-Global-SF_WEBGPU_ES3_1_DEFERRED-SP_WEBGPU_ES3_1_DEFERRED.stinfo", "url": "ReelTime/Content/ShaderTypeInfo-Global-SF_WEBGPU_ES3_1_DEFERRED-SP_WEBGPU_ES3_1_DEFERRED.stinfo", "size": 23636, "sha1": "2a592415009c0cdae56eb560e887055ac543d558"},
+  {"path": "/ReelTime/Content/ShaderTypeInfo-ReelTime-SF_WEBGPU_ES3_1_DEFERRED-SP_WEBGPU_ES3_1_DEFERRED.stinfo", "url": "ReelTime/Content/ShaderTypeInfo-ReelTime-SF_WEBGPU_ES3_1_DEFERRED-SP_WEBGPU_ES3_1_DEFERRED.stinfo", "size": 9580, "sha1": "5679c4e1da819d335f883f7f2d970ee0d24190b5"}
+]
