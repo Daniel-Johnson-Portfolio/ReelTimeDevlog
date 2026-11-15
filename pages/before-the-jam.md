@@ -14,7 +14,7 @@ The story behind this list is in [Pre-production: everything that existed before
 ## Workflow tooling (prompts and scripts)
 
 - **The crew setup:** shared rules, one instruction file per session role, a task and inbox system, a status board, day and night mode, a jam clock and digest scripts, and Claude Code hooks, subagents and skills.
-- **The agent and MCP setup:** Claude Code settings and hooks; three subagent prompts (API lookup, code reviewer, media reviewer); skills with their prompt libraries (looking up Unreal Engine 5.9 APIs in the generated stub, kit scripts, a reference for the editor's MCP toolsets); an MCP server config that connects Claude Code to the Unreal Editor's built-in MCP server, plus a helper script that calls it; and Blender's MCP add-on, connected the same way. No game content.
+- **The agent and MCP setup:** Claude Code settings and hooks; three subagent prompts (API lookup, code reviewer, media reviewer); skills with their prompt libraries (looking up Unreal Engine 5.9 APIs in the generated stub, kit scripts, a reference for the editor's MCP toolsets); an MCP server config that connects Claude Code to the Unreal Editor's built-in MCP server, plus a helper script that calls it; Blender's MCP add-on, connected the same way; and codegraph, a code-index tool the sessions use to look up the project's code. No game content.
 - **A kit template:** an empty script skeleton for importing and building Unreal assets. It contains no game content.
 - **Release tools:** a packaging and smoke-test script and a script that cuts the gameplay video.
 - **This site's generator,** its page templates and stylesheet.
