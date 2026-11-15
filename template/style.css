@@ -443,3 +443,10 @@ a.chip:hover { color: var(--ink); border-color: var(--muted); }
 }
 .build-card { margin: 1.5rem 0; }
 .build-desc { margin: 0 0 1rem; }
+/* submitted marker (data/submitted.json) */
+.ticks li.submitted { height: 100%; background: #f2c200; box-shadow: 0 0 0 2px #f2c200; }
+.ruler-submitted { margin: 0.5rem 0 0; font-family: var(--display); font-weight: 700; font-size: 1.05rem; color: inherit; display: flex; align-items: center; gap: 0.5rem; }
+.ruler-submitted .sub-dot { width: 0.9rem; height: 0.9rem; border-radius: 50%; background: #f2c200; flex: none; }
+.t-row.t-submitted { background: #f2c200; color: #17212b; border-radius: 6px; padding: 1rem; margin: 0.5rem 0; border-bottom: 0; }
+.t-row.t-submitted h3, .t-row.t-submitted p, .t-row.t-submitted .t-hour { color: #17212b; margin: 0; }
+.t-sub-badge { font-family: var(--display); font-weight: 800; font-size: 1.4rem; letter-spacing: 0.04em; align-self: center; }

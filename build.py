@@ -19,6 +19,7 @@ Writing entries (entries/*.md, front matter then markdown):
 
 Special lines in the markdown body:
   @video media/clip.mp4 "Caption"                     a looping clip
+  @film media/trailer.mp4 "Caption"                  a film with sound that plays only on click (big files)
   @compare media/before.jpg media/after.jpg "Caption"  a before/after slider
   @gallery                                           a grid of shots, one per line after it:
   media/a.jpg "Caption"
@@ -123,6 +124,7 @@ def thumb_for(src):
 
 BULLET = re.compile(r"^\s*[-*]\s+")
 NUMBERED = re.compile(r"^\s*\d+\.\s+")
+FILM = re.compile(r'^@film\s+(\S+)(?:\s+"([^"]*)")?\s*$', re.M)
 VIDEO = re.compile(r'^@video\s+(\S+)(?:\s+"([^"]*)")?\s*$', re.M)
 COMPARE = re.compile(r'^@compare\s+(\S+)\s+(\S+)(?:\s+"([^"]*)")?\s*$', re.M)
 GALLERY = re.compile(r'^@gallery[ \t]*\n((?:[ \t]*media/\S+(?:[ \t]+"[^"]*")?[ \t]*(?:\n|$))+)', re.M)
@@ -150,6 +152,18 @@ def web_builds():
     if not f.exists():
         return []
     return sorted(json.loads(f.read_text(encoding="utf-8")), key=lambda b: b.get("date", ""))
+
+
+def submitted_info():
+    """data/submitted.json: {"time": ISO with offset, "build": "short text"}. Empty time = not submitted yet."""
+    f = HERE / "data" / "submitted.json"
+    if not f.exists():
+        return None
+    d = json.loads(f.read_text(encoding="utf-8"))
+    if not d.get("time"):
+        return None
+    d["dt"] = datetime.fromisoformat(d["time"])
+    return d
 
 
 def builds_block():
@@ -281,6 +295,14 @@ def expand_directives(md, names, collected):
     md = COST_LINE.sub(lambda m: "\n" + cost_block() + "\n", md)
     md = PLAY_LINE.sub(lambda m: "\n" + play_block() + "\n", md)
     md = BUILDS_LINE.sub(lambda m: "\n" + builds_block() + "\n", md)
+    def film(m):
+        src, cap = m.group(1), m.group(2) or ""
+        collected.append({"src": src, "caption": cap})
+        figcap = f"<figcaption>{esc(cap)}</figcaption>" if cap else ""
+        tag = video_tag(src, 'controls playsinline preload="none"')
+        return "\n" + f'<figure class="clip film">{tag}{figcap}</figure>' + "\n"
+
+    md = FILM.sub(film, md)
     md = VIDEO.sub(video, md)
     md = COMPARE.sub(compare, md)
     md = GALLERY.sub(gallery, md)
@@ -561,8 +583,18 @@ class Site:
         else:
             caption = f"Hour {current} of {self.hours}"
         cls = "ruler compact" if compact else "ruler"
+        sub = submitted_info()
+        sub_html = ""
+        if sub and self.start:
+            sh = int((sub["dt"] - self.start).total_seconds() // 3600) + 1
+            if 1 <= sh <= self.hours:
+                blocks_html = "".join(blocks).replace(f'style="--i:{sh}"></li>', f'style="--i:{sh}" class="submitted"></li>', 1)
+                blocks = [blocks_html]
+            sub_html = (f'<p class="ruler-submitted"><span class="sub-dot" aria-hidden="true"></span>'
+                        f'Submitted {esc(sub["dt"].strftime("%a %H:%M"))} UK, hour {sh}'
+                        + (f' &middot; {esc(sub["build"])}' if sub.get("build") else "") + '</p>')
         return (f'<figure class="{cls}" aria-label="{esc(caption)}"><div class="ruler-days" style="--days:{self.days}">'
-                f'{"".join(blocks)}</div><figcaption>{esc(caption)}</figcaption></figure>')
+                f'{"".join(blocks)}</div><figcaption>{esc(caption)}</figcaption>{sub_html}</figure>')
 
     def header(self, root, active):
         links = []
@@ -765,13 +797,25 @@ class Site:
             if not posts:
                 continue
             rows = []
+            sub = submitted_info()
+            sub_row = ""
+            if sub and self.when(sub["dt"])[2] == n:
+                sub_row = (f'<li class="t-row t-submitted"><span class="t-hour">{self.when(sub["dt"])[0]}</span>'
+                           f'<span class="t-sub-badge">SUBMITTED</span><div class="t-text"><h3>Submitted at '
+                           f'{esc(sub["dt"].strftime("%H:%M"))} UK, {esc(sub["dt"].strftime("%A %d %B"))}</h3>'
+                           f'<p>{esc(sub.get("build", ""))}</p></div></li>')
             for e in posts:
+                if sub_row and e["date"] > sub["dt"]:
+                    rows.append(sub_row)
+                    sub_row = ""
                 thumb = (f'<img src="{esc(mp + e["thumb"][6:])}" alt="" loading="lazy">' if e["thumb"] else '<span class="no-media"></span>')
                 cat = self.chip(e["categories"][0], root) if e["categories"] else ""
                 rows.append(f'<li class="t-row"><span class="t-hour">{e["hour"]}</span>'
                             f'<a class="t-thumb" href="posts/{e["slug"]}.html" tabindex="-1" aria-hidden="true">{thumb}</a>'
                             f'<div class="t-text"><h3><a href="posts/{e["slug"]}.html">{esc(e["title"])}</a></h3>'
                             f'<p>{esc(e["summary"])}</p>{cat}</div></li>')
+            if sub_row:
+                rows.append(sub_row)
             count = f'{len(posts)} {"post" if len(posts) == 1 else "posts"}'
             sections.append(f'<section class="t-day wrap" id="day-{n}"><div class="t-day-head"><h2>{esc(self.day_title(n))}</h2>'
                             f'<span class="count">{count}</span></div><ol class="t-list">{"".join(rows)}</ol></section>')

@@ -18,7 +18,7 @@ I played it at 19:35 on Sunday: "significantly more stable in Chrome, frame rate
 - Use **Chrome**, with WebGPU, on a computer with a real graphics card. Phones and tablets won't run it.
 - It's a big download, and nothing loads until you click. The size is on each build.
 - Once it has loaded, click once more: the page waits for a click before it starts the sound.
-- Controls: **keyboard and mouse**. WASD to move, the mouse to look, Space to jump, Ctrl to slide, left mouse to attack, right mouse to throw, E to grab a weapon, Esc to pause. Click the game first so it takes the mouse.
+- The game plays with a **mouse and keyboard or a controller**, and the controller rumbles on hits, kills and shots. That's in the Windows build. In the browser we've only tested mouse and keyboard. Keyboard and mouse controls: WASD to move, the mouse to look, Space to jump, Ctrl to slide, left mouse to attack, right mouse to throw, E to grab a weapon, Esc to pause. Click the game first so it takes the mouse.
 - Time only moves while you do. If it looks frozen, try moving.
 
 ## The builds, oldest first
