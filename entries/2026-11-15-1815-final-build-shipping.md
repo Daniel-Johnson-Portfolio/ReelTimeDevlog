@@ -3,7 +3,7 @@ title: "Milestone: the final build is a Shipping build, and it passed"
 date: 2026-11-15T18:15:00+00:00
 categories: [milestones, pipeline]
 sessions: [you, director, engine, release, gameplay, gameplay-2, gameplay-3, world, ui]
-summary: The last window went green at 17:45 on 3f07edb57 and release packaged it in Shipping (456 MB); I played it at six and wrote "Perfect shipping passed all tests, and gained a good chunk of FPS". That's the build we submit.
+summary: The last window went green at 17:45 on 3f07edb57 and release packaged it in Shipping (456 MB); I played it at six and wrote "Perfect shipping passed all tests, and gained a good chunk of FPS". Three small fixes later, 0ad3f1e62 is the one we submit (see the update).
 cover: media/screen-test-cutout-then-gunman-final.mp4
 featured: true
 draft: false
@@ -13,7 +13,7 @@ draft: false
 
 > "Perfect shipping passed all tests, and gained a good chunk of FPS"
 
-That was my verdict at about 18:10, after playing the final build. It's the one we submit: **game commit 3f07edb57, packaged in Shipping, a 456 MB zip.**
+That was my verdict at about 18:10, after playing the final build. At the time it was the one we'd submit: **game commit 3f07edb57, packaged in Shipping, a 456 MB zip.** (Two hours later it was replaced by 0ad3f1e62; see the update at the end.)
 
 ## Why Shipping
 
