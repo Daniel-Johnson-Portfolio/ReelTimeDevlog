@@ -17,7 +17,7 @@
     "commit": "game commit 3f07edb57, the same as the Windows entry",
     "size": "220 MB",
     "title": "The final build, in your browser",
-    "description": "Experimental browser version of the final build, with the front end, the screen test and the first zombie scene (Dead Mile Motel). It starts in about 7 seconds once downloaded. The page says 'Click or press a key for sound' until you click, so click once to start. The Windows download is the whole game.",
+    "description": "Experimental browser version of the final build, with the front end, the screen test and the first zombie scene (Dead Mile Motel). It starts in about 7 seconds once downloaded. The page says 'Click or press a key for sound' until you click, so click once to start. We checked that it reaches the title menu. The scenes haven't been played through in a browser yet, so if something breaks, tell us. The Windows download is the whole game, and the one we entered.",
     "download": "about 220 MB"
   }
 ]
