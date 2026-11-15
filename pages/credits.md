@@ -22,6 +22,7 @@ Every session adds a line to the crew's credits file the moment it brings someth
 | Courier Prime (Alan Dague-Greene, Quote-Unquote Apps) | Google Fonts | SIL OFL 1.1 | UI: body text, menus, subtitles |
 | Caveat (Impallari Type) | Google Fonts | SIL OFL 1.1 | UI: the Director's handwritten notes |
 | Kokoro-82M v1.0 text-to-speech model, voice am_onyx | hexgrad, run locally through kokoro-onnx | Apache License 2.0 | The in-game director's spoken lines. The generated audio ships; the model doesn't |
+| "Fractal" (music track, 60 s) | Microsoft Clipchamp stock audio library | Clipchamp stock licence, for use in videos exported from Clipchamp | The music on the gameplay trailer. It isn't in the game |
 
 ## Tools used
 
