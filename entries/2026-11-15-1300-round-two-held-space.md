@@ -20,6 +20,9 @@ Four tasks, one window:
 
 - **T-0215 (gameplay-2):** the fix for held Space already existed. It was a key-swallow built in the morning and shelved because it touched C++ late. It went in: a Space still held from a skip is swallowed, so it can't press the next button. On film the credits skip lands on the title and stays there, and the Dailies card waits.
 - **T-0217 (gameplay-3):** one number, `MinHitsToKill 2`. A runner went down on the second swing, and so did a shambler.
+
+@video media/machete-two-hits.mp4 "The machete after T-0217, on a test set: the first swing bloodies the runner and it keeps coming, the second puts it down. Then the same for a shambler."
+
 - **T-0216 (npc-ai):** quicker reactions, and gunmen shoot sooner after spotting you. Data only.
 - **T-0218 (gameplay):** the [E] PICK UP prompts showed everywhere except the screen test. Fixed there, and ui moved the prompt above the subtitle plate, which it had been sitting on.
 

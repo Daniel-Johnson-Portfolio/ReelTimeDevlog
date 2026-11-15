@@ -4,9 +4,11 @@ date: 2026-11-15T11:00:00+00:00
 categories: [fixes, gameplay]
 sessions: [you, director, gameplay, gameplay-2, ui, audio, npc-ai, world-2, engine, release]
 summary: I played the overnight build at 09:40 and wrote one long note; by 10:57 five sessions had fixed all of it, from missing tutorial lines to a death screen you can actually read, and the build went green.
-cover: media/cut-a-shambler-got-you.jpg
+cover: media/gas-station-death-cut-card.mp4
 draft: false
 ---
+
+@video media/gas-station-death-cut-card.mp4 "Dying at the gas station on the 10:57 build: a shambler gets the demo bot, the screen cuts to CUT! A SHAMBLER GOT YOU. with the take counter going to 02, then straight back to ACTION."
 
 ![The new death card on the 10:57 build: CUT!, what killed you ("A SHAMBLER GOT YOU."), and the take counter ticking over. Before this you just restarted with no idea why.](media/cut-a-shambler-got-you.jpg)
 

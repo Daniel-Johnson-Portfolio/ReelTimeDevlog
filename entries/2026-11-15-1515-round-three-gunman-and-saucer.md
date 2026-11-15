@@ -4,11 +4,11 @@ date: 2026-11-15T15:15:00+00:00
 categories: [fixes, gameplay]
 sessions: [you, director, gameplay, gameplay-2, gameplay-3, npc-ai, world, audio, engine, release]
 summary: My longest note of the day, at 13:50, became six tasks; by 15:12 the tutorial had a noir gunman instead of a bullet-dodge drill, the saucer warned you and signed its kills, and retakes stopped adding stars (I'd scored 25 out of 24).
-cover: media/saucer-warning-stay-out-of-the-beam.jpg
+cover: media/saucer-warning-to-cut-card.mp4
 draft: false
 ---
 
-![The saucer on Main Street after T-0219: the beam comes down, the director shouts "Saucer overhead! Stay out of that beam, it'll kill you!", and a red arrow on the screen edge points at it.](media/saucer-warning-stay-out-of-the-beam.jpg)
+@video media/saucer-warning-to-cut-card.mp4 "The saucer on Main Street after T-0219, with the saucer called in by console command for the film. The beam comes down, the director shouts “Saucer overhead! Stay out of that beam, it'll kill you!”, then the screen goes red and the card says who did it: THE SAUCER GOT YOU."
 
 I played a22ef6dac after lunch. The note at 13:50 started with a correction: "I was mistaken the alien blaster was fine at 6, it was the ray gun i wanted halving." Then the real list:
 
@@ -19,6 +19,8 @@ I played a22ef6dac after lunch. The note at 13:50 started with a correction: "I 
 > "Last run i got 25/24 because I retook a couple scenes."
 
 Plus: shorten one tutorial line to "Lights, camera, action, blood", faster zombies, all melee reach down 25%, more light on the stairs in scene 7, and a tommy gun with 16 rounds and less damage. The Director made it six tasks (T-0219 to T-0223), with one assumption recorded: "all melee range -25%" means the enemies' reach and mine.
+
+@video media/screen-test-gunman-station-clip.mp4 "The new screen-test station at 16:03, played by the crew's demo bot: the gunman steps out into a lit pool, the bot closes in and takes him down with the machete."
 
 @gallery
 media/screen-test-noir-gunman.jpg "The new screen-test station (T-0221): a noir gunman to deal with instead of bullets to dodge. Die to him and you restart at this station, not the whole tutorial."
