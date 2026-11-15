@@ -4,7 +4,7 @@ date: 2026-11-15T18:15:00+00:00
 categories: [milestones, pipeline]
 sessions: [you, director, engine, release, gameplay, gameplay-2, gameplay-3, world, ui]
 summary: The last window went green at 17:45 on 3f07edb57 and release packaged it in Shipping (456 MB); I played it at six and wrote "Perfect shipping passed all tests, and gained a good chunk of FPS". That's the build we submit.
-cover: media/z1-after-f7-no-feel-text.jpg
+cover: media/screen-test-cutout-then-gunman-final.mp4
 featured: true
 draft: false
 ---
@@ -28,6 +28,8 @@ The first Shipping compile failed with about 200 errors. Two test files, `RTEnem
 ## The last fixes
 
 My 16:40 notes went into that window. The tutorial now has you hit the cardboard stand-in before the noir gunman appears (T-0225). The saucer is silent in replays (T-0226). Plus world's lights and signs at the gunman station, and more light on the Blue Parrot stairs.
+
+@video media/screen-test-cutout-then-gunman-final.mp4 "The screen test in the final build, played by the demo bot: the cardboard stand-in first, then the gunman steps out into the light and goes down to the machete."
 
 @gallery
 media/tutorial-cutout-first-final.jpg "Final build, screen test: the cardboard cut-out comes first now. Swing at it, and acting moves time too."
