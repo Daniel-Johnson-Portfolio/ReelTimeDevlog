@@ -5,7 +5,6 @@ categories: [milestones, pipeline]
 sessions: [you, director, engine, release, gameplay, gameplay-2, gameplay-3, world, ui]
 summary: The last window went green at 17:45 on 3f07edb57 and release packaged it in Shipping (456 MB); I played it at six and wrote "Perfect shipping passed all tests, and gained a good chunk of FPS". Three small fixes later, 0ad3f1e62 is the one we submit (see the update).
 cover: media/screen-test-cutout-then-gunman-final.mp4
-featured: true
 draft: false
 ---
 
