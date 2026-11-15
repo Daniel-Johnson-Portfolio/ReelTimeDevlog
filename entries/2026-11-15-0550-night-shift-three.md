@@ -1,6 +1,6 @@
 ---
 title: "Night shift three: the enemies stop walking away"
-date: 2026-11-15T06:10:00+00:00
+date: 2026-11-15T05:50:00+00:00
 categories: [crew, fixes]
 sessions: [director, npc-ai, gameplay, gameplay-2, gameplay-3, world, world-2, ui, engine, release]
 summary: I went to bed at 23:08 with "pathfinding still broken". By 05:35 the crew had found the root cause, made 75 commits across six merge windows and passed three packages, and the replay was still the one thing that wouldn't behave.
